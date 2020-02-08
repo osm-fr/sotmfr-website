@@ -1699,6 +1699,8 @@
 
 	strong, b {
 		font-weight: 600;
+		font-size: 1.4rem;
+		text-shadow: black 0.1em 0.1em 0.2em;
 	}
 
 	em, i {
@@ -1828,7 +1830,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #797979 !important;
+			color: #ECE7E7 !important;
 		}
 
 	strong, b {
@@ -3034,7 +3036,7 @@
 			width: 100%;
 			height: 100%;
 			/*background-color: #1B1F5C;*/
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/vue-montpellier-banniere-fond.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/nantes.png");
 			/*background-image: none;*/
 			background-size: auto, auto, 100% auto;
 			background-position: center, center, top center;
@@ -3212,6 +3214,7 @@
 				transform: translateY(2rem);
 				opacity: 0;
 				visibility: hidden;
+				font-size: 1.4rem;
 			}
 
 		#intro.hidden {
@@ -3392,7 +3395,7 @@
 
 			#header .logo:hover {
 				/*border-color: #797979 !important;*/
-				color: #AFAFAF !important;
+				color: #ECE7E7 !important;
 			}
 
 		@media screen and (max-width: 980px) {
