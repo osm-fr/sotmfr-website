@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Programme</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/js/FancySelect/fancySelect.css" />
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="jaune">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><img src="images/logo-sotm-2019-BAT.png" alt="logo SOTM-FR 2019" width="270"></a>
+					<a href="index.html" class="logo">14 au 16 juin, Montpellier</a>
+				</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="contribution.html">Appel à contribution</a></li>
+							<li class="active"><a href="programme.html">Programme</a></li>
+							<li><a href="inscription.html">Inscription</a></li>
+							<li><a href="sponsors.html">Soutiens</a></li>
+							<li><a href="infos.html">Infos pratiques</a></li>
+							<li><a href="video.html">Vidéos</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/sotmfr" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/osmfr" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Programme</h1>
+									<a href="pdfs/SOTM-FR_2019_Programme_definitif.pdf" class="button icon fa-file-pdf-o" title="Télécharger le programme au format PDF" target="_blank"> Télécharger le programme au format PDF</a></p>
+									<a href="pdfs/SOTM2019_guide_interventions" class="button icon fa-file-pdf-o" title="Télécharger le guide des interventions au format PDF" target="_blank"> Télécharger le guide des interventions avec les résumés, au format PDF</a></p>
+								</header>
+								<p><i>Sauvez des arbres, n'imprimez pas ce programme : une version papier vous sera remise lors de votre arrivée au SotM-FR.</i></p>
+								
+
+							</section>
+							
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><a href="https://openstreetmap.fr/"><img src="images/Public-images-osm_logo.png" alt="logo OpenStreetMap France" width="50"></a><li>&copy; OpenStreetMap France</li><li>Site basé sur un design <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jQuery-EasyTabs/jquery.easytabs.min.js"></script>
+			<!--<script src="assets/js/jquery.dropotron.min.js"></script>-->
+			<script src="assets/js/FancySelect/fancySelect.js"></script>
+			
+			<script type="text/javascript"> 
+			  $(document).ready(function(){ 
+				  $('.s-theme').fancySelect();
+				  
+				  var mySelect = $('.s-theme');
+				  mySelect.fancySelect().on('change.fs', function() {
+					$(this).trigger('change.$');
+				  }); // trigger the DOM's change event when changing FancySelect
+				  
+				  $('div.salle-filter.canceled').prepend('<span class="canceled-label">Annulé</span>');
+				  $( ".s-theme" ).change(function() {
+					var stheme = $( ".s-theme" ).val();
+					// on remet toutes les salles
+					$('div#j1 table.programme div.salle-filter,div#j2 table.programme div.salle-filter,div#j3 table.programme div.salle-filter').fadeIn(450);
+					$('.btn').removeClass('active');
+					$('.btn.all').addClass('active');
+					// console.log(stheme);
+					if(stheme == 'all') {
+						// A SUPPRIMER
+						$('div#j1 table.programme div.salle-filter,div#j2 table.programme div.salle-filter,div#j3 table.programme div.salle-filter').fadeIn(450);
+					  } else {
+						var $el = $('.' + stheme).fadeIn(450);
+						$('div#j1 table.programme div.salle-filter,div#j2 table.programme div.salle-filter,div#j3 table.programme div.salle-filter').not($el).hide();
+					  }
+
+				  });
+				  
+				  // easy tabs
+				  // https://github.com/JangoSteve/jQuery-EasyTabs/issues/101
+				  $('#tab-container').easytabs().bind('easytabs:after', function(evt, tab) {
+					  console.log('easytabs:after fired');
+					  $('table.programme div.salle-filter').fadeIn(450);
+					  // @todo : réinitialiser le fancy-select à la valeur "All" seulement l'affichage après changement de tab
+					  $(".s-theme").val("all");
+					  $(".trigger selected").text("all");
+					  //mySelect.trigger('update');
+				  });
+				  
+				  // from http://codepen.io/terf/post/jquery-filter-divs
+				  var $btns = $('div.salle .button').click(function() {
+					  console.log(this.id);
+					  if (this.id == 'all_j1' || this.id == 'all_j2' || this.id == 'all_j3') {
+						$('table.programme div.salle-filter').fadeIn(450);
+					  } else {
+						var $el = $('.' + this.id).fadeIn(450);
+						$('table.programme div.salle-filter').not($el).hide();
+					  }
+					  $btns.removeClass('active');
+					  $(this).addClass('active');
+					});
+				  
+				  
+				jQuery('.light-conf').before('<span class="light">Format court</span>');
+				jQuery("table div.salle-filter").each(function() {
+					console.log(this);
+					// jQuery(this).find(".address").text(); // <- This works
+					if($(this).hasClass("A")) $(this).append( '<span class="tag">Adresses</span>' ); 
+					if($(this).hasClass("B")) $(this).append( '<span class="tag">Cartographie</span>' ); 
+					if($(this).hasClass("C")) $(this).append( '<span class="tag">Collecte</span>' ); 
+					if($(this).hasClass("D")) $(this).append( '<span class="tag">Communauté</span>' ); 
+					if($(this).hasClass("E")) $(this).append( '<span class="tag">Contribution</span>' ); 
+					if($(this).hasClass("F")) $(this).append( '<span class="tag">Enseignement & recherche</span>' ); 
+					if($(this).hasClass("G")) $(this).append( '<span class="tag">Géomatique</span>' ); 
+					if($(this).hasClass("H")) $(this).append( '<span class="tag">Humanitaire</span>' ); 
+					if($(this).hasClass("I")) $(this).append( '<span class="tag">Indoor</span>' ); 
+					if($(this).hasClass("J")) $(this).append( '<span class="tag">Outils</span>' ); 
+					if($(this).hasClass("K")) $(this).append( '<span class="tag">Territoire</span>' ); 
+					if($(this).hasClass("L")) $(this).append( '<span class="tag">Transport</span>' ); 
+					if($(this).hasClass("M")) $(this).append( '<span class="tag">Visualisation</span>' ); 
+					//if($(this).hasClass("H")) $(this).append( '<span class="tag">Alter</span>' ); 
+				  // alert(n);
+				});
+
+				  
+				});
+				
+				var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        /* Toggle between adding and removing the "active" class,
+                        to highlight the button that controls the panel */
+                        this.classList.toggle("active");
+                
+                        /* Toggle between hiding and showing the active panel */
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                } 
+			</script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
