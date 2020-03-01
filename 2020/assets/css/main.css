@@ -1,12 +1,12 @@
 :root {
-    --primary-dark: #592123;
-    --primary-light: #982d22;
-    --links: #592123;
-    --links-light: #982d22;
-    --links-white: #f5f0e9;
+    --primary-dark: #202055;
+    --primary-light: #222296;
+    --links: #202055;
+    --links-light: #222296;
+    --links-white: #e6e6f4;
     --text: #383838;
     --background-light: #fefef6;
-    --text-light: #f5f0e9;
+    --text-light: #e6e6f4;
 }
 
 body {
@@ -231,7 +231,8 @@ footer img::-moz-selection,
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-image: url('../img/nantes_transparent_overlay.png'), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url('../img/nantes_transparent_overlay.png'),
+      linear-gradient(0deg, var(--primary-light) 50%, var(--primary-dark) 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
