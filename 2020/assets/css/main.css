@@ -233,7 +233,6 @@ footer img::-moz-selection,
     background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position-y: bottom;
 }
 
@@ -276,21 +275,23 @@ footer img::-moz-selection,
     Crédits
 ************************/
 
+header.intro {
+    position: relative;
+}
 .credits {
-    color: white;
     position: absolute;
     bottom: 10px;
     right: 30px;
     font-size: 12px;
-    filter: drop-shadow(0 0 1px black);
 }
+
+.credits a {
+    color: var(--links-white);
+}
+
 
 div.img-with-credits {
     position: relative;
-}
-
-header.intro .credits {
-    position: fixed;
 }
 
 @media (max-width: 766px) {
