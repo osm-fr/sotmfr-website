@@ -1,21 +1,23 @@
 // jQuery to collapse the navbar on scroll
-var navbarCollapse = function() {
+const navbarCollapse = function() {
     // not use for the moments
-    /*if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-custom").addClass("top-nav-collapse");
+        $(".links").css({'transform' : 'translate(-21%, 0)'});
+        $(".navbar-brand").css('margin-left', '1em');
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }*/
-    $(".navbar-fixed-top").addClass("top-nav-collapse");
-}
+        $(".navbar-custom").removeClass("top-nav-collapse");
+        $(".links").css({'transform' : 'translate(0, 0)'});
+    }
+};
 $(window).scroll(navbarCollapse);
 $(document).ready(navbarCollapse);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        var href = $anchor.attr('href');
+        const $anchor = $(this);
+        const href = $anchor.attr('href');
         $('html, body').stop().animate({
             scrollTop: $(href).offset().top
         }, 1200, 'easeInOutExpo');
@@ -24,9 +26,4 @@ $(function() {
             history.pushState({}, document.title, href);
         }
     });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
 });
