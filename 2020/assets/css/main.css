@@ -968,6 +968,10 @@ h2.abstract-subtitle {
     padding-bottom: 10px;
 }
 
+/************************
+    Font
+************************/
+
 /* latin */
 @font-face {
     font-family: 'Barlow';
