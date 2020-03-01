@@ -202,9 +202,13 @@ footer img::-moz-selection,
 #footer {
     font-size: 15px;
     line-height: 1.75em;
-    /* Todo: Modification temporaire en attendu d'avoir du conten*/
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
     padding: 3em;
+}
+
+#footer.home {
+    /* Todo: Modification temporaire en attendu d'avoir du contenu, à supprimer*/
+    background-color: var(--primary-light);
 }
 
 #footer a.light {
@@ -696,6 +700,14 @@ p img.bio-pic {
         border-bottom: 1px solid var(--primary-light);
     }
 
+    .stay-collapsed ul {
+        transform : translate(-21%, 0);
+    }
+
+    .stay-collapsed .navbar-brand {
+        margin-left: 1em;
+    }
+
     .navbar-custom.top-nav-collapse {
         background-color: var(--primary-dark);
         border-bottom: 1px solid var(--primary-light);
@@ -916,9 +928,31 @@ h2.abstract-subtitle {
     Program
 ************************/
 
-.program-page ul.abstract-speaker {
-    list-style: none;
-    margin-left: 0;
+.program-page {
+    padding: 6em 0;
+}
+
+.program-page .container-fluid {
+    width: calc(100vw - 24em);
+    margin-right: 12em;
+    margin-left: 12em;
+}
+
+.program-page h1 {
+    font-size: 2em;
+}
+
+.program-page h2 {
+    font-size: 1.8em;
+}
+
+.program-page h3 {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+.program-page h2:not(:first-child) {
+    padding: 0.5em 0;
 }
 
 /************************
@@ -932,4 +966,13 @@ h2.abstract-subtitle {
 .translation-table .section-head {
     font-weight: bold;
     padding-bottom: 10px;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Barlow Regular'), local('Barlow-Regular'), url(../fonts/Barlow-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
