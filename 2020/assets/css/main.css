@@ -373,7 +373,7 @@ div.img-with-credits {
 ************************/
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 1em;
 }
 
 /************************
@@ -771,7 +771,7 @@ p img.bio-pic {
 
 @media (min-width: 767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 2em;
     }
 
     .download-section {
