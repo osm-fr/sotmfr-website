@@ -231,9 +231,9 @@ footer img::-moz-selection,
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-image: url("../../../2019/images/overlay.png"),
+    background-image: url("../img/overlay.png"),
       linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url("../../../2019/images/nantes.png");
+      url("../img/nantes.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
