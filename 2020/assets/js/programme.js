@@ -1,19 +1,19 @@
 // Après chargement de la page
-$(function() {
+$(function () {
   const programmeSelector = ".programme";
   let rows;
 
   // Afficher la programmation
   // "?20200322" : force la mise à jour du cache à chaque changement.
-  $.getJSON("assets/js/programme.json?20200322", function(data) {
+  $.getJSON("assets/js/programme.json?20200322", function (data) {
     // TODO trier par date
-    $.each(data, function(index, element) {
-      programme(index, element, programmeSelector)
+    $.each(data, function (index, element) {
+      programme(index, element, programmeSelector);
     });
     // Lignes fitrables
     rows = $(programmeSelector + " [data-filter]");
     // Accordion
-    $(programmeSelector + " [data-toggle='collapse']").click(function() {
+    $(programmeSelector + " [data-toggle='collapse']").click(function () {
       event.preventDefault();
       let $icon = $("i", this);
       $icon.toggleClass("fa-chevron-circle-down");
@@ -22,32 +22,34 @@ $(function() {
     });
   });
 
-  // Filtre
+  // Message caché par défault car aucun filtre n'est activé
   $(".no-result").hide();
 
-  function checkNoResult() {
+  // Filtre
+  function checkNoResult () {
+    console.log(('Bouh)'))
     let visible = rows.filter(":visible").length;
-    if (visible == 0) {
+    if (visible === 0) {
       $(".no-result").show();
     } else {
       $(".no-result").hide();
     }
   }
 
-  $(".filter").on("click", "button[data-filter]", function(e) {
+  $(".filter").on("click", "button[data-filter]", function (e) {
     e.preventDefault();
 
-    //Get filter data from active link
+    // Get filter data from active link
     let filterValue = $(this).attr("data-filter");
-    //Change active filter tag
+    // Change active filter tag
     let currentFilter = $(this).closest("[data-filter]");
     currentFilter.toggleClass("active");
     $(this).parent().children().filter("[data-filter]").not(currentFilter).removeClass("active");
     //Remove search field content when choosing a filter
     $("#search").val("");
 
-    //Show filtered list by matching data-filter with data-filter of item
-    if (filterValue == "all") {
+    // Show filtered list by matching data-filter with data-filter of item
+    if (filterValue === "all") {
       rows.fadeIn("slow");
       // Désactiver tous les filtres actifs
       $(".filter button[data-filter!='all']").removeClass("active");
@@ -57,27 +59,26 @@ $(function() {
       // Prendre en compte tous les filtres actifs
       rows.hide();
       let filterValues = [];
-      $(".filter button[data-filter].active").each(function() {
+      $(".filter button[data-filter].active").each(function () {
         filterValues.push($(this).attr("data-filter"));
       });
-      rows.filter(function() {
+      rows.filter(function () {
         let dataFilter = $(this).attr("data-filter");
-        let setVisible = filterValues.reduce(function(accumulator, currentValue) {
+        return filterValues.reduce(function (accumulator, currentValue) {
           return accumulator && dataFilter.includes(currentValue);
         }, true);
-        return setVisible;
       }).fadeIn("slow");
     }
     checkNoResult();
   });
 
   // Filtre de recherche
-  $("#search").keyup(function() {
+  $("#search").keyup(function () {
     $(".filter [data-filter]").removeClass("active");
     let val = "^(?=.*\\b" + $.trim($(this).val()).split(/\s+/).join("\\b)(?=.*\\b") + ").*$",
       reg = RegExp(val, "i"),
       text;
-    let hiddenRows = rows.show().filter(function() {
+    let hiddenRows = rows.show().filter(function () {
       text = $(this).text().replace(/\s+/g, " ");
       return !reg.test(text);
     }).hide();
@@ -97,13 +98,14 @@ const jours = {
   "Th": "Jeudi",
   "Fr": "Vendredi",
   "Sa": "Samedi",
-  "Su": "Dimanche"
-}
+  "Su": "Dimanche",
+};
+
 const regex = /(Mo|Tu|We|Th|Fr|Sa|Su) (\d+):(\d+)-(\d+):(\d+)/;
 
 let tr_model;
 
-function getTrModel(selector) {
+function getTrModel (selector) {
   if (!tr_model) {
     tr_model = $(selector + " tr.tr_model");
     tr_model.hide();
@@ -114,7 +116,7 @@ function getTrModel(selector) {
 /**
  * Retourner un code salle.
  **/
-function getCodeSalle(salle) {
+function getCodeSalle (salle) {
   if (!salle) return "";
   // ex: "Amphi 6" --> "A_6"
   let code = salle.toUpperCase().replace(/^([A-Z]).+ ([A-Z0-9]+)$/, "$1_$2");
@@ -124,64 +126,74 @@ function getCodeSalle(salle) {
 /**
  * Retourner un tableau de codes tags.
  **/
-function getCodesTags(tags) {
+function getCodesTags (tags) {
   if (!tags) return "";
   // ex: "Communauté" --> "COM"
   return tags.map(tag => tag.substring(0, 3).toUpperCase());
 }
 
 let previousTd = {
-  text: function() {}
+  text: function () {},
 };
 
 /**
  * Afficher un programme, sous forme de ligne de tableau,
  * à partir d'un modèle HTML.
  **/
-function programme(key, prog, selector = "table.programme") {
-  // console.log(key);
+function programme (key, prog, selector = "table.programme") {
   let tr = getTrModel(selector);
-  // Colonne avec les heures
-  let td1 = $(".horaire", tr);
   let rowspan = false;
+
+  // Colonne avec les heures
+  let thHoraire = $(".horaire", tr);
+
   // Colonne avec les propriétés du programme
-  let td2 = $(".presentation", tr);
+  let tdPresentation = $(".presentation", tr);
 
   // Horaire
   let previousHoraire = previousTd.text() || "--";
   let horaire = prog.horaire;
   let jour = prog.jour;
-  let text, m;
+
+  let periode, m;
+
   if (jQuery.type(horaire) === "array") {
     // Tableau
-    text = horaire.join(" - ");
-  } else if ((m = regex.exec(horaire)) !== null) {
+    periode = horaire.join(" - ");
+  } else if ((
+    m = regex.exec(horaire)
+  ) !== null) {
     // Format opening_hours
-    text = `${parseInt(m[2])}h${m[3]} - ${parseInt(m[4])}h${m[5]}`;
+    periode = `${parseInt(m[2])}h${m[3]} - ${parseInt(m[4])}h${m[5]}`;
     jour = jours[m[1]];
   } else {
-    text = horaire;
+    periode = horaire;
   }
   // J'indique le jour en plus de l'horaire
-  text = jour + ", " + text;
   if (rowspan && text === previousHoraire) {
-    previousTd.attr("rowspan",
-      1 + parseInt(previousTd.attr("rowspan") || 1, 10)
-    );
-    td1.remove();
+    previousTd.attr("rowspan", 1 + parseInt(previousTd.attr("rowspan") || 1, 10));
+    thHoraire.remove();
+
   } else {
-    td1.text(text);
-    td1.attr("title", jour);
-    previousTd = td1;
+    $('<span>', {
+      text: jour,
+      class: 'jour',
+    }).appendTo(thHoraire);
+    $('<span>', {
+      text: periode,
+      class: 'heures',
+    }).appendTo(thHoraire);
+    thHoraire.attr("title", jour);
+    previousTd = thHoraire;
   }
 
   // Si c'est un pause
-  if (prog.break == "true") {
-    //td1.addClass("break");
-    //td2.addClass("breakmain");
+  if (prog.break === "true") {
+    //thHoraire.addClass("break");
+    //tdPresentation.addClass("breakmain");
     if (!prog.libelle) prog.libelle = "Pause";
-    $(".card", td2).addClass("text-white bg-secondary");
-    $(".card-body", td2).remove();
+    $(".card", tdPresentation).addClass("text-white bg-secondary");
+    $(".card-body", tdPresentation).remove();
   }
 
   // Calculer le filtre
@@ -199,17 +211,17 @@ function programme(key, prog, selector = "table.programme") {
   tr.attr("data-filter", filter);
 
   // Afficher les valeurs
-  for (let key of ["salle", "numero", "libelle", "description",
-      "conferencier", "organisation", "videos", "presentations", "tags"
-    ]) {
+  for (let key of [
+    "salle", "numero", "libelle", "description", "conferencier", "organisation", "videos", "presentations", "tags",
+  ]) {
     let classSelector = "." + key;
     if (prog[key]) {
       if (jQuery.type(prog[key]) === "string") {
         // Texte
-        $(classSelector, td2).text(prog[key]);
+        $(classSelector, tdPresentation).text(prog[key]);
       } else if (jQuery.type(prog[key]) === "array") {
         // Tableau
-        let liste = $(classSelector, td2);
+        let liste = $(classSelector, tdPresentation);
         if (key === "tags") {
           let node_model = $(":first-child", liste);
           // Mot clé
@@ -225,21 +237,21 @@ function programme(key, prog, selector = "table.programme") {
           for (let el of prog[key]) {
             let node = node_model.clone();
             $("a:first-child", node)
-              .text(el.text || el.name || "Voir le lien")
-              .attr("href", el.href);
+            .text(el.text || el.name || "Voir le lien")
+            .attr("href", el.href);
             liste.append(node);
           }
           node_model.remove();
         }
         // Sinon, supprimer
       } else {
-        $(classSelector, td2).remove();
+        $(classSelector, tdPresentation).remove();
       }
     } else {
-      $(classSelector, td2).remove();
+      $(classSelector, tdPresentation).remove();
     }
     if (!prog["description"]) {
-      $("[data-toggle]", td2).remove();
+      $("[data-toggle]", tdPresentation).remove();
     }
   }
   tr.appendTo(selector);
