@@ -300,33 +300,6 @@ div.img-with-credits {
     position: relative;
 }
 
-@media (max-width: 766px) {
-    header.intro {
-        background-attachment: local;
-        position: relative;
-    }
-
-    header.intro .credits {
-        position: absolute;
-    }
-}
-
-@media (min-width: 767px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .logo {
-        font-size: 100px;
-        padding-bottom: 60px;
-        margin-left: 14%;
-        float: left;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-}
-
 /************************
     Button Arrow (not use)
 ************************/
@@ -686,7 +659,49 @@ p img.bio-pic {
     Mobile
 ************************/
 
+@media (max-width: 766px) {
+    header.intro {
+        background-attachment: local;
+        position: relative;
+    }
+
+    header.intro .credits {
+        position: absolute;
+        right: 0;
+    }
+
+    .footer-logo {
+        padding-bottom: 1em;
+    }
+
+    .prose h2:first-child {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    div.affix {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 @media (min-width: 767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .logo {
+        font-size: 100px;
+        padding-bottom: 60px;
+        margin-left: 14%;
+        float: left;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -736,6 +751,18 @@ p img.bio-pic {
         width: auto;
         color: var(--text-light);
     }
+
+    .content-section {
+        padding-top: 2em;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -770,39 +797,6 @@ p img.bio-pic {
         left: 0;
     }
 }
-
-@media (min-width: 767px) {
-    .content-section {
-        padding-top: 2em;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
-    #map {
-        height: 400px;
-    }
-}
-
-@media (max-width: 767px) {
-    .prose h2:first-child {
-        padding-top: 0;
-        margin-top: 0;
-    }
-
-    div.affix {
-        display: block;
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #toc {
-        display: none;
-    }
-}
-
 
 /************************
     tracks
