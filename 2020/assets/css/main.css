@@ -217,7 +217,7 @@ footer img::-moz-selection,
 
 #footer .center {
     padding-top: 2em;
-   text-align: center;
+    text-align: center;
 }
 
 /************************
@@ -231,9 +231,11 @@ footer img::-moz-selection,
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-image: url("../img/overlay.png"),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url("../img/nantes.png");
+    /* Todo : To remove, useful to  announce cancellation */
+    background-color: #040555;
+    /*background-image: url("../img/overlay.png"),*/
+    /*  linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),*/
+    /*  url("../img/nantes.png");*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -284,6 +286,7 @@ footer img::-moz-selection,
 header.intro {
     position: relative;
 }
+
 .credits {
     position: absolute;
     bottom: 10px;
@@ -424,6 +427,8 @@ ul.banner-social-buttons li {
 #about {
     padding: 3em;
     background-color: var(--primary-dark);
+    /* Todo : To remove, useful to  announce cancellation */
+    text-align: center;
 }
 
 #about .col-subtitle-info {
@@ -689,8 +694,11 @@ p img.bio-pic {
 
 @media (min-width: 767px) {
     .intro {
-        height: 100%;
-        padding: 0;
+        width: 100%;
+        /*padding: 0;*/
+        /* Todo : To remove, useful to  announce cancellation */
+        padding-top: 6em;
+
     }
 
     .intro .intro-body .logo {
@@ -718,7 +726,7 @@ p img.bio-pic {
     }
 
     .stay-collapsed ul {
-        transform : translate(-21%, 0);
+        transform: translate(-21%, 0);
     }
 
     .stay-collapsed .navbar-brand {
@@ -784,7 +792,12 @@ p img.bio-pic {
 }
 
 @media only screen and (max-width: 767px) {
-    .intro-body .col4 {
+    /* Todo : To remove, useful to  announce cancellation */
+    .intro > img {
+        width: 100%;
+    }
+
+    .intro-body {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
