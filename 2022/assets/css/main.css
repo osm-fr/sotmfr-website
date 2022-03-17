@@ -217,7 +217,7 @@ footer img::-moz-selection,
 
 #footer .center {
     padding-top: 2em;
-    text-align: center;
+   text-align: center;
 }
 
 /************************
@@ -231,11 +231,9 @@ footer img::-moz-selection,
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    /* Todo : To remove, useful to  announce cancellation */
-    background-color: #040555;
-    /*background-image: url("../img/overlay.png"),*/
-    /*  linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),*/
-    /*  url("../img/nantes.png");*/
+    background-image: url("../img/overlay.png"),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url("../img/nantes.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -286,7 +284,6 @@ footer img::-moz-selection,
 header.intro {
     position: relative;
 }
-
 .credits {
     position: absolute;
     bottom: 10px;
@@ -427,8 +424,6 @@ ul.banner-social-buttons li {
 #about {
     padding: 3em;
     background-color: var(--primary-dark);
-    /* Todo : To remove, useful to  announce cancellation */
-    text-align: center;
 }
 
 #about .col-subtitle-info {
@@ -694,11 +689,8 @@ p img.bio-pic {
 
 @media (min-width: 767px) {
     .intro {
-        width: 100%;
-        /*padding: 0;*/
-        /* Todo : To remove, useful to  announce cancellation */
-        padding-top: 6em;
-
+        height: 100%;
+        padding: 0;
     }
 
     .intro .intro-body .logo {
@@ -726,7 +718,7 @@ p img.bio-pic {
     }
 
     .stay-collapsed ul {
-        transform: translate(-21%, 0);
+        transform : translate(-21%, 0);
     }
 
     .stay-collapsed .navbar-brand {
@@ -792,12 +784,7 @@ p img.bio-pic {
 }
 
 @media only screen and (max-width: 767px) {
-    /* Todo : To remove, useful to  announce cancellation */
-    .intro > img {
-        width: 100%;
-    }
-
-    .intro-body {
+    .intro-body .col4 {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
@@ -941,6 +928,12 @@ h2.abstract-subtitle {
     padding: 6em 0;
 }
 
+.program-page .container-fluid {
+    width: calc(100vw - 24em);
+    margin-right: 12em;
+    margin-left: 12em;
+}
+
 .program-page h1 {
     font-size: 2em;
 }
@@ -956,20 +949,6 @@ h2.abstract-subtitle {
 
 .program-page h2:not(:first-child) {
     padding: 0.5em 0;
-}
-
-.programme thead {
-    background-color: var(--text);
-    color: var(--text-light)
-}
-
-.programme th.horaire {
-    display: flex;
-    flex-direction: column;
-}
-
-.programme td.presentation {
-    width: 75%;
 }
 
 /************************
@@ -996,9 +975,4 @@ h2.abstract-subtitle {
     font-weight: 400;
     src: local('Barlow Regular'), local('Barlow-Regular'), url(../fonts/Barlow-Regular.ttf) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Todo: Modification temporaire en attendu d'avoir du contenu, à supprimer*/
-.space-bottom2 {
-    padding-bottom: 1em;
 }
