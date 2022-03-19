@@ -15,9 +15,19 @@ $(function () {
     // Accordion
     $(programmeSelector + " [data-toggle='collapse']").click(function () {
       event.preventDefault();
+      /*
       let $icon = $("i", this);
       $icon.toggleClass("fa-chevron-circle-down");
       $icon.toggleClass("fa-chevron-circle-up");
+      */
+      let $icon = $("img", this);
+      let src = $icon.attr('src');
+      if (src.includes('-up')) {
+        src = src.replace('-up', '-down');
+      } else if (src.includes('-down')) {
+        src = src.replace('-down', '-up');
+      }
+      $icon.attr('src', src);
       $(this).next().toggleClass("collapse");
     });
   });
@@ -27,7 +37,7 @@ $(function () {
 
   // Filtre
   function checkNoResult () {
-    console.log(('Bouh)'))
+    console.log('No result')
     let visible = rows.filter(":visible").length;
     if (visible === 0) {
       $(".no-result").show();
