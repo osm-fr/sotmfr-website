@@ -278,6 +278,32 @@ footer img::-moz-selection,
 }
 
 /************************
+    Inscription
+************************/
+.inscription-page {
+    padding: 6em 0;
+}
+
+#inscription {
+    border-radius: 0;
+    text-align: center;
+}
+
+#inscription em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#iframe_assoconnect {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    border: 0;
+    max-height: none
+}
+
+
+/************************
     Crédits
 ************************/
 
