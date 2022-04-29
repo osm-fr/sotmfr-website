@@ -730,7 +730,7 @@ p img.bio-pic {
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 991px) {
     .intro {
         height: 100%;
         padding: 0;
@@ -806,7 +806,7 @@ p img.bio-pic {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .navbar a {
         color: var(--text-light);
     }
@@ -826,7 +826,7 @@ p img.bio-pic {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     .intro-body .col4 {
         width: 80%;
         margin-left: 10%;
