@@ -1,13 +1,14 @@
 @import './fonts.css';
 
 :root {
-    --primary-dark: #202055;
-    --primary-light: #222296;
-    --links: #202055;
-    --links-light: #222296;
-    --links-white: #e6e6f4;
-    --text: #383838;
-    --background-light: #fefef6;
+    --colour-1: #001e46;
+    --colour-2: #e8413a;
+    --colour-3: #00b0a9;
+    --colour-4: #fbb900;
+    --colour-5: #73ba64;
+    --primary-dark: var(--colour-1);
+    --primary-light: var(--colour-3);
+    --links: var(--colour-2);
     --text-light: #e6e6f4;
 }
 
@@ -16,8 +17,8 @@ body {
     height: 100%;
     font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 17px;
-    color: var(--text);
-    background-color: var(--background-light);
+    color: var(--text-light);
+    background-color: var(--primary-dark);
 }
 
 h1,
@@ -93,8 +94,12 @@ div.affix {
     background-color: rgba(255, 255, 255, .05);
 }
 
-.navbar, .navbar a, .navbar a:hover {
-    color: var(--text-light);
+.navbar, .navbar a {
+    color: var(--primary-dark);
+}
+
+.navbar a::hover {
+    color: var(--colour-2);
 }
 
 nav a, .nav a {
@@ -131,15 +136,15 @@ nav .navbar-brand {
 ************************/
 
 a {
-    color: var(--text);
+    color: var(--text-light);
     text-decoration: underline;
 }
 
 a:hover,
 a:focus {
     text-decoration: underline;
-    color: var(--text);
-    text-decoration-color: var(--text);
+    color: var(--links);
+    text-decoration-color: var(--links);
 }
 
 
@@ -149,7 +154,7 @@ a:focus {
 
 .page {
     background-color: var(--primary-light);
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 /************************
@@ -158,20 +163,20 @@ a:focus {
 
 footer a,
 .page a {
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 footer a:hover,
 footer a:focus,
 .page a:hover,
 .page a:focus {
-    color: white;
-    text-decoration-color: var(--links-white);
+    color: var(--links);
+    text-decoration-color: var(--links);
 }
 
 footer {
     padding: 50px 0;
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 footer p {
@@ -207,11 +212,7 @@ footer img::-moz-selection,
     line-height: 1.75em;
     background-color: var(--primary-dark);
     padding: 3em;
-}
-
-#footer.home {
-    /* Todo: Modification temporaire en attendu d'avoir du contenu, à supprimer*/
-    background-color: var(--primary-light);
+    border-top: 1px solid var(--primary-light);
 }
 
 #footer a.light {
@@ -323,7 +324,7 @@ header.intro {
 }
 
 .credits a {
-    color: var(--links-white);
+    color: var(--links);
 }
 
 /* copyright symbol
@@ -421,7 +422,7 @@ div.img-with-credits {
 }
 
 /************************
-    Button
+    Button (not used)
 ************************/
 
 .btn {
@@ -568,7 +569,7 @@ h3.small-title:before {
 
 #newsletter .button {
     background-color: var(--primary-dark);
-    color: var(--links-white);
+    color: var(--links);
     font-size: 17px;
     -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
     -moz-transition: background .3s ease-in-out, color .3s ease-in-out;
@@ -620,7 +621,7 @@ input#mce-EMAIL::selection {
 
 #sponsors {
     background-color: var(--primary-dark);
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 #sponsoring-interested {
@@ -638,7 +639,7 @@ input#mce-EMAIL::selection {
 }
 
 #sponsors a {
-    color: var(--links-white);
+    color: var(--links);
 }
 
 #sponsors a:hover {
@@ -767,14 +768,6 @@ p img.bio-pic {
         border-bottom: 1px solid var(--primary-light);
     }
 
-    .navbar a {
-        color: var(--links-white);
-    }
-
-    .navbar a:hover {
-        color: var(--primary-light);
-    }
-
     a.navbar-brand {
         display: inline-block;
         opacity: 0;
@@ -809,6 +802,14 @@ p img.bio-pic {
 }
 
 @media (max-width: 767px) {
+    .navbar a {
+        color: var(--text-light);
+    }
+
+    .navbar a:hover {
+        color: var(--links);
+    }
+
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
