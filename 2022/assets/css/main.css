@@ -106,9 +106,6 @@ div.affix {
 nav a, .nav a {
     text-decoration: none;
     font-weight: 500;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
 }
 
 nav {
@@ -139,6 +136,9 @@ nav .navbar-brand {
 a {
     color: var(--text-light);
     text-decoration: underline;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 a:hover,
@@ -777,11 +777,14 @@ p img.bio-pic {
         overflow: hidden;
     }
 
-    .navbar-custom.top-nav-collapse a, .stay-collapsed a,
-    .navbar-custom.top-nav-collapse a:hover, .stay-collapsed a:hover {
+    .navbar-custom.top-nav-collapse a, .stay-collapsed a {
         opacity: 1;
         width: auto;
         color: var(--text-light);
+    }
+
+    .navbar-custom.top-nav-collapse a:hover, .stay-collapsed a:hover {
+        color: var(--links);
     }
 
     .content-section {
