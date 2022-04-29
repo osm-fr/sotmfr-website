@@ -268,6 +268,11 @@ footer img::-moz-selection,
     padding: 3em;
     border-radius: 0;
     text-align: center;
+    color: var(--primary-dark);
+}
+
+.presentation a {
+    color: var(--primary-dark);
 }
 
 .presentation .card-title {
