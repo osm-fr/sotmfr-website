@@ -120,9 +120,9 @@ nav .navbar-brand {
 }
 
 .navbar-brand {
-    padding-top: 15px;
-    padding-left: 0;
-    padding-right: 0;
+    /* la loupe dépasse de la carte en bas, si on met la même valeur */
+    /* en haut et en bas, ça semble déséquilibré (pour 30x30 c'est 3px) */
+    padding: 15px 0 12px 0;
 }
 
 .navbar-toggle {
