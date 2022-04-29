@@ -66,6 +66,7 @@ div.affix {
 
 .navbar-custom .navbar-brand {
     font-weight: normal;
+    margin-left: 1em;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -760,12 +761,8 @@ p img.bio-pic {
         border-bottom: 1px solid var(--primary-light);
     }
 
-    .stay-collapsed ul {
+    .navbar-custom ul {
         transform : translate(-21%, 0);
-    }
-
-    .stay-collapsed .navbar-brand {
-        margin-left: 1em;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -776,7 +773,7 @@ p img.bio-pic {
     a.navbar-brand {
         display: inline-block;
         opacity: 0;
-        width: 0;
+        width: auto;
         overflow: hidden;
     }
 
