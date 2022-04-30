@@ -330,6 +330,10 @@ header.intro {
 }
 
 .credits a {
+    color: var(--primary-dark);
+}
+
+.credits a:hover {
     color: var(--links);
 }
 
