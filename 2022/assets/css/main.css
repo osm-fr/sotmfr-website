@@ -1,21 +1,24 @@
+@import './fonts.css';
+
 :root {
-    --primary-dark: #202055;
-    --primary-light: #222296;
-    --links: #202055;
-    --links-light: #222296;
-    --links-white: #e6e6f4;
-    --text: #383838;
-    --background-light: #fefef6;
+    --colour-1: #001e46;
+    --colour-2: #e8413a;
+    --colour-3: #00b0a9;
+    --colour-4: #fbb900;
+    --colour-5: #73ba64;
+    --primary-dark: var(--colour-1);
+    --primary-light: var(--colour-3);
+    --links: var(--colour-2);
     --text-light: #e6e6f4;
 }
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Barlow', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 17px;
-    color: var(--text);
-    background-color: var(--background-light);
+    color: var(--text-light);
+    background-color: var(--primary-dark);
 }
 
 h1,
@@ -24,8 +27,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .prose h2 {
@@ -62,6 +66,7 @@ div.affix {
 
 .navbar-custom .navbar-brand {
     font-weight: normal;
+    margin-left: 1em;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -90,16 +95,17 @@ div.affix {
     background-color: rgba(255, 255, 255, .05);
 }
 
-.navbar, .navbar a, .navbar a:hover {
-    color: var(--text-light);
+.navbar, .navbar a {
+    color: var(--primary-dark);
+}
+
+.navbar a::hover {
+    color: var(--colour-2);
 }
 
 nav a, .nav a {
     text-decoration: none;
-    font-weight: 500;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    font-weight: 1000;
 }
 
 nav {
@@ -111,9 +117,9 @@ nav .navbar-brand {
 }
 
 .navbar-brand {
-    padding-top: 15px;
-    padding-left: 0;
-    padding-right: 0;
+    /* la loupe dépasse de la carte en bas, si on met la même valeur */
+    /* en haut et en bas, ça semble déséquilibré (pour 30x30 c'est 3px) */
+    padding: 15px 0 12px 0;
 }
 
 .navbar-toggle {
@@ -128,15 +134,18 @@ nav .navbar-brand {
 ************************/
 
 a {
-    color: var(--text);
+    color: var(--text-light);
     text-decoration: underline;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 a:hover,
 a:focus {
     text-decoration: underline;
-    color: var(--text);
-    text-decoration-color: var(--text);
+    color: var(--links);
+    text-decoration-color: var(--links);
 }
 
 
@@ -146,7 +155,7 @@ a:focus {
 
 .page {
     background-color: var(--primary-light);
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 /************************
@@ -155,20 +164,20 @@ a:focus {
 
 footer a,
 .page a {
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 footer a:hover,
 footer a:focus,
 .page a:hover,
 .page a:focus {
-    color: white;
-    text-decoration-color: var(--links-white);
+    color: var(--links);
+    text-decoration-color: var(--links);
 }
 
 footer {
     padding: 50px 0;
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 footer p {
@@ -204,11 +213,7 @@ footer img::-moz-selection,
     line-height: 1.75em;
     background-color: var(--primary-dark);
     padding: 3em;
-}
-
-#footer.home {
-    /* Todo: Modification temporaire en attendu d'avoir du contenu, à supprimer*/
-    background-color: var(--primary-light);
+    border-top: 1px solid var(--primary-light);
 }
 
 #footer a.light {
@@ -230,10 +235,8 @@ footer img::-moz-selection,
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background-image: url("../img/overlay.png"),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url("../img/nantes.png");
+    color: var(--primary-dark);
+    background-image: url("../img/fond-web.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -251,7 +254,11 @@ footer img::-moz-selection,
     font-size: 40px;
     text-align: center;
     display: inline-block;
-    width: 300px;
+    width: 350px;
+}
+
+.intro .intro-body .logo img {
+    margin-bottom: 1rem;
 }
 
 /************************
@@ -262,6 +269,11 @@ footer img::-moz-selection,
     padding: 3em;
     border-radius: 0;
     text-align: center;
+    color: var(--primary-dark);
+}
+
+.presentation a {
+    color: var(--primary-dark);
 }
 
 .presentation .card-title {
@@ -278,6 +290,32 @@ footer img::-moz-selection,
 }
 
 /************************
+    Inscription
+************************/
+.inscription-page {
+    padding: 6em 0;
+}
+
+#inscription {
+    border-radius: 0;
+    text-align: center;
+}
+
+#inscription em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#iframe_assoconnect {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    border: 0;
+    max-height: none
+}
+
+
+/************************
     Crédits
 ************************/
 
@@ -292,9 +330,19 @@ header.intro {
 }
 
 .credits a {
-    color: var(--links-white);
+    color: var(--primary-dark);
 }
 
+.credits a:hover {
+    color: var(--links);
+}
+
+/* copyright symbol
+.credits a::before {
+    content: "\00A9";
+    padding-right: 5px;
+}
+*/
 
 div.img-with-credits {
     position: relative;
@@ -384,7 +432,7 @@ div.img-with-credits {
 }
 
 /************************
-    Button
+    Button (not used)
 ************************/
 
 .btn {
@@ -531,7 +579,7 @@ h3.small-title:before {
 
 #newsletter .button {
     background-color: var(--primary-dark);
-    color: var(--links-white);
+    color: var(--links);
     font-size: 17px;
     -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
     -moz-transition: background .3s ease-in-out, color .3s ease-in-out;
@@ -583,7 +631,7 @@ input#mce-EMAIL::selection {
 
 #sponsors {
     background-color: var(--primary-dark);
-    color: var(--links-white);
+    color: var(--text-light);
 }
 
 #sponsoring-interested {
@@ -601,7 +649,7 @@ input#mce-EMAIL::selection {
 }
 
 #sponsors a {
-    color: var(--links-white);
+    color: var(--links);
 }
 
 #sponsors a:hover {
@@ -687,7 +735,7 @@ p img.bio-pic {
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 991px) {
     .intro {
         height: 100%;
         padding: 0;
@@ -717,12 +765,8 @@ p img.bio-pic {
         border-bottom: 1px solid var(--primary-light);
     }
 
-    .stay-collapsed ul {
+    .navbar-custom ul {
         transform : translate(-21%, 0);
-    }
-
-    .stay-collapsed .navbar-brand {
-        margin-left: 1em;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -730,26 +774,21 @@ p img.bio-pic {
         border-bottom: 1px solid var(--primary-light);
     }
 
-    .navbar a {
-        color: var(--links-white);
-    }
-
-    .navbar a:hover {
-        color: var(--primary-light);
-    }
-
     a.navbar-brand {
         display: inline-block;
         opacity: 0;
-        width: 0;
+        width: auto;
         overflow: hidden;
     }
 
-    .navbar-custom.top-nav-collapse a, .stay-collapsed a,
-    .navbar-custom.top-nav-collapse a:hover, .stay-collapsed a:hover {
+    .navbar-custom.top-nav-collapse a, .stay-collapsed a {
         opacity: 1;
         width: auto;
         color: var(--text-light);
+    }
+
+    .navbar-custom.top-nav-collapse a:hover, .stay-collapsed a:hover {
+        color: var(--links);
     }
 
     .content-section {
@@ -771,7 +810,15 @@ p img.bio-pic {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+    .navbar a {
+        color: var(--text-light);
+    }
+
+    .navbar a:hover {
+        color: var(--links);
+    }
+
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
@@ -783,7 +830,7 @@ p img.bio-pic {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     .intro-body .col4 {
         width: 80%;
         margin-left: 10%;
@@ -962,17 +1009,4 @@ h2.abstract-subtitle {
 .translation-table .section-head {
     font-weight: bold;
     padding-bottom: 10px;
-}
-
-/************************
-    Font
-************************/
-
-/* latin */
-@font-face {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Barlow Regular'), local('Barlow-Regular'), url(../fonts/Barlow-Regular.ttf) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

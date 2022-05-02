@@ -1,0 +1,85 @@
+[
+    {
+      "horaire": "Fr 09:00-09:30",
+      "libelle": "Accueil, etc - Hall",
+      "break": "true"
+    },
+    {
+      "horaire": "Fr 10:00-10:30",
+      "libelle": "Intervention plénière",
+      "salle": "Salle B",
+      "numero": "2"
+    },
+    {
+      "horaire": "Fr 10:30-11:00",
+      "libelle": "Lightning talks",
+      "break": "false",
+      "salle": "Amphi 3",
+      "numero": "3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "conferencier": "Jean DUPOND, Bob LESPONGE",
+      "organisation": "Nantes Métropole, TAN",
+      "videos": [{
+        "name": "voir la vidéo",
+        "href": "https://peertube.openstreetmap.fr/videos/watch/abcd"
+      }],
+      "presentations": [{
+        "name": "présentation un",
+        "href": "https://nextcloud.openstreetmap.fr/index.php/abcd.pdf"
+      },
+      {
+        "name": "présentation deux",
+        "href": "https://nextcloud.openstreetmap.fr/index.php/efgh.pdf"
+      }],
+      "tags": ["Contribution", "Géomatique", "Territoire"]
+    },
+    {
+      "horaire": "Fr 11:00-11:30",
+      "libelle": "Pause",
+      "break": "true"
+    },
+    {
+      "horaire": "Fr 11:30-12:00",
+      "libelle": "Talk 1",
+      "salle": "Salle",
+      "numero": "23",
+      "tags": ["Contribution"]
+    },
+    {
+      "horaire": "Fr 12:00-12:30",
+      "libelle": "Talk 2",
+      "salle": "Salle",
+      "numero": "22",
+      "tags": ["Enseignement & recherche", "Visualisation"]
+    },
+    {
+      "horaire": "Fr 12:30-13:45",
+      "libelle": "Repas",
+      "break": "true"
+    },
+    {
+      "horaire": "Fr 14:00-14:00",
+      "libelle": "Talk 3",
+      "salle": "Salle",
+      "numero": "24"
+    },
+    {
+      "horaire": "Sa 11:30-12:00",
+      "libelle": "Talk 12",
+      "salle": "Salle",
+      "numero": "23",
+      "tags": ["Géomatique"]
+    },
+    {
+      "horaire": "Sa 12:30-13:45",
+      "libelle": "Repas",
+      "break": "true"
+    },
+    {
+      "horaire": "Su 10:00-11:30",
+      "libelle": "Programme libre",
+      "salle": "Salle",
+      "numero": "22"
+    }
+  ]
+  
