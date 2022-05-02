@@ -399,7 +399,7 @@
     },
     {
         "horaire": "Sa 16:00-17:00",
-        "libelle": "es pompiers de l'Hérault aiment OpenStreetMap !",
+        "libelle": "Les pompiers de l'Hérault aiment OpenStreetMap !",
         "numero": "44",
         "salle": "027"
     },
@@ -446,7 +446,7 @@
     },
     {
         "horaire": "Su 10:00-12:00",
-        "libelle": "Ateliers spontanés",
+        "libelle": "CA OSM France",
         "salle": "025"
     },
     {
