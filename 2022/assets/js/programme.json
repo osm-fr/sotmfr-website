@@ -6,19 +6,20 @@
     },
     {
         "horaire": "Fr 09:30-10:00",
-        "libelle": "Discours d’accueil",
-        "salle": "Amphi 2",
-        "break": "false"
+        "libelle": "Discours d'accueil",
+        "salle": "Amphi 2"
     },
     {
         "horaire": "Fr 10:00-10:30",
         "libelle": "Intervention plénière",
+        "salle": "TBD",
         "conferencier": "Olivier Ertzscheid",
         "organisation": "Affordance.info"
     },
     {
         "horaire": "Fr 10:30-11:00",
         "libelle": "Intervention plénière",
+        "salle": "TBD",
         "conferencier": "Capucine-Marin",
         "organisation": "Wikimedias France"
     },
@@ -29,11 +30,11 @@
         "description": "Temps de déplacements et imprévus"
     },
     {
-        "horaire": "Fr 11:30-11:00",
-        "libelle": "L’IGN lance la Fabrique des géo-communs !",
+        "horaire": "Fr 11:30-12:00",
+        "libelle": "L'IGN lance la Fabrique des géo-communs !",
         "salle": "Amphi 2",
         "numero": "30",
-        "description": "Le but de l’atelier est de présenter la Fabrique des géo-communs et ses projets à toute la communauté OSM. Nous devrions connaître fin mai les projets qui seront menés par des agents IGN au sein de cette Fabrique.\nParmi ces 5-7 projets, il ne fait aucun doute que certains intéresseront la communauté OSM et nous serons probablement à la recherche de contributeurs. On espère par exemple présenter un chantier sur un street view collaboratif ou un référentiel administratif mis à jour de manière plus dynamique dont OSM pourrait bénéficier et auquel la communauté pourrait même contribuer.",
+        "description": "Le but de l'atelier est de présenter la Fabrique des géo-communs et ses projets à toute la communauté OSM. Nous devrions connaître fin mai les projets qui seront menés par des agents IGN au sein de cette Fabrique.\nParmi ces 5-7 projets, il ne fait aucun doute que certains intéresseront la communauté OSM et nous serons probablement à la recherche de contributeurs. On espère par exemple présenter un chantier sur un street view collaboratif ou un référentiel administratif mis à jour de manière plus dynamique dont OSM pourrait bénéficier et auquel la communauté pourrait même contribuer.",
         "conferencier": "Nicolas Berthelot",
         "organisation": "IGN",
         "tags": [
@@ -44,10 +45,10 @@
     },
     {
         "horaire": "Fr 11:30-11:00",
-        "libelle": "Les données d’OSM sur le mode piéton et la marchabilité",
+        "libelle": "Les données d'OSM sur le mode piéton et la marchabilité",
         "salle": "Salle 024",
         "numero": "53",
-        "description": "La <b>marche à pied</b> est le socle de toute mobilité, pourtant le mode piéton reste un peu le parent pauvre des politiques de transport. Pour mettre en évidence le réseau marchable, nous avons créé avec le soutien de l’Ademe une appli web open source qui couvre la France métropolitaine (app.openmobilityindicators.org), et montre les impasses et les mailles du réseau de voirie, les grands ilots et les grandes coupures urbaines et naturelles.\nCette appli utilise la donnée OpenStreetMap pour décrire le réseau piéton.\nNous souhaitons compléter ce 1er travail : la marchabilité, c’est aussi le confort et la sécurité. Mais cela implique de compléter la donnée du filaire de voirie par d’autres données comme le type de voie, la largeur des trottoirs, l’éclairage, la pente, le couvert végétal...\nLa présentation a surtout pour but de présenter les questions que nous posons et d’en discuter avec les participants et la communauté OSM France :<ul><li>quelles données existantes d’OSM sont utiles pour décrire la marchabilité ? voire l’accessibilité aux personnes à mobilité réduite ?<li>quelles règles faut-il se donner pour que la donnée soit utilisable en pratique ? les règles actuelles du Wiki OSM sont elles suffisantes ? et bien respectées ? (par exemple, nous nous intéressons au tag access, qui est essentiel pour définir le réseau utilisable par un piéton)<li>comment diffuser et valoriser cette donnée, sous quelle forme ?<li>il existe une communauté active qui cartographie les aménagements cyclables; quelle communauté peut-on réunir autour de la marche à pied ?<li>quelles représentations carto du réseau marchable et de la marchabilité sont les plus pertinentes, pour quelles usages ?</ul>\nComme pour le vélo d’ailleurs, il nous semble important de ne pas seulement décrire les aménagements piétons, mais bien le réseau sur lequel on se déplace; on voudrait donc s’inscrire dans la démarche des géocommuns où il est question de produire une base de données routières navigable et nous sommes motivés pour en discuter et contribuer à le faire avancer.",
+        "description": "La <b>marche à pied</b> est le socle de toute mobilité, pourtant le mode piéton reste un peu le parent pauvre des politiques de transport. Pour mettre en évidence le réseau marchable, nous avons créé avec le soutien de l'Ademe une appli web open source qui couvre la France métropolitaine (app.openmobilityindicators.org), et montre les impasses et les mailles du réseau de voirie, les grands ilots et les grandes coupures urbaines et naturelles.\nCette appli utilise la donnée OpenStreetMap pour décrire le réseau piéton.\nNous souhaitons compléter ce 1er travail : la marchabilité, c'est aussi le confort et la sécurité. Mais cela implique de compléter la donnée du filaire de voirie par d'autres données comme le type de voie, la largeur des trottoirs, l'éclairage, la pente, le couvert végétal...\nLa présentation a surtout pour but de présenter les questions que nous posons et d'en discuter avec les participants et la communauté OSM France :<ul><li>quelles données existantes d'OSM sont utiles pour décrire la marchabilité ? voire l'accessibilité aux personnes à mobilité réduite ?<li>quelles règles faut-il se donner pour que la donnée soit utilisable en pratique ? les règles actuelles du Wiki OSM sont elles suffisantes ? et bien respectées ? (par exemple, nous nous intéressons au tag access, qui est essentiel pour définir le réseau utilisable par un piéton)<li>comment diffuser et valoriser cette donnée, sous quelle forme ?<li>il existe une communauté active qui cartographie les aménagements cyclables; quelle communauté peut-on réunir autour de la marche à pied ?<li>quelles représentations carto du réseau marchable et de la marchabilité sont les plus pertinentes, pour quelles usages ?</ul>\nComme pour le vélo d'ailleurs, il nous semble important de ne pas seulement décrire les aménagements piétons, mais bien le réseau sur lequel on se déplace; on voudrait donc s'inscrire dans la démarche des géocommuns où il est question de produire une base de données routières navigable et nous sommes motivés pour en discuter et contribuer à le faire avancer.",
         "conferencier": "Patrick Gendre, Bertrand Gervais",
         "organisation": "Infomobi, Someware",
         "tags": [
@@ -60,9 +61,122 @@
         ]
     },
     {
+        "horaire": "Fr 11:30-12:00",
+        "libelle": "Localisation ferroviaire à la voie en utilisant OpenStreetMap",
+        "numero": "13",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 11:30-12:00",
+        "libelle": "Mise en œuvre d'un observatoire de la vacance immobilière uniquement avec des données en open data",
+        "numero": "51",
+        "salle": "023"
+    },
+    {
+        "horaire": "Fr 12:00-12:30",
+        "libelle": "Tu veux mes photos ? vers un \"streetview\" libre ?",
+        "numero": "15",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 12:00-12:30",
+        "libelle": "Blind Sailors & Open-Sea-Marks",
+        "numero": "29",
+        "salle": "024"
+    },
+    {
+        "horaire": "Fr 12:00-12:30",
+        "libelle": "De l'artisanat à l'industrialisation : pourquoi et comment SNCF a cartographié 425 gares en Île-de-France",
+        "numero": "27",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 12:00-12:30",
+        "libelle": "Diffusion de données OpenStreetMap sur un portail OpenData : exemple avec la Région SUD",
+        "numero": "6",
+        "salle": "023"
+    },
+    {
         "horaire": "Fr 12:30-14:00",
         "libelle": "Déjeuner",
         "break": "true"
+    },
+    {
+        "horaire": "Fr 14:00-14:30",
+        "libelle": "Maël",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 14:00-14:30",
+        "libelle": "Balluchon : contribuer aux données d'accessibilité",
+        "numero": "23",
+        "salle": "024"
+    },
+    {
+        "horaire": "Fr 14:00-14:30",
+        "libelle": "Qarto, un outil de suivi qualité des données des gares Transilien",
+        "numero": "35",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 14:00-14:30",
+        "libelle": "Appropriation d'OSM par les acteurs publics : intégration, transformation et valorisation des données au sein du SIG des collectivités",
+        "numero": "49",
+        "salle": "023"
+    },
+    {
+        "horaire": "Fr 14:30-15:00",
+        "libelle": "L'imagerie immersive par les entreprises pour faciliter la contribution à OpenStreetMap",
+        "numero": "54",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 14:30-15:00",
+        "libelle": "Dessine ta ville : 10 ans de plaidoyer OpenStreetMap",
+        "numero": "10",
+        "salle": "024"
+    },
+    {
+        "horaire": "Fr 14:30-15:00",
+        "libelle": "Tous les commerces de France cartographiés dans 2 ans",
+        "numero": "5",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 14:30-15:00",
+        "libelle": "OSM et chrono-urbanisme pour un aménageur public",
+        "numero": "32",
+        "salle": "023"
+    },
+    {
+        "horaire": "Fr 14:30-17:00",
+        "libelle": "Interroger et récupérer les données OSM à la demande avec Overpass Turbo",
+        "numero": "19",
+        "salle": "025"
+    },
+    {
+        "horaire": "Fr 15:00-15:30",
+        "libelle": "Dégooglisez vos photos de rues avec GeoVisio",
+        "numero": "11",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 15:00-15:30",
+        "libelle": "OSM à l'école : où en sommes-nous ?",
+        "numero": "8",
+        "salle": "024"
+    },
+    {
+        "horaire": "Fr 15:00-15:30",
+        "libelle": "OSM et Michelin: pourquoi un cartographe centenaire croit en l'open data?",
+        "numero": "59",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 15:00-15:30",
+        "libelle": "Information trafic et OpenStreetMap",
+        "numero": "28",
+        "salle": "023"
     },
     {
         "horaire": "Fr 15:30-16:00",
@@ -70,8 +184,282 @@
         "break": "true"
     },
     {
+        "horaire": "Fr 16:00-16:30",
+        "libelle": "Prises de vues : bien les prendre, et les gérer efficacement",
+        "numero": "36",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 16:00-16:30",
+        "libelle": "Carteco, la carte collaborative des structures de l'économie sociale et solidaire qui font la transition écologique",
+        "numero": "58",
+        "salle": "024"
+    },
+    {
+        "horaire": "Fr 16:00-16:30",
+        "libelle": "La carte OpenStreetMap en tuiles vectorielles",
+        "numero": "31",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 16:00-16:30",
+        "libelle": "40 - Des Landes à la Manche, la transversale OSM",
+        "numero": "40",
+        "salle": "023"
+    },
+    {
+        "horaire": "Fr 16:30-17:00",
+        "libelle": "Hugues OSM au Samu de Normandie",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 16:30-17:30",
+        "libelle": "La nouvelle fédération des pros d'OSM",
+        "numero": "38",
+        "salle": "024"
+    },
+    {
+        "horaire": "Fr 16:30-17:00",
+        "libelle": "\"C'est la tuile\" : Gestion et agrégation des tuiles vectorielles chez Geovelo",
+        "numero": "20",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 16:30-17:30",
+        "libelle": "Les tags, l'autre commun d'OpenStreetMap",
+        "numero": "17",
+        "salle": "023"
+    },
+    {
+        "horaire": "Fr 17:00-17:30",
+        "libelle": "Road2 : Serveur de calcul d'itinéraires et d'isochrones basé sur les moteurs open source OSRM, pgRouting et Valhalla",
+        "numero": "52",
+        "salle": "TBD"
+    },
+    {
+        "horaire": "Fr 17:00-17:30",
+        "libelle": "Diffusion des styles et tuiles vectorielles chez Teritorio",
+        "numero": "26",
+        "salle": "022"
+    },
+    {
+        "horaire": "Fr 17:30-18:00",
+        "libelle": "L'AG GéoCommuns (synthèse)",
+        "salle": "TBD"
+    },
+    {
         "horaire": "Fr 18:30-20:00",
-        "libelle": "Buffet + Soirée",
+        "libelle": "Buffet + soirée",
+        "salle": "Pôle étudiant"
+    },
+    {
+        "horaire": "Sa 09:00-09:30",
+        "libelle": "Accueil"
+    },
+    {
+        "horaire": "Sa 09:30-10:30",
+        "libelle": "Comprendre l'accessibilité et la cartographier",
+        "numero": "41",
+        "salle": "024"
+    },
+    {
+        "horaire": "Sa 09:30-10:00",
+        "libelle": "Les signalements Geovelo : Contribuer à OpenStreetMap sans contribuer à OpenStreetMap",
+        "numero": "21",
+        "salle": "022"
+    },
+    {
+        "horaire": "Sa 09:30-10:30",
+        "libelle": "Retour d'expérience sur l'animation d'ateliers de cartographie participative avec OSM au service de projets de développement",
+        "numero": "33",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 09:30-10:30",
+        "libelle": "Prises de vues : bien les prendre, et les gérer efficacement",
+        "numero": "36",
+        "salle": "020"
+    },
+    {
+        "horaire": "Sa 10:30-11:00",
+        "libelle": "Pause",
         "break": "true"
+    },
+    {
+        "horaire": "Sa 11:00-11:30",
+        "libelle": "OpenData pour l'accessibilité",
+        "numero": "24",
+        "salle": "024"
+    },
+    {
+        "horaire": "Sa 11:00-11:30",
+        "libelle": "Le nécessaire jardinage d'OSM",
+        "numero": "14",
+        "salle": "022"
+    },
+    {
+        "horaire": "Sa 11:00-11:30",
+        "libelle": "OSMdata: valoriser toutes les données d'OpenStreetMap ?",
+        "numero": "37",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 11:00-11:30",
+        "libelle": "OSM et QGIS ?",
+        "numero": "43",
+        "salle": "020"
+    },
+    {
+        "horaire": "Sa 11:30-12:00",
+        "libelle": "On ne fait pas d'omelette sans casser des N'Oeufs V2.0 : Les éditeurs",
+        "numero": "22",
+        "salle": "Salle plein-air"
+    },
+    {
+        "horaire": "Sa 11:30-12:00",
+        "libelle": "C'est quoi ca, Nominatim ?",
+        "numero": "7",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 11:30-12:00",
+        "libelle": "Exploitation des données OSM avec QGIS",
+        "numero": "45",
+        "salle": "020"
+    },
+    {
+        "horaire": "Sa 12:00-14:00",
+        "libelle": "Déjeuner",
+        "break": "true"
+    },
+    {
+        "horaire": "Sa 14:00-15:00",
+        "libelle": "Production de cartes interactives pour déficients visuels à partir d'OpenStreetMap",
+        "numero": "25",
+        "salle": "024"
+    },
+    {
+        "horaire": "Sa 14:00-15:00",
+        "libelle": "Pifomètre ! Comment contribuer à OSM et BANO en quelques clics",
+        "numero": "46",
+        "salle": "022"
+    },
+    {
+        "horaire": "Sa 14:00-14:30",
+        "libelle": "OpenStreetMap en soutien des missions de maintien de la paix de l'ONU: Unite Maps & UN Mappers",
+        "numero": "16",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 14:00-15:30",
+        "libelle": "Exploitation des données OSM avec QGIS",
+        "numero": "45",
+        "salle": "020"
+    },
+    {
+        "horaire": "Sa 14:00-15:30",
+        "libelle": "GoGoCarto, des cartes à gogo reliable à OSM",
+        "numero": "47",
+        "salle": "025"
+    },
+    {
+        "horaire": "Sa 14:30-15:00",
+        "libelle": "Le service Minecraft à la carte de l'IGN s'internationalise avec OSM",
+        "numero": "57",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 15:00-15:30",
+        "libelle": "L'enjeu de la formation des contributeurs à OSM",
+        "numero": "50",
+        "salle": "022"
+    },
+    {
+        "horaire": "Sa 15:00-15:30",
+        "libelle": "Des outils autour d'OpenStreetMap",
+        "numero": "42",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 15:30-16:00",
+        "libelle": "Pause",
+        "break": "true"
+    },
+    {
+        "horaire": "Sa 16:00-17:00",
+        "libelle": "Comment tuer OSM ? Surtout, ne changeons rien",
+        "numero": "39",
+        "salle": "024"
+    },
+    {
+        "horaire": "Sa 16:00-16:30",
+        "libelle": "Projet CoopCarto : retour d'expérience sur un projet européen autour de la cartographie collaborative",
+        "numero": "55",
+        "salle": "022"
+    },
+    {
+        "horaire": "Sa 16:00-17:00",
+        "libelle": "es pompiers de l'Hérault aiment OpenStreetMap !",
+        "numero": "44",
+        "salle": "027"
+    },
+    {
+        "horaire": "Sa 16:00-17:00",
+        "libelle": "La géoloc centimétrique pour tous, c'est maintenant",
+        "numero": "18",
+        "salle": "020"
+    },
+    {
+        "horaire": "Sa 16:30-17:00",
+        "libelle": "OpenStreetMap dans les fablabs",
+        "numero": "56",
+        "salle": "022"
+    },
+    {
+        "horaire": "Sa 17:30-19:00",
+        "libelle": "AG OSM France",
+        "salle": "Amphi 3"
+    },
+    {
+        "horaire": "Sa 20:00-22:00",
+        "libelle": "Repas Canas y tapas (sur inscription)"
+    },
+    {
+        "horaire": "Su 09:30-10:00",
+        "libelle": "Accueil"
+    },
+    {
+        "horaire": "Su 10:00-12:00",
+        "libelle": "Dégooglisez vos photos de rues avec GeoVisio",
+        "numero": "12",
+        "salle": "024"
+    },
+    {
+        "horaire": "Su 10:00-12:00",
+        "libelle": "Ateliers spontanés",
+        "salle": "027"
+    },
+    {
+        "horaire": "Su 10:00-12:00",
+        "libelle": "Ateliers spontanés",
+        "salle": "020"
+    },
+    {
+        "horaire": "Su 10:00-12:00",
+        "libelle": "Ateliers spontanés",
+        "salle": "025"
+    },
+    {
+        "horaire": "Su 12:00-13:00",
+        "libelle": "Déjeuner",
+        "break": "true"
+    },
+    {
+        "horaire": "Su 13:00-16:00",
+        "libelle": "Programme libre"
+    },
+    {
+        "horaire": "Su 16:00-16:30",
+        "libelle": "Fin"
     }
 ]
