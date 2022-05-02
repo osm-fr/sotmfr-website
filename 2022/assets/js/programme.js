@@ -4,8 +4,8 @@ $(function () {
     let rows;
   
     // Afficher la programmation
-    // "?20200322" : force la mise à jour du cache à chaque changement.
-    $.getJSON("assets/js/programme.json?20200322", function (data) {
+    // "?20220502" : force la mise à jour du cache à chaque changement.
+    $.getJSON("assets/js/programme.json?20220502", function (data) {
       // TODO trier par date
       $.each(data, function (index, element) {
         programme(index, element, programmeSelector);
@@ -228,7 +228,8 @@ $(function () {
       if (prog[key]) {
         if (jQuery.type(prog[key]) === "string") {
           // Texte
-          $(classSelector, tdPresentation).text(prog[key]);
+          let html = $.parseHTML(prog[key].replace("\n", "<br>"));
+          $(classSelector, tdPresentation).html(html);
         } else if (jQuery.type(prog[key]) === "array") {
           // Tableau
           let liste = $(classSelector, tdPresentation);

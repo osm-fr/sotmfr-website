@@ -1,85 +1,77 @@
 [
     {
-      "horaire": "Fr 09:00-09:30",
-      "libelle": "Accueil, etc - Hall",
-      "break": "true"
+        "horaire": "Fr 09:00-09:30",
+        "libelle": "Accueil",
+        "break": "true"
     },
     {
-      "horaire": "Fr 10:00-10:30",
-      "libelle": "Intervention plénière",
-      "salle": "Salle B",
-      "numero": "2"
+        "horaire": "Fr 09:30-10:00",
+        "libelle": "Discours d’accueil",
+        "salle": "Amphi 2",
+        "break": "false"
     },
     {
-      "horaire": "Fr 10:30-11:00",
-      "libelle": "Lightning talks",
-      "break": "false",
-      "salle": "Amphi 3",
-      "numero": "3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "conferencier": "Jean DUPOND, Bob LESPONGE",
-      "organisation": "Nantes Métropole, TAN",
-      "videos": [{
-        "name": "voir la vidéo",
-        "href": "https://peertube.openstreetmap.fr/videos/watch/abcd"
-      }],
-      "presentations": [{
-        "name": "présentation un",
-        "href": "https://nextcloud.openstreetmap.fr/index.php/abcd.pdf"
-      },
-      {
-        "name": "présentation deux",
-        "href": "https://nextcloud.openstreetmap.fr/index.php/efgh.pdf"
-      }],
-      "tags": ["Contribution", "Géomatique", "Territoire"]
+        "horaire": "Fr 10:00-10:30",
+        "libelle": "Intervention plénière",
+        "conferencier": "Olivier Ertzscheid",
+        "organisation": "Affordance.info"
     },
     {
-      "horaire": "Fr 11:00-11:30",
-      "libelle": "Pause",
-      "break": "true"
+        "horaire": "Fr 10:30-11:00",
+        "libelle": "Intervention plénière",
+        "conferencier": "Capucine-Marin",
+        "organisation": "Wikimedias France"
     },
     {
-      "horaire": "Fr 11:30-12:00",
-      "libelle": "Talk 1",
-      "salle": "Salle",
-      "numero": "23",
-      "tags": ["Contribution"]
+        "horaire": "Fr 11:00-11:30",
+        "libelle": "Pause",
+        "break": "true",
+        "description": "Temps de déplacements et imprévus"
     },
     {
-      "horaire": "Fr 12:00-12:30",
-      "libelle": "Talk 2",
-      "salle": "Salle",
-      "numero": "22",
-      "tags": ["Enseignement & recherche", "Visualisation"]
+        "horaire": "Fr 11:30-11:00",
+        "libelle": "L’IGN lance la Fabrique des géo-communs !",
+        "salle": "Amphi 2",
+        "numero": "30",
+        "description": "Le but de l’atelier est de présenter la Fabrique des géo-communs et ses projets à toute la communauté OSM. Nous devrions connaître fin mai les projets qui seront menés par des agents IGN au sein de cette Fabrique.\nParmi ces 5-7 projets, il ne fait aucun doute que certains intéresseront la communauté OSM et nous serons probablement à la recherche de contributeurs. On espère par exemple présenter un chantier sur un street view collaboratif ou un référentiel administratif mis à jour de manière plus dynamique dont OSM pourrait bénéficier et auquel la communauté pourrait même contribuer.",
+        "conferencier": "Nicolas Berthelot",
+        "organisation": "IGN",
+        "tags": [
+            "Tout public",
+            "Communauté",
+            "Animer"
+        ]
     },
     {
-      "horaire": "Fr 12:30-13:45",
-      "libelle": "Repas",
-      "break": "true"
+        "horaire": "Fr 11:30-11:00",
+        "libelle": "Les données d’OSM sur le mode piéton et la marchabilité",
+        "salle": "Salle 024",
+        "numero": "53",
+        "description": "La <b>marche à pied</b> est le socle de toute mobilité, pourtant le mode piéton reste un peu le parent pauvre des politiques de transport. Pour mettre en évidence le réseau marchable, nous avons créé avec le soutien de l’Ademe une appli web open source qui couvre la France métropolitaine (app.openmobilityindicators.org), et montre les impasses et les mailles du réseau de voirie, les grands ilots et les grandes coupures urbaines et naturelles.\nCette appli utilise la donnée OpenStreetMap pour décrire le réseau piéton.\nNous souhaitons compléter ce 1er travail : la marchabilité, c’est aussi le confort et la sécurité. Mais cela implique de compléter la donnée du filaire de voirie par d’autres données comme le type de voie, la largeur des trottoirs, l’éclairage, la pente, le couvert végétal...\nLa présentation a surtout pour but de présenter les questions que nous posons et d’en discuter avec les participants et la communauté OSM France :<ul><li>quelles données existantes d’OSM sont utiles pour décrire la marchabilité ? voire l’accessibilité aux personnes à mobilité réduite ?<li>quelles règles faut-il se donner pour que la donnée soit utilisable en pratique ? les règles actuelles du Wiki OSM sont elles suffisantes ? et bien respectées ? (par exemple, nous nous intéressons au tag access, qui est essentiel pour définir le réseau utilisable par un piéton)<li>comment diffuser et valoriser cette donnée, sous quelle forme ?<li>il existe une communauté active qui cartographie les aménagements cyclables; quelle communauté peut-on réunir autour de la marche à pied ?<li>quelles représentations carto du réseau marchable et de la marchabilité sont les plus pertinentes, pour quelles usages ?</ul>\nComme pour le vélo d’ailleurs, il nous semble important de ne pas seulement décrire les aménagements piétons, mais bien le réseau sur lequel on se déplace; on voudrait donc s’inscrire dans la démarche des géocommuns où il est question de produire une base de données routières navigable et nous sommes motivés pour en discuter et contribuer à le faire avancer.",
+        "conferencier": "Patrick Gendre, Bertrand Gervais",
+        "organisation": "Infomobi, Someware",
+        "tags": [
+            "Intermédiaire",
+            "Communauté",
+            "Contribuer",
+            "Utiliser",
+            "Outils",
+            "Mobilités"
+        ]
     },
     {
-      "horaire": "Fr 14:00-14:00",
-      "libelle": "Talk 3",
-      "salle": "Salle",
-      "numero": "24"
+        "horaire": "Fr 12:30-14:00",
+        "libelle": "Déjeuner",
+        "break": "true"
     },
     {
-      "horaire": "Sa 11:30-12:00",
-      "libelle": "Talk 12",
-      "salle": "Salle",
-      "numero": "23",
-      "tags": ["Géomatique"]
+        "horaire": "Fr 15:30-16:00",
+        "libelle": "Pause",
+        "break": "true"
     },
     {
-      "horaire": "Sa 12:30-13:45",
-      "libelle": "Repas",
-      "break": "true"
-    },
-    {
-      "horaire": "Su 10:00-11:30",
-      "libelle": "Programme libre",
-      "salle": "Salle",
-      "numero": "22"
+        "horaire": "Fr 18:30-20:00",
+        "libelle": "Buffet + Soirée",
+        "break": "true"
     }
-  ]
-  
+]
