@@ -5,7 +5,7 @@ $(function () {
   
     // Afficher la programmation
     // "?20220502" : force la mise à jour du cache à chaque changement.
-    $.getJSON("assets/js/programme.json?20220502", function (data) {
+    $.getJSON("assets/js/programme.json?20220503", function (data) {
       // TODO trier par date
       $.each(data, function (index, element) {
         programme(index, element, programmeSelector);
