@@ -75,7 +75,7 @@
 	</nav>
 
 	<!-- Program Section -->
-	<section id="main" class="program-page">
+	<section id="main" class="page program-page">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
@@ -93,48 +93,39 @@
 							</div>
 							<hr />
 							<div class="filter">
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="ve">Vendredi</button>
-								<button type="button" class="btn btn-outline-secondary" data-filter="sa">Samedi</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="di">Dimanche</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="ve">Vendredi</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="sa">Samedi</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="di">Dimanche</button>
 							</div>
 							<hr />
 							<div class="filter">
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="ADR">Adresses</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="ANI">Animer</button>
-								<button type="button" class="btn btn-outline-secondary"
+								<button type="button" class="btn btn-outline-dark" data-filter="A_2">Apmhi 2</button>
+							</div>
+							<hr />
+							<div class="filter">
+								<button type="button" class="btn btn-outline-dark" data-filter="ADR">Adresses</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="ANI">Animer</button>
+								<button type="button" class="btn btn-outline-dark"
 									data-filter="CAR">Cartographie</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="COM">Communauté</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="CON">Contribuer</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="ENS">Enseignement &amp; recherche</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="GÉO">Géomatique</button>
-								<button type="button" class="btn btn-outline-secondary"
+								<button type="button" class="btn btn-outline-dark" data-filter="COM">Communauté</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="CON">Contribuer</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="ENS">Enseignement
+									&amp; recherche</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="GÉO">Géomatique</button>
+								<button type="button" class="btn btn-outline-dark"
 									data-filter="HUM">Humanitaire</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="IND">Indoor</button>
-								<button type="button" class="btn btn-outline-secondary"
+								<button type="button" class="btn btn-outline-dark" data-filter="IND">Indoor</button>
+								<button type="button" class="btn btn-outline-dark"
 									data-filter="INT">Intermédiaire</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="MOB">Mobilités</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="OUT">Outils</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="PLE">Plein-air</button>
-								<button type="button" class="btn btn-outline-secondary"
+								<button type="button" class="btn btn-outline-dark" data-filter="MOB">Mobilités</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="OUT">Outils</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="PLE">Plein-air</button>
+								<button type="button" class="btn btn-outline-dark"
 									data-filter="TER">Territoires</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="TOU">Tout public</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="UTI">Utiliser</button>
-								<button type="button" class="btn btn-outline-secondary"
-									data-filter="VIS">Visualiser</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="TOU">Tout
+									public</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="UTI">Utiliser</button>
+								<button type="button" class="btn btn-outline-dark" data-filter="VIS">Visualiser</button>
 							</div>
 						</div>
 					</form>
@@ -150,43 +141,41 @@
 									<th scope="col">Présentation</th>
 								</tr>
 							</thead>
-							<tr class="tr_model">
+							<tr class="tr_model" style="display: none;">
 								<th scope="row" class="horaire"></th>
-								<td class="presentation">
-									<div class="card mb-3">
-										<h3 class="card-header libelle"></h3>
+								<td class="program-presentation">
+									<div class="card text-dark bg-light mb-3">
+										<h3 class="card-header">
+											<span class="libelle"></span>
+											<span class="badge badge-secondary numero"></span>
+										</h3>
 										<div class="card-body">
 											<h5 class="card-title">
 												<span class="salle badge badge-info"></span>
-												<span class="numero"></span>
 											</h5>
-											<!--<h6 class="card-subtitle text-muted"></h6>-->
-										</div>
-										<div class="card-body">
-											<a data-toggle="collapse" href="#" role="button" aria-expanded="false">
-												<img src="assets/img/circle-chevron-up-solid.svg" alt="" width="16"
-													height="16">
+											<a data-toggle="collapse" href="#" role="button" aria-expanded="false"
+												class="text-dark text-decoration-none">
 												Résumé
+												<img src="assets/img/circle-chevron-down-solid.svg" alt=""
+													width="16" height="16">
 											</a>
 											<p class="card-text description collapse"></p>
-										</div>
-										<div class="card-body">
 											<p class="card-text conferencier"></p>
 											<p class="card-text organisation text-muted"></p>
+											<ul class="list-group list-group-flush videos">
+												<li class="list-group-item">
+													<img src="assets/img/film-solid.svg" alt="" width="16" height="16">
+													<a href="#" class="card-link text-dark">Voir la vidéo</a>
+												</li>
+											</ul>
+											<ul class="list-group list-group-flush presentations">
+												<li class="list-group-item">
+													<img src="assets/img/chalkboard-solid.svg" alt="" width="16"
+														height="16">
+													<a href="#" class="card-link text-dark">Voir la présentation</a>
+												</li>
+											</ul>
 										</div>
-										<ul class="list-group list-group-flush videos">
-											<li class="list-group-item">
-												<img src="assets/img/film-solid.svg" alt="" width="16" height="16">
-												<a href="#" class="card-link">Voir la vidéo</a>
-											</li>
-										</ul>
-										<ul class="list-group list-group-flush presentations">
-											<li class="list-group-item">
-												<img src="assets/img/chalkboard-solid.svg" alt="" width="16"
-													height="16">
-												<a href="#" class="card-link">Voir la présentation</a>
-											</li>
-										</ul>
 										<div class="card-footer text-muted tags">
 											<div class="badge badge-pill badge-secondary mr-1">Une étiquette</div>
 										</div>
