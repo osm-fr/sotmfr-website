@@ -941,12 +941,6 @@ h2.abstract-subtitle {
     padding: 6em 0;
 }
 
-.program-page .container-fluid {
-    width: calc(100vw - 24em);
-    margin-right: 12em;
-    margin-left: 12em;
-}
-
 .program-page h1 {
     font-size: 2em;
 }
@@ -962,6 +956,20 @@ h2.abstract-subtitle {
 
 .program-page h2:not(:first-child) {
     padding: 0.5em 0;
+}
+
+.programme thead {
+    background-color: var(--text);
+    color: var(--text-light)
+}
+
+.programme th.horaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.programme td.presentation {
+    width: 75%;
 }
 
 /************************

@@ -153,9 +153,36 @@ a:focus {
     Page
 ************************/
 
-.page {
+/* FIXME:
+Remplacer "program-page" par "page" dans HTML.
+*/
+#main, .page {
     background-color: var(--primary-light);
     color: var(--text-light);
+    padding: 6em 0;
+}
+
+#main .container-fluid {
+    width: calc(100vw - 24em);
+    margin-right: 12em;
+    margin-left: 12em;
+}
+
+#main h1 {
+    font-size: 2em;
+}
+
+#main h2 {
+    font-size: 1.8em;
+}
+
+#main h3 {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+#main h2:not(:first-child) {
+    padding: 0.5em 0;
 }
 
 /************************
@@ -265,27 +292,27 @@ footer img::-moz-selection,
     Présentation
 ************************/
 
-.presentation {
+.card.presentation {
     padding: 3em;
     border-radius: 0;
     text-align: center;
     color: var(--primary-dark);
 }
 
-.presentation a {
+.card.presentation a {
     color: var(--primary-dark);
 }
 
-.presentation .card-title {
+.card.presentation .card-title {
     font-size: 2em;
 }
 
-.presentation .card-subtitle {
+.card.presentation .card-subtitle {
     font-size: 1.8em;
     padding-bottom: 1em;
 }
 
-.presentation .card-text {
+.card.presentation .card-text {
     font-size: 1.5em;
 }
 
@@ -970,32 +997,17 @@ h2.abstract-subtitle {
 /************************
     Program
 ************************/
-
-.program-page {
-    padding: 6em 0;
+.program-page .card-header {
+    padding: .75rem 1.25rem !important;
+    font-size: 1.2em !important;
 }
-
-.program-page .container-fluid {
-    width: calc(100vw - 24em);
-    margin-right: 12em;
-    margin-left: 12em;
+.program-page .salle.badge::before {
+    content: "salle";
+    padding-right: .4em;
+    font-size: 80%;
 }
-
-.program-page h1 {
-    font-size: 2em;
-}
-
-.program-page h2 {
-    font-size: 1.8em;
-}
-
-.program-page h3 {
-    font-size: 1.5em;
-    padding: 0.5em 0;
-}
-
-.program-page h2:not(:first-child) {
-    padding: 0.5em 0;
+.program-page .jour {
+    padding-right: .4em;
 }
 
 /************************
