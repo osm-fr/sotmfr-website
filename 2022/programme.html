@@ -80,52 +80,17 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<h1>Programme</h1>
-					<!-- Filter la liste -->
+					<!-- Filtrer la liste -->
 					<form role="form">
 						<div class="form-group">
 							<!--<label class="float-label" for="search">Filtre de recherche</label>-->
 							<input type="text" class="form-control" id="search" placeholder="Rechercher...">
 						</div>
-						<div class="form-group">
+						<div id="filter-group" class="form-group">
 							<div class="filter">
 								<button type="button" class="btn btn-outline-primary" data-filter="all">Voir
 									tout</button>
-							</div>
-							<hr />
-							<div class="filter">
-								<button type="button" class="btn btn-outline-dark" data-filter="ve">Vendredi</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="sa">Samedi</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="di">Dimanche</button>
-							</div>
-							<hr />
-							<div class="filter">
-								<button type="button" class="btn btn-outline-dark" data-filter="A_2">Apmhi 2</button>
-							</div>
-							<hr />
-							<div class="filter">
-								<button type="button" class="btn btn-outline-dark" data-filter="ADR">Adresses</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="ANI">Animer</button>
-								<button type="button" class="btn btn-outline-dark"
-									data-filter="CAR">Cartographie</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="COM">Communauté</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="CON">Contribuer</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="ENS">Enseignement
-									&amp; recherche</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="GÉO">Géomatique</button>
-								<button type="button" class="btn btn-outline-dark"
-									data-filter="HUM">Humanitaire</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="IND">Indoor</button>
-								<button type="button" class="btn btn-outline-dark"
-									data-filter="INT">Intermédiaire</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="MOB">Mobilités</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="OUT">Outils</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="PLE">Plein-air</button>
-								<button type="button" class="btn btn-outline-dark"
-									data-filter="TER">Territoires</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="TOU">Tout
-									public</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="UTI">Utiliser</button>
-								<button type="button" class="btn btn-outline-dark" data-filter="VIS">Visualiser</button>
+								<button style="display: none;" type="button" class="btn btn-outline-dark mr-1 mb-1 filter-model" data-filter="code">Libelle</button>
 							</div>
 						</div>
 					</form>
@@ -133,8 +98,12 @@
 				<div class="col-lg-8">
 					<!-- La liste -->
 					<div class="table-responsive">
-						<table class="table programme">
+						<table class="table table-sm programme">
 							<caption class="no-result">Aucun résultat trouvé !</caption>
+							<colgroup>
+								<col style="min-width:8em">
+								<col style="width:auto">
+							</colgroup>
 							<thead>
 								<tr>
 									<th scope="col">Horaire</th>

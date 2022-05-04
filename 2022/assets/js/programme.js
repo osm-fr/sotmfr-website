@@ -1,15 +1,45 @@
+const programmeSelector = ".programme";
+let rows;
+const salleSet = new Set();
+const tagSet = new Set();
+
 // Après chargement de la page
 $(function () {
-  const programmeSelector = ".programme";
-  let rows;
-
   // Afficher la programmation
   // "?20220502" : force la mise à jour du cache à chaque changement.
   $.getJSON("assets/js/programme.json?20220503", function (data) {
     // TODO trier par date
     $.each(data, function (index, element) {
       programme(index, element, programmeSelector);
+      if (element.salle) {
+        salleSet.add(element.salle);
+      }
+      if (element.tags) {
+        element.tags.forEach(t => tagSet.add(t));
+      }
     });
+
+    // Ajouter un filtre par jour
+    const jourMap = new Map();
+    jourMap.set("Fr", jours["Fr"]);
+    jourMap.set("Sa", jours["Sa"]);
+    jourMap.set("Su", jours["Su"]);
+    addFilter(jourMap);
+
+    // Ajouter un filtre par salle
+    const salleMap = new Map();
+    Array.from(salleSet).sort().map(value => {
+      salleMap.set(getCodeSalle(value), value);
+    });
+    addFilter(salleMap);
+
+    // Ajouter un filtre par tag
+    const tagMap = new Map();
+    Array.from(tagSet).sort().map(value => {
+      tagMap.set(getCodeTag(value), value);
+    });
+    addFilter(tagMap);
+
     // Lignes fitrables
     rows = $(programmeSelector + " [data-filter]");
     // Accordion
@@ -30,52 +60,7 @@ $(function () {
   // Message caché par défault car aucun filtre n'est activé
   $(".no-result").hide();
 
-  // Filtre
-  function checkNoResult () {
-    console.log('No result')
-    let visible = rows.filter(":visible").length;
-    if (visible === 0) {
-      $(".no-result").show();
-    } else {
-      $(".no-result").hide();
-    }
-  }
-
-  $(".filter").on("click", "button[data-filter]", function (e) {
-    e.preventDefault();
-
-    // Get filter data from active link
-    let filterValue = $(this).attr("data-filter");
-    // Change active filter tag
-    let currentFilter = $(this).closest("[data-filter]");
-    currentFilter.toggleClass("active");
-    $(this).parent().children().filter("[data-filter]").not(currentFilter).removeClass("active");
-    //Remove search field content when choosing a filter
-    $("#search").val("");
-
-    // Show filtered list by matching data-filter with data-filter of item
-    if (filterValue === "all") {
-      rows.fadeIn("slow");
-      // Désactiver tous les filtres actifs
-      $(".filter button[data-filter!='all']").removeClass("active");
-    } else {
-      // Désactiver le filtre ALL
-      $(".filter button[data-filter='all']").removeClass("active");
-      // Prendre en compte tous les filtres actifs
-      rows.hide();
-      let filterValues = [];
-      $(".filter button[data-filter].active").each(function () {
-        filterValues.push($(this).attr("data-filter"));
-      });
-      rows.filter(function () {
-        let dataFilter = $(this).attr("data-filter");
-        return filterValues.reduce(function (accumulator, currentValue) {
-          return accumulator && dataFilter.includes(currentValue);
-        }, true);
-      }).fadeIn("slow");
-    }
-    checkNoResult();
-  });
+  $(".filter").on("click", "button[data-filter]", onFilter);
 
   // Filtre de recherche
   $("#search").keyup(function () {
@@ -91,6 +76,53 @@ $(function () {
   });
 
 });
+
+// Filtre
+function checkNoResult () {
+  let visible = rows.filter(":visible").length;
+  if (visible === 0) {
+    $(".no-result").show();
+  } else {
+    $(".no-result").hide();
+  }
+}
+
+function onFilter (e) {
+  e.preventDefault();
+
+  // Get filter data from active link
+  let filterValue = $(this).attr("data-filter");
+
+  // Change active filter tag
+  let currentFilter = $(this).closest("[data-filter]");
+  currentFilter.toggleClass("active");
+  $(this).parent().children().filter("[data-filter]").not(currentFilter).removeClass("active");
+  //Remove search field content when choosing a filter
+  $("#search").val("");
+
+  // Show filtered list by matching data-filter with data-filter of item
+  if (filterValue === "all") {
+    rows.fadeIn("slow");
+    // Désactiver tous les filtres actifs
+    $(".filter button[data-filter!='all']").removeClass("active");
+  } else {
+    // Désactiver le filtre ALL
+    $(".filter button[data-filter='all']").removeClass("active");
+    // Prendre en compte tous les filtres actifs
+    rows.hide();
+    let filterValues = [];
+    $(".filter button[data-filter].active").each(function () {
+      filterValues.push($(this).attr("data-filter"));
+    });
+    rows.filter(function () {
+      let dataFilter = $(this).attr("data-filter");
+      return filterValues.reduce(function (accumulator, currentValue) {
+        return accumulator && dataFilter.includes(currentValue);
+      }, true);
+    }).fadeIn("slow");
+  }
+  checkNoResult();
+}
 
 //===========================================
 //|  Le code pour générer la programmation  |
@@ -109,13 +141,24 @@ const jours = {
 const regex = /(Mo|Tu|We|Th|Fr|Sa|Su) (\d+):(\d+)-(\d+):(\d+)/;
 
 let tr_model;
+let filter_model;
 
 function getTrModel (selector) {
   if (!tr_model) {
     tr_model = $(selector + " tr.tr_model");
+    tr_model.removeClass("tr_model");
     tr_model.hide();
   }
   return tr_model.clone();
+}
+
+function getFilterModel (selector) {
+  if (!filter_model) {
+    filter_model = $(selector + " button.filter-model");
+    filter_model.removeClass("filter-model");
+    filter_model.hide();
+  }
+  return filter_model.clone();
 }
 
 /**
@@ -129,12 +172,21 @@ function getCodeSalle (salle) {
 }
 
 /**
+ * Retourner un code tag.
+ **/
+ function getCodeTag (tag) {
+  if (!tag) return "";
+  // ex: "Communauté" --> "COM"
+  let code = tag.substring(0, 3).toUpperCase();
+  return code || "";
+}
+
+/**
  * Retourner un tableau de codes tags.
  **/
 function getCodesTags (tags) {
   if (!tags) return "";
-  // ex: "Communauté" --> "COM"
-  return tags.map(tag => tag.substring(0, 3).toUpperCase());
+  return tags.map(tag => getCodeTag(tag));
 }
 
 let previousTd = {
@@ -160,7 +212,7 @@ function programme (key, prog, selector = "table.programme") {
   let horaire = prog.horaire;
   let jour = prog.jour;
 
-  let periode, m;
+  let periode, m, codeJour;
 
   if (jQuery.type(horaire) === "array") {
     // Tableau
@@ -170,7 +222,8 @@ function programme (key, prog, selector = "table.programme") {
   ) !== null) {
     // Format opening_hours
     periode = `${parseInt(m[2])}h${m[3]} - ${parseInt(m[4])}h${m[5]}`;
-    jour = jours[m[1]];
+    codeJour = m[1];
+    jour = jours[codeJour];
   } else {
     periode = horaire;
   }
@@ -184,6 +237,7 @@ function programme (key, prog, selector = "table.programme") {
       text: jour,
       class: 'jour',
     }).appendTo(thHoraire);
+    $('<br>').appendTo(thHoraire);
     $('<span>', {
       text: periode,
       class: 'heures',
@@ -206,7 +260,7 @@ function programme (key, prog, selector = "table.programme") {
   if (!filter) {
     // ex: "Vendredi, Amphi 6, Géomatique, Territoire" --> "ve A_6 GÉO TER"
     let arr = [];
-    arr.push(jour.toLowerCase().substring(0, 2));
+    arr.push(codeJour);
     arr.push(getCodeSalle(prog.salle));
     if (prog.tags && jQuery.type(prog.tags) === "array") {
       Array.prototype.push.apply(arr, getCodesTags(prog.tags));
@@ -261,4 +315,21 @@ function programme (key, prog, selector = "table.programme") {
     }
   }
   tr.appendTo(selector).show();
+}
+/**
+ * Ajouter un groupe de filtre
+ * @param {Map} myMap 
+ */
+function addFilter(myMap) {
+  let filterGroup = $('<hr><div class="filter">').appendTo("#filter-group");
+
+  // Ajouter un groupe de filtre  
+  myMap.forEach(function(value, key) {
+    let filterButton = getFilterModel(".filter");
+    filterButton.text(value);
+    filterButton.attr("data-filter", key);
+    filterButton.on("click", onFilter);
+    filterGroup.append(filterButton);
+    filterButton.show();
+  })
 }
