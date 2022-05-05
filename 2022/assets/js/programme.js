@@ -117,7 +117,9 @@ function onFilter (e) {
     rows.filter(function () {
       let dataFilter = $(this).attr("data-filter");
       return filterValues.reduce(function (accumulator, currentValue) {
-        return accumulator && dataFilter.includes(currentValue);
+        return accumulator &&
+          // match whole word
+          dataFilter.match(new RegExp(`\\b${currentValue}\\b`));
       }, true);
     }).fadeIn("slow");
   }
@@ -166,8 +168,10 @@ function getFilterModel (selector) {
  **/
 function getCodeSalle (salle) {
   if (!salle) return "";
-  // ex: "Amphi 6" --> "A_6"
-  let code = salle.toUpperCase().replace(/^([A-Z]).+ ([A-Z0-9]+)$/, "$1_$2");
+  // ex: "Amphi 6" --> "room_A_6"
+  let code = "room_" + salle.toUpperCase()
+    .replace(/^([A-Z]).+ ([A-Z0-9]+)$/, "$1_$2")
+    .replaceAll(" ", "_");
   return code || "";
 }
 
@@ -176,8 +180,8 @@ function getCodeSalle (salle) {
  **/
  function getCodeTag (tag) {
   if (!tag) return "";
-  // ex: "Communauté" --> "COM"
-  let code = tag.substring(0, 3).toUpperCase();
+  // ex: "Communauté" --> "tag_COM"
+  let code = "tag_" + tag.substring(0, 3).toUpperCase();
   return code || "";
 }
 
