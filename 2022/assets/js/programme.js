@@ -277,7 +277,7 @@ function programme (key, prog, selector = "table.programme") {
     if (prog[key]) {
       if (jQuery.type(prog[key]) === "string") {
         // Texte
-        let html = $.parseHTML(prog[key].replace("\n", "<br>"));
+        let html = $.parseHTML(prog[key].replaceAll("\n", "<br>"));
         $(classSelector, tdPresentation).html(html);
       } else if (jQuery.type(prog[key]) === "array") {
         // Tableau
