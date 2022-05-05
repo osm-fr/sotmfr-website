@@ -1010,6 +1010,10 @@ h2.abstract-subtitle {
     padding-right: .4em;
 }
 
+.text-dark a {
+    color: var(--text-dark);
+}
+
 /************************
     Attending
 ************************/
