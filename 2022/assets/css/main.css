@@ -997,9 +997,16 @@ h2.abstract-subtitle {
 /************************
     Program
 ************************/
-.program-page .card-header {
-    padding: .75rem 1.25rem !important;
+
+.program-page h3.card-header {
+    font-family: inherit;
     font-size: 1.2em !important;
+    font-weight: inherit;
+    text-transform: none;
+    padding: .75rem 1.25rem !important;
+}
+.program-page .filter > button.btn {
+    text-transform: none;
 }
 .program-page .salle.badge::before {
     content: "salle";

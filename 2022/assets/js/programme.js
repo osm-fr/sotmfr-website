@@ -33,6 +33,16 @@ $(function () {
     });
     addFilter(salleMap);
 
+    // Ajouter un filtre par publique
+    const publicMap = new Map();
+    ["Tout public", "Intermédiaire", "Expert"]
+    .forEach(value => {
+      // Remove from tags
+      tagSet.delete(value);
+      publicMap.set(getCodeTag(value), value);
+    });
+    addFilter(publicMap);
+
     // Ajouter un filtre par tag
     const tagMap = new Map();
     Array.from(tagSet).sort().map(value => {
