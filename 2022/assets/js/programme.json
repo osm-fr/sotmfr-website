@@ -11,18 +11,19 @@
     },
     {
         "horaire": "Fr 10:00-10:30",
-        "libelle": "Intervention plénière",
+        "libelle": "De la carte blanche à la carte arc-en-ciel !",
         "salle": "Amphi 2",
-        "description": "",
-        "conferencier": "Olivier Ertzscheid",
-        "organisation": "Affordance.info"
+        "description": "Contributeurice aux projets Wikimédia depuis une dizaine d’années, Capucine-Marin est président·e de Wikimédia France",
+        "conferencier": "Capucine-Marin, Dubroca-Voisin",
+        "organisation": "Wikimedias France"
     },
     {
         "horaire": "Fr 10:30-11:00",
-        "libelle": "Intervention plénière",
+        "libelle": "Carte blanche",
         "salle": "Amphi 2",
-        "conferencier": "Capucine-Marin",
-        "organisation": "Wikimedias France"
+        "description": "Enseignant-chercheur français en sciences de l’information, Olivier Ertzscheid documente depuis plus de 17 ans les évolutions du web et de notre rapport à la connaissance au travers de son blog affordance.info et de ses ouvrages et articles.",
+        "conferencier": "Olivier Ertzscheid",
+        "organisation": "Affordance.info"
     },
     {
         "horaire": "Fr 11:00-11:30",
