@@ -7,21 +7,32 @@
     {
         "horaire": "Fr 09:30-10:00",
         "libelle": "Discours d'accueil",
-        "salle": "Amphi 2"
+        "salle": "Amphi 2",
+        "tags": [
+            "Tout public"
+        ]
     },
     {
         "horaire": "Fr 10:00-10:30",
-        "libelle": "Intervention plénière",
-        "salle": "TBD",
-        "conferencier": "Olivier Ertzscheid",
-        "organisation": "Affordance.info"
+        "libelle": "De la carte blanche à la carte arc-en-ciel !",
+        "salle": "Amphi 2",
+        "description": "Contributeurice aux projets Wikimédia depuis une dizaine d’années, Capucine-Marin est président·e de Wikimédia France",
+        "conferencier": "Capucine-Marin, Dubroca-Voisin",
+        "organisation": "Wikimedias France",
+        "tags": [
+            "Tout public"
+        ]
     },
     {
         "horaire": "Fr 10:30-11:00",
-        "libelle": "Intervention plénière",
-        "salle": "TBD",
-        "conferencier": "Capucine-Marin",
-        "organisation": "Wikimedias France"
+        "libelle": "Carte blanche",
+        "salle": "Amphi 2",
+        "description": "Enseignant-chercheur français en sciences de l’information, Olivier Ertzscheid documente depuis plus de 17 ans les évolutions du web et de notre rapport à la connaissance au travers de son blog affordance.info et de ses ouvrages et articles.",
+        "conferencier": "Olivier Ertzscheid",
+        "organisation": "Affordance.info",
+        "tags": [
+            "Tout public"
+        ]
     },
     {
         "horaire": "Fr 11:00-11:30",
@@ -44,7 +55,7 @@
         ]
     },
     {
-        "horaire": "Fr 11:30-11:00",
+        "horaire": "Fr 11:30-12:00",
         "libelle": "Les données d'OSM sur le mode piéton et la marchabilité",
         "salle": "024",
         "numero": "53",
@@ -97,7 +108,7 @@
         "horaire": "Fr 12:00-12:30",
         "libelle": "Tu veux mes photos ? vers un \"streetview\" libre ?",
         "numero": "15",
-        "salle": "TBD",
+        "salle": "Amphi 2",
         "conferencier": "Christian Quest",
         "organisation": "",
         "description": "Nous sommes nombreux à prendre des photos de terrain pour contribuer à OpenStreetMap.\nCeci se fait souvent via des plateformes comme Mapillary ou Kartaview.\nPlateformes mi-ouvertes / mi-fermées à la gouvernance opaque, le rachat de Mapillary par Facebook interroge et des changements sont déjà constatés.\nIl est temps de retrouver une indépendance pour collecter et partager ces photos, temps d'en faire un commun à la gouvernance ouverte.\nQue faire ? Comment faire ? Quels sont les enjeux techniques ?",
@@ -166,7 +177,7 @@
     {
         "horaire": "Fr 14:00-14:30",
         "libelle": "Maël",
-        "salle": "TBD"
+        "salle": "Amphi 2"
     },
     {
         "horaire": "Fr 14:00-14:30",
@@ -223,7 +234,7 @@
         "horaire": "Fr 14:30-15:00",
         "libelle": "L'imagerie immersive par les entreprises pour faciliter la contribution à OpenStreetMap",
         "numero": "54",
-        "salle": "TBD",
+        "salle": "Amphi 2",
         "conferencier": "Vincent Robbe",
         "organisation": "SOGEFI",
         "description": "Dans le cadre de nos missions à SOGEFI, nous avons acquis plus de 100 000 km d'imagerie immersive sur le territoire français, qui sont systématiquement versées dans Mapillary.\nNous présenterons les types de missions pour lesquelles nous acquérons ces images et nous commenterons leur qualité, leur exhaustivité.\nNous aborderons également les différentes utilisations possibles pour la communauté et laisserons une large place aux échanges.",
@@ -303,7 +314,7 @@
         "horaire": "Fr 15:00-15:30",
         "libelle": "Dégooglisez vos photos de rues avec GeoVisio",
         "numero": "11",
-        "salle": "TBD",
+        "salle": "Amphi 2",
         "conferencier": "Adrien Pavie",
         "organisation": "Entrepreneur en géomatique et développement",
         "description": "Marre que vos photos de poteaux incendie finissent sur StreetView (Google) ou Mapillary (Facebook) ? Envie de re-décentraliser Internet, image après image ? GeoVisio est la solution qu'il vous faut !\nGeoVisio est une solution d'auto-hébergement de photos de rues. Développée par les licornes de la « French OSM Tech » (GéoVélo, Cartocité et Adrien Pavie), elle est 100 % libre et gratuite. Venez découvrir cette solution, comment elle peut permettre à votre organisation de devenir autonome sur la gestion des photos de rues, et les perspectives de développements pour le futur.",
@@ -370,7 +381,7 @@
         "horaire": "Fr 16:00-16:30",
         "libelle": "Prises de vues : bien les prendre, et les gérer efficacement",
         "numero": "36",
-        "salle": "TBD",
+        "salle": "Amphi 2",
         "conferencier": "Stéphane Péneau",
         "organisation": "Carto'Cité",
         "description": "La photo est un des meilleurs outils pour collecter de la donnée rapidement sur le terrain. Mais quel matériel utiliser et comment manipuler correctement ces photos ? C'est ce que nous verrons en étudiant les différents types de caméras disponibles, les meilleurs choix en fonction du mode de déplacement, et nous terminerons en regardant les nouvelles fonctions de Josm pour géolocaliser les photos, qu'elles soient prises en extérieur ou en intérieur.",
@@ -435,7 +446,7 @@
     {
         "horaire": "Fr 16:30-17:00",
         "libelle": "Hugues OSM au Samu de Normandie",
-        "salle": "TBD"
+        "salle": "Amphi 2"
     },
     {
         "horaire": "Fr 16:30-17:30",
@@ -483,7 +494,7 @@
         "horaire": "Fr 17:00-17:30",
         "libelle": "Road2 : Serveur de calcul d'itinéraires et d'isochrones basé sur les moteurs open source OSRM, pgRouting et Valhalla",
         "numero": "52",
-        "salle": "TBD",
+        "salle": "Amphi 2",
         "conferencier": "Amaury Zarzelli",
         "organisation": "IGN",
         "description": "Quand vient le moment de choisir un calcul d'itinéraires basé sur des données OSM ou bien des données \"maison\", choisir \"le bon\" n'est pas une mince affaire... En tout cas, ça n'a pas été le cas chez nous. Nous avons donc développé road2, un serveur REST permettant d'associer les avantages des différents moteurs open source du marché : à la question \"OSRM ou pgRouting ?\", nous avons répondu \"Why not both?\".\nJe vous présente donc un retour d'expérience sur le développement de l'outil open source road2, de son alimentation en données, des ses limitations.",
@@ -512,7 +523,7 @@
     {
         "horaire": "Fr 17:30-18:00",
         "libelle": "L'AG GéoCommuns (synthèse)",
-        "salle": "TBD"
+        "salle": "Amphi 2"
     },
     {
         "horaire": "Fr 18:30-20:00",
