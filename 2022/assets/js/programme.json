@@ -453,8 +453,12 @@
     },
     {
         "horaire": "Fr 16:30-17:00",
-        "libelle": "Hugues OSM au Samu de Normandie",
-        "salle": "Amphi 2"
+        "libelle": "Ils sont fous ces normands ? des Centre 15 avec OSM !",
+        "numero": "60",
+        "salle": "Amphi 2",
+        "conferencier": "Hugues Parvilliers",
+        "organisation": "Groupe de Coopération Sanitaire Normand-esanté",
+        "description": "Début 2000 page blanche pour un SI SAMU régional avec téléphonie et cartographie intégrée\nJuin 2004 lancement en production d'un premier SAMU avec téléphonie et cartographie intégrée\nVous avez dit géocodage ?\nLe RGE IGN, quand une tuile en cache une autre !\nQuand le gars du 15 met le feu à l'IGN\nL'Etat sait, et nous on est des nuls ; survie dans les tranchées\nZoom sur l'existant et les projets\nBonus : quelques états d'âmes"
     },
     {
         "horaire": "Fr 16:30-17:30",
