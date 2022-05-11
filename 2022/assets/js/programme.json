@@ -176,8 +176,16 @@
     },
     {
         "horaire": "Fr 14:00-14:30",
-        "libelle": "Maël",
-        "salle": "Amphi 2"
+        "libelle": "Mapillary dans les collectivités locales : état des lieux et perspectives",
+        "numero": "61",
+        "salle": "Amphi 2",
+        "conferencier": "AITF (Association des Ingénieurs Territoriaux de France)",
+        "tags": [
+            "Tout public",
+            "Communauté",
+            "Contribuer",
+            "Visualiser"
+        ]
     },
     {
         "horaire": "Fr 14:00-14:30",
