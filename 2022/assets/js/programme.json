@@ -18,7 +18,7 @@
         "salle": "Amphi 2",
         "description": "Contributeurice aux projets Wikimédia depuis une dizaine d’années, Capucine-Marin est président·e de Wikimédia France",
         "conferencier": "Capucine-Marin, Dubroca-Voisin",
-        "organisation": "Wikimedias France",
+        "organisation": "Wikimedia France",
         "tags": [
             "Tout public"
         ]
@@ -142,8 +142,8 @@
         "libelle": "De l'artisanat à l'industrialisation : pourquoi et comment SNCF a cartographié 425 gares en Île-de-France",
         "numero": "27",
         "salle": "022",
-        "conferencier": "Céline Durupt, Antoine Riche",
-        "organisation": "SNCF Transilien, Carto'Cité",
+        "conferencier": "Antoine Riche",
+        "organisation": "Carto'Cité",
         "description": "Après avoir micro-cartographié sur OpenStreetMap les 85 gares de la ligne RER C en 2018, SNCF Transilien décide en 2021 de couvrir toutes les gares de son périmètre, soit 425 gares allant d'un simple quai à d'immenses complexes souterrains.\nL'agence Carto'Cité et ses partenaires relèvent le défi, et font évoluer leurs méthodes et outils. Côté collecte, deux caméras sont ajoutées au V4MPack pour produire des photosphères, la géolocalisation devient centimétrique, les photos sont anonymisées en interne. Côté numérisation, JOSM est configuré pour assurer productivité et qualité : rendu indoor, validation des données, et formulaires adaptés.\nLes données des gares et de leurs environs sont utilisées pour faciliter l'orientation des voyageurs. Les médias numériques de SNCF Transilien, tels le site transilien.com et bientôt l'application mobile Andilien, proposent une carte interactive montrant les équipements et services de chaque gare. Un calculateur d'itinéraires indoor/outdoor surfacique guide les voyageurs pas à pas, du quai à l'arrêt de bus en empruntant au choix escaliers ou ascenseurs.",
         "tags": [
             "Tout public",
@@ -176,8 +176,17 @@
     },
     {
         "horaire": "Fr 14:00-14:30",
-        "libelle": "Maël",
-        "salle": "Amphi 2"
+        "libelle": "Mapillary dans les collectivités locales : état des lieux et perspectives",
+        "numero": "61",
+        "salle": "Amphi 2",
+        "conferencier": "AITF (Association des Ingénieurs Territoriaux de France)",
+        "tags": [
+            "Tout public",
+            "Communauté",
+            "Contribuer",
+            "Visualiser",
+            "Géocommuns"
+        ]
     },
     {
         "horaire": "Fr 14:00-14:30",
@@ -202,7 +211,7 @@
         "libelle": "Qarto, un outil de suivi qualité des données des gares Transilien",
         "numero": "35",
         "salle": "022",
-        "conferencier": "Céline Durupt, Kaoutar Bourgane",
+        "conferencier": "Kaoutar Bourgane",
         "organisation": "SNCF Transilien",
         "description": "Depuis 2015, Transilien utilise pour de nombreux usages à destination des clients et de l'interne les données OpenStreetMap des gares d'Île-de-France. Et depuis 2015, nous nous demandons comment assurer au jour le jour la qualité des données utilisées sur un périmètre géographique (425 gares) et attributaire (plus de 70 types d'objets) aussi important et en constante évolution.\nAprès une étude de faisabilité examinant les solutions existant sur le marché, nous avons choisi de faire développer par les sociétés Champs Libres et Atelier Cartographique, à partir de briques open source existantes complétées par des fonctionnalités nouvelles, un outil entièrement dédié à nos usages.\nCet outil, QArto (QA pour quality assurance), se présente sous la forme d'une interface de visualisation cartographique et tabulaire d'une base de données de « signalements ». Un signalement est une erreur potentielle dans les données OpenStreetMap, détectée automatiquement par un analyseur et qui doit être traitée manuellement par l'utilisateur·rice. Ces analyseurs permettent d'effectuer du contrôle qualité (par exemple, s'assurer que tous les quais aient un numéro de référence), du suivi des modification (vérifier que le nom d'une gare ne change pas), des comparaisons avec d'autres bases (ouvertes ou internes) plus ou moins transformées (tests de régression de calcul d'itinéraire).\nLa mise en production de cet outil, prévue en 2022, nous permettra ainsi d'avoir une vue d'ensemble de l'évolution des données OSM que nous utilisons, de garantir le respect du modèle et de limiter les risques d'obsolescence de la donnée par le croisement de sources.\nDans le cadre de cette présentation, nous souhaitons partager notre expérience avec d'autres acteur·rices de la communauté OpenStreetMap confronté·es aux mêmes problématiques et, si cela intéresse certain·es, mettre à disposition le projet en open source.",
         "tags": [
@@ -445,8 +454,19 @@
     },
     {
         "horaire": "Fr 16:30-17:00",
-        "libelle": "Hugues OSM au Samu de Normandie",
-        "salle": "Amphi 2"
+        "libelle": "Ils sont fous ces normands ? des Centre 15 avec OSM !",
+        "numero": "60",
+        "salle": "Amphi 2",
+        "conferencier": "Hugues Parvilliers",
+        "organisation": "Groupe de Coopération Sanitaire Normand-esanté",
+        "description": "Début 2000 page blanche pour un SI SAMU régional avec téléphonie et cartographie intégrée\nJuin 2004 lancement en production d'un premier SAMU avec téléphonie et cartographie intégrée\nVous avez dit géocodage ?\nLe RGE IGN, quand une tuile en cache une autre !\nQuand le gars du 15 met le feu à l'IGN\nL'Etat sait, et nous on est des nuls ; survie dans les tranchées\nZoom sur l'existant et les projets\nBonus : quelques états d'âmes",
+        "tags": [
+            "Tout public",
+            "Utiliser",
+            "Géomatique",
+            "Adresses",
+            "Géocommuns"
+        ]
     },
     {
         "horaire": "Fr 16:30-17:30",
