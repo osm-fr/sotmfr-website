@@ -51,7 +51,8 @@
         "tags": [
             "Tout public",
             "Communauté",
-            "Animer"
+            "Animer",
+            "Géocommuns"
         ]
     },
     {
@@ -116,7 +117,8 @@
             "Tout public",
             "Communauté",
             "Contribuer",
-            "Outils"
+            "Outils",
+            "Géocommuns"
         ]
     },
     {
@@ -253,7 +255,8 @@
             "Contribuer",
             "Utiliser",
             "Visualiser",
-            "Outils"
+            "Outils",
+            "Géocommuns"
         ]
     },
     {
@@ -331,7 +334,8 @@
             "Tout public",
             "Visualiser",
             "Outils",
-            "Territoires"
+            "Territoires",
+            "Géocommuns"
         ]
     },
     {
@@ -398,7 +402,8 @@
             "Tout public",
             "Communauté",
             "Contribuer",
-            "Outils"
+            "Outils",
+            "Géocommuns"
         ]
     },
     {
@@ -522,7 +527,8 @@
             "Expert",
             "Utiliser",
             "Outils",
-            "Mobilités"
+            "Mobilités",
+            "Géocommuns"
         ]
     },
     {
@@ -543,7 +549,10 @@
     {
         "horaire": "Fr 17:30-18:00",
         "libelle": "L'AG GéoCommuns (synthèse)",
-        "salle": "Amphi 2"
+        "salle": "Amphi 2",
+        "tags": [
+            "Géocommuns"
+        ]
     },
     {
         "horaire": "Fr 18:30-20:00",
