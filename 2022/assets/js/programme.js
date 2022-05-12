@@ -191,7 +191,7 @@ function getCodeSalle (salle) {
  function getCodeTag (tag) {
   if (!tag) return "";
   // ex: "Communauté" --> "tag_COM"
-  let code = "tag_" + tag.substring(0, 3).toUpperCase();
+  let code = "tag_" + tag.substring(0, 4).toUpperCase();
   return code || "";
 }
 
