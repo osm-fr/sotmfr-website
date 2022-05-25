@@ -78,8 +78,22 @@
 	<section id="main" class="page program-page">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-12 pb-2">
 					<h1>Programme</h1>
+					<p class="lead">
+						Le programme est filtrable par le menu de gauche.
+						<br>
+						Il est également disponible en
+						<a href="pdfs/SOTM-FR_2022_Programme_definitif.pdf" target="_blank" class="font-weight-bold">
+							téléchargement
+							<span class="pl-1">
+								<!-- see: https://stackoverflow.com/a/53336754 -->
+								<img src="assets/img/file-pdf-regular.svg" alt="PDF" style="width: 1em; filter: invert(91%) sepia(23%) saturate(192%) hue-rotate(200deg) brightness(99%) contrast(93%)">
+							</span>
+						</a>
+					</p>
+				</div>
+				<div class="col-lg-4">
 					<!-- Filtrer la liste -->
 					<form role="form">
 						<div class="form-group">
@@ -98,7 +112,6 @@
 				<div class="col-lg-8">
 					<!-- La liste -->
 					<div class="table-responsive">
-						<p style="font-weight: bold;font-size: 20px;">Le programme est filtrable par le menu de gauche. <br>Il est également <a href="pdfs/SOTM-FR_2022_Programme_definitif.pdf" target="_blank">disponible en PDF</a><br><br></p>
 						<table class="table table-sm programme">
 							<caption class="no-result">Aucun résultat trouvé !</caption>
 							<colgroup>
