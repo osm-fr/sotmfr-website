@@ -148,6 +148,10 @@ a:focus {
     text-decoration-color: var(--links);
 }
 
+a.nodeco {
+    text-decoration: none;
+}
+
 
 /************************
     Page
