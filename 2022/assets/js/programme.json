@@ -21,6 +21,12 @@
         "organisation": "Wikimedia France",
         "tags": [
             "Tout public"
+        ],
+        "videos": [
+            {
+                "name": "De la carte blanche à la carte arc-en-ciel ! [Capucine-Marin Dubroca-Voisin]",
+                "href": "https://peertube.openstreetmap.fr/w/auvejo48t9inMhD2uLV6iQ"
+            }
         ]
     },
     {

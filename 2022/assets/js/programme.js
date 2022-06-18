@@ -7,7 +7,7 @@ const tagSet = new Set();
 $(function () {
   // Afficher la programmation
   // "?20220502" : force la mise à jour du cache à chaque changement.
-  $.getJSON("assets/js/programme.json?20220510", function (data) {
+  $.getJSON("assets/js/programme.json?20220618", function (data) {
     // TODO trier par date
     $.each(data, function (index, element) {
       programme(index, element, programmeSelector);
@@ -296,8 +296,8 @@ function programme (key, prog, selector = "table.programme") {
       } else if (jQuery.type(prog[key]) === "array") {
         // Tableau
         let liste = $(classSelector, tdPresentation);
+        let node_model = $("*", liste).first();
         if (key === "tags") {
-          let node_model = $(":first-child", liste);
           // Mot clé
           for (let el of prog.tags) {
             let tag = node_model.clone();
@@ -306,11 +306,10 @@ function programme (key, prog, selector = "table.programme") {
           }
           node_model.remove();
         } else {
-          let node_model = $("li:first-child", liste);
           // Hyperlien
           for (let el of prog[key]) {
             let node = node_model.clone();
-            $("a:first-child", node)
+            $("a", node).first()
             .text(el.text || el.name || "Voir le lien")
             .attr("href", el.href);
             liste.append(node);
