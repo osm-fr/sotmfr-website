@@ -1,15 +1,15 @@
 @import './fonts.css';
 
 :root {
-    --colour-1: #001e46;
-    --colour-2: #e8413a;
-    --colour-3: #00b0a9;
-    --colour-4: #fbb900;
-    --colour-5: #73ba64;
+    --colour-1: #242423;
+    --colour-2: #F5CB5C;
+    --colour-3: #333533;
+    --colour-4: #E8EDDF;
+    --colour-5: #85B79D;
     --primary-dark: var(--colour-1);
     --primary-light: var(--colour-3);
     --links: var(--colour-2);
-    --text-light: #e6e6f4;
+    --text-light: var(--colour-4);
 }
 
 body {
@@ -300,11 +300,11 @@ footer img::-moz-selection,
     padding: 3em;
     border-radius: 0;
     text-align: center;
-    color: var(--primary-dark);
+    color: var(--text-light);
 }
 
 .card.presentation a {
-    color: var(--primary-dark);
+    color: var(--text-light);
 }
 
 .card.presentation .card-title {
