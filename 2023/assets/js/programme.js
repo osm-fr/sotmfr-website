@@ -56,7 +56,7 @@ $(function () {
         // Lignes fitrables
         rows = $(programmeSelector + ' [data-filter]');
         // Accordion
-        $(programmeSelector + " [data-toggle='collapse']").click(function () {
+        $(programmeSelector + " [data-bs-toggle='collapse']").click(function () {
             event.preventDefault();
             let $icon = $('img', this);
             let src = $icon.attr('src');
@@ -340,7 +340,7 @@ function programme(key, prog, selector = 'table.programme') {
             $(classSelector, tdPresentation).remove();
         }
         if (!prog['description']) {
-            $('[data-toggle]', tdPresentation).remove();
+            $('[data-bs-toggle]', tdPresentation).remove();
         }
     }
     tr.appendTo(selector).show();
