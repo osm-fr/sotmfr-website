@@ -2,10 +2,10 @@
 
 :root {
     --colour-1: #242423;
-    --colour-2: #F5CB5C;
+    --colour-2: #f5cb5c;
     --colour-3: #333533;
-    --colour-4: #E8EDDF;
-    --colour-5: #85B79D;
+    --colour-4: #e8eddf;
+    --colour-5: #85b79d;
     --primary-dark: var(--colour-1);
     --primary-light: var(--colour-3);
     --links: var(--colour-2);
@@ -15,7 +15,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Montserrat Alternates", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat Alternates', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 17px;
     color: var(--text-light);
     background-color: var(--primary-dark);
@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Josefin Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -87,15 +87,16 @@ div.affix {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
     outline: 0;
-    background-color: rgba(255, 255, 255, .15);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255, 255, 255, .05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-.navbar, .navbar a {
+.navbar,
+.navbar a {
     color: var(--primary-dark);
 }
 
@@ -103,7 +104,8 @@ div.affix {
     color: var(--colour-2);
 }
 
-nav a, .nav a {
+nav a,
+.nav a {
     text-decoration: none;
     font-weight: 1000;
 }
@@ -128,7 +130,6 @@ nav .navbar-brand {
     margin-top: 4px;
 }
 
-
 /************************
     Link
 ************************/
@@ -136,9 +137,9 @@ nav .navbar-brand {
 a {
     color: var(--text-light);
     text-decoration: underline;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover,
@@ -152,7 +153,6 @@ a.nodeco {
     text-decoration: none;
 }
 
-
 /************************
     Page
 ************************/
@@ -160,7 +160,8 @@ a.nodeco {
 /* FIXME:
 Remplacer "program-page" par "page" dans HTML.
 */
-#main, .page {
+#main,
+.page {
     background-color: var(--primary-light);
     color: var(--text-light);
     padding: 6em 0;
@@ -219,14 +220,14 @@ footer ::selection,
 .page ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 footer ::-moz-selection,
 .page ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 footer img::selection,
@@ -253,7 +254,7 @@ footer img::-moz-selection,
 
 #footer .center {
     padding-top: 2em;
-   text-align: center;
+    text-align: center;
 }
 
 /************************
@@ -267,7 +268,7 @@ footer img::-moz-selection,
     padding: 100px 0;
     text-align: center;
     color: var(--primary-dark);
-    background-image: url("../img/fond-web.jpg");
+    background-image: url('../img/fond-web.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -342,9 +343,8 @@ footer img::-moz-selection,
     padding-right: 0;
     overflow: hidden;
     border: 0;
-    max-height: none
+    max-height: none;
 }
-
 
 /************************
     Crédits
@@ -392,9 +392,9 @@ div.img-with-credits {
     font-size: 40px;
     color: var(--text-light);
     background-color: var(--primary-dark);
-    -webkit-transition: background .3s ease-in-out, text .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out, text .3s ease-in-out;
-    transition: background .3s ease-in-out, text .3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out, text 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out, text 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, text 0.3s ease-in-out;
 }
 
 .btn-circle:hover,
@@ -469,9 +469,9 @@ div.img-with-credits {
 .btn {
     text-transform: uppercase;
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-default {
@@ -510,7 +510,6 @@ ul.banner-social-buttons li {
     font-size: 1.2em;
     position: relative;
     margin-bottom: 25px;
-
 }
 
 #about .col-subtitle-info:before {
@@ -544,11 +543,9 @@ ul.banner-social-buttons li {
     z-index: 0;
 }
 
-
 /************************
     Generic h3 (not use)
 ************************/
-
 
 h3.small-title {
     color: var(--links);
@@ -579,7 +576,7 @@ h3.small-title:before {
     width: 100%;
     height: 2px;
     border-radius: 5px;
-    background-color: #FFE0A8;
+    background-color: #ffe0a8;
     position: absolute;
     bottom: -9px;
     left: 0;
@@ -597,27 +594,33 @@ h3.small-title:before {
     background-color: var(--primary-light);
 }
 
-.with-icon input[type=email] {
+.with-icon input[type='email'] {
     padding-left: 36px;
     font-size: 17px;
     color: #222;
 }
 
-.dark textarea:focus, .dark input[type=password]:focus, .dark input[type=text]:focus, .dark input[type=date]:focus, .dark input[type=email]:focus, .dark input[type=number]:focus {
+.dark textarea:focus,
+.dark input[type='password']:focus,
+.dark input[type='text']:focus,
+.dark input[type='date']:focus,
+.dark input[type='email']:focus,
+.dark input[type='number']:focus {
     border-color: rgba(255, 255, 255, 0.75);
-    color: #7E91FF;
+    color: #7e91ff;
 }
 
 #newsletter .button {
     background-color: var(--primary-dark);
     color: var(--links);
     font-size: 17px;
-    -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out, color .3s ease-in-out;
-    transition: background .3s ease-in-out, color .3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-#newsletter .button:hover, #newsletter .button.active {
+#newsletter .button:hover,
+#newsletter .button.active {
     background-color: #baad11;
     color: white;
 }
@@ -642,8 +645,9 @@ input#mce-EMAIL::selection {
     padding: 6px 12px;
 }
 
-#toc li a:hover, #toc li a:focus {
-    background-color: rgba(0, 0, 0, .05);
+#toc li a:hover,
+#toc li a:focus {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 #toc li.active a:after {
@@ -670,10 +674,10 @@ input#mce-EMAIL::selection {
 }
 
 #sponsors a img {
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
     filter: grayscale(1);
     display: inline-block;
     max-width: 100%;
@@ -684,7 +688,7 @@ input#mce-EMAIL::selection {
 }
 
 #sponsors a:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 #sponsors a.sponsor {
@@ -722,7 +726,6 @@ input#mce-EMAIL::selection {
     font-size: 1em;
     margin-top: 6px;
 }
-
 
 p img.bio-pic {
     height: 160px;
@@ -785,19 +788,23 @@ p img.bio-pic {
         padding: 20px 0;
         border-bottom: 0;
         background: 0 0;
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, color 0.5s ease-in-out,
+            opacity 0.5s ease-in-out;
+        -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, color 0.5s ease-in-out,
+            opacity 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, color 0.5s ease-in-out,
+            opacity 0.5s ease-in-out;
     }
 
-    .top-nav-collapse, .stay-collapsed {
+    .top-nav-collapse,
+    .stay-collapsed {
         padding: 0;
         background-color: var(--primary-dark);
         border-bottom: 1px solid var(--primary-light);
     }
 
     .navbar-custom ul {
-        transform : translate(-21%, 0);
+        transform: translate(-21%, 0);
     }
 
     .navbar-custom.top-nav-collapse {
@@ -812,13 +819,15 @@ p img.bio-pic {
         overflow: hidden;
     }
 
-    .navbar-custom.top-nav-collapse a, .stay-collapsed a {
+    .navbar-custom.top-nav-collapse a,
+    .stay-collapsed a {
         opacity: 1;
         width: auto;
         color: var(--text-light);
     }
 
-    .navbar-custom.top-nav-collapse a:hover, .stay-collapsed a:hover {
+    .navbar-custom.top-nav-collapse a:hover,
+    .stay-collapsed a:hover {
         color: var(--links);
     }
 
@@ -870,7 +879,7 @@ p img.bio-pic {
     }
 
     form .icon.mail:before {
-        content: "\e653";
+        content: '\e653';
         position: absolute !important;
         left: 0;
     }
@@ -881,7 +890,7 @@ p img.bio-pic {
 ************************/
 
 .trackicon:before {
-    content: "";
+    content: '';
     display: inline-block;
     height: 0;
     width: 0;
@@ -893,31 +902,31 @@ p img.bio-pic {
 }
 
 .trackicon#track-basics:before {
-    border-color: #96E185;
+    border-color: #96e185;
 }
 
 .trackicon#track-community:before {
-    border-color: #FC9294;
+    border-color: #fc9294;
 }
 
 .trackicon#track-mapping:before {
-    border-color: #FFA5EA;
+    border-color: #ffa5ea;
 }
 
 .trackicon#track-cartography:before {
-    border-color: #91F7F7;
+    border-color: #91f7f7;
 }
 
 .trackicon#track-software:before {
-    border-color: #FFFF99;
+    border-color: #ffff99;
 }
 
 .trackicon#track-data:before {
-    border-color: #FFCF3F;
+    border-color: #ffcf3f;
 }
 
 .trackicon#track-experiences:before {
-    border-color: #C7C7F9;
+    border-color: #c7c7f9;
 }
 
 .trackicon#track-academic:before {
@@ -1007,18 +1016,18 @@ h2.abstract-subtitle {
     font-size: 1.2em !important;
     font-weight: inherit;
     text-transform: none;
-    padding: .75rem 1.25rem !important;
+    padding: 0.75rem 1.25rem !important;
 }
 .program-page .filter > button.btn {
     text-transform: none;
 }
 .program-page .salle.badge::before {
-    content: "salle";
-    padding-right: .4em;
+    content: 'salle';
+    padding-right: 0.4em;
     font-size: 80%;
 }
 .program-page .jour {
-    padding-right: .4em;
+    padding-right: 0.4em;
 }
 
 .text-dark a {

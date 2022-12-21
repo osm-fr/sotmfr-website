@@ -1,4 +1,4 @@
-const { create } = require('xmlbuilder2');
+const {create} = require('xmlbuilder2');
 const fs = require('fs');
 const path = require('path');
 
@@ -7,7 +7,6 @@ const path = require('path');
  * afin de l'importer dans une autre application tel que Giggity
  * https://github.com/Wilm0r/giggity/blob/master/tools/gen-xml.py
  */
-
 
 // Charger le programme JSON
 let data = fs.readFileSync(path.join(__dirname + '/../assets/js/') + 'programme.json', 'utf8');
@@ -50,7 +49,7 @@ let roomDefault = 'vide';
 for (let i = 0; i < programme.length; i++) {
     let prog = programme[i];
     let track = prog.tags ? prog.tags.join(', ') : '';
-    let abstract = (prog.numero ? `[${prog.numero}] ` : '');
+    let abstract = prog.numero ? `[${prog.numero}] ` : '';
     abstract += prog.description ? prog.description.substr(0, 40) + ' (...)' : '';
 
     // Exclure les pauses
@@ -64,11 +63,11 @@ for (let i = 0; i < programme.length; i++) {
     let dayStart = new Date(`${dayDate}T09:00:00${timezone}`);
     let dayEnd = new Date(`${dayDate}T20:00:00${timezone}`);
     let nDay = root.find(n => {
-        return n.node.nodeName === 'day'
-            && n.node.getAttribute('index') == String(dayIndex + 1)
+        return n.node.nodeName === 'day' && n.node.getAttribute('index') == String(dayIndex + 1);
     });
     if (!nDay) {
-        nDay = root.ele('day')
+        nDay = root
+            .ele('day')
             .att('index', String(dayIndex + 1))
             .att('date', dayDate)
             .att('start', dayStart.toISOString())
@@ -80,14 +79,12 @@ for (let i = 0; i < programme.length; i++) {
 
     // Créer la salle si besoin
     let roomName = prog.salle || roomDefault;
-    let nRoom = nDay.find(
-        n => n.node.nodeName === 'room'
-            && n.node.getAttribute('name') === roomName);
+    let nRoom = nDay.find(n => n.node.nodeName === 'room' && n.node.getAttribute('name') === roomName);
     if (!nRoom) {
-        nRoom = nDay.ele('room')
-            .att('name', roomName);
+        nRoom = nDay.ele('room').att('name', roomName);
     }
 
+    // prettier-ignore
     // Ajouter l'événement
     let nEvent = nRoom.ele('event')
         .att('id', i)
@@ -105,6 +102,7 @@ for (let i = 0; i < programme.length; i++) {
         .ele('description').txt(prog.description).up()
         .ele('persons').up()
         .ele('links').up();
+
     if (prog.conferencier) {
         let nPersons = nEvent.ele('persons');
         prog.conferencier.split(', ').forEach(person => {
@@ -113,11 +111,10 @@ for (let i = 0; i < programme.length; i++) {
             nPersons.ele('person').att('id', getPersonId(person)).txt(personTxt);
         });
     }
-
 }
 
-// XML Frab 
-const xml = doc.end({ prettyPrint: true });
+// XML Frab
+const xml = doc.end({prettyPrint: true});
 
 // Créer un fichier d'export
 try {
@@ -130,7 +127,7 @@ try {
 
 /**
  * Generate a ID for the person
- * @param {string} person 
+ * @param {string} person
  * @returns ID
  */
 function getPersonId(person) {
@@ -143,8 +140,8 @@ function getPersonId(person) {
 
 /**
  * Get duration between start and end
- * @param {Date} startDate 
- * @param {Date} endDate 
+ * @param {Date} startDate
+ * @param {Date} endDate
  * @returns duration in minutes
  */
 function getDuration(startDate, endDate) {
@@ -154,8 +151,7 @@ function getDuration(startDate, endDate) {
     var minutes = Math.floor(diff / 1000 / 60);
 
     // If using time pickers with 24 hours format, add the below line get exact hours
-    if (hours < 0)
-        hours = hours + 24;
+    if (hours < 0) hours = hours + 24;
 
-    return (hours <= 9 ? "0" : "") + hours + ":" + (minutes <= 9 ? "0" : "") + minutes;
+    return (hours <= 9 ? '0' : '') + hours + ':' + (minutes <= 9 ? '0' : '') + minutes;
 }
