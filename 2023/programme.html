@@ -10,16 +10,13 @@
         <link rel="icon" href="assets/img/favicon.ico" />
 
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
         <!-- jQuery -->
         <script src="assets/js/jquery.js"></script>
 
-        <!-- Popper -->
-        <script src="assets/js/popper.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript with Popper -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
 
         <!-- leaflet -->
         <script src="assets/js/leaflet.js"></script>
@@ -35,39 +32,43 @@
     <body id="page-top">
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-expand-lg stay-collapsed fixed-top" role="navigation">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/osm.svg" width="30" height="30" alt="osm-logo" />
-                State of the Map France
-            </a>
-            <button
-                class="navbar-toggler navbar-dark"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarText"
-                aria-controls="navbarText"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/osm.svg" width="30" height="30" alt="osm-logo" />
+                    State of the Map France
+                </a>
+                <button
+                    class="navbar-toggler navbar-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="links navbar-nav mx-auto">
-                    <li class="nav-item text-hide">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="programme.html">Programme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="inscription.html">Inscription</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Soutiens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="infos.html">Infos pratiques</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="links navbar-nav mx-auto">
+                        <li class="nav-item visually-hidden">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="programme.html"
+                                >Programme<span class="visually-hidden"> (page actuelle)</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscription.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sponsors.html">Soutiens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="infos.html">Infos pratiques</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -81,12 +82,9 @@
                             Le programme est filtrable par le menu de gauche.
                             <br />
                             Il est aussi disponible en
-                            <a
-                                href="pdfs/SOTM-FR_2022_Programme_definitif.pdf"
-                                target="_blank"
-                                class="font-weight-bold">
+                            <a href="pdfs/SOTM-FR_2022_Programme_definitif.pdf" target="_blank" class="fw-bold">
                                 téléchargement
-                                <span class="pl-1">
+                                <span class="ps-1">
                                     <!-- see: https://stackoverflow.com/a/53336754 -->
                                     <img
                                         src="assets/img/file-pdf-regular.svg"
@@ -105,10 +103,10 @@
                             où le programme est présent par défaut.
                             <br />
                             Vous pouvez aussi télécharger le
-                            <a href="pdfs/SOTM-FR_2022_guide_interventions.pdf" target="_blank" class="font-weight-bold"
+                            <a href="pdfs/SOTM-FR_2022_guide_interventions.pdf" target="_blank" class="fw-bold"
                                 >guide des interventions avec les résumés</a
                             >
-                            <span class="pl-1">
+                            <span class="ps-1">
                                 <!-- see: https://stackoverflow.com/a/53336754 -->
                                 <img
                                     src="assets/img/file-pdf-regular.svg"
@@ -136,7 +134,7 @@
                                     <button
                                         style="display: none"
                                         type="button"
-                                        class="btn btn-outline-dark mr-1 mb-1 filter-model"
+                                        class="btn btn-outline-dark me-1 mb-1 filter-model"
                                         data-filter="code">
                                         Libelle
                                     </button>
@@ -161,20 +159,20 @@
                                         <th scope="col">Présentation</th>
                                     </tr>
                                 </thead>
-                                <tr class="tr_model" style="display: none">
+                                <tr class="tr_model" style="display: block">
                                     <th scope="row" class="horaire"></th>
                                     <td class="program-presentation">
                                         <div class="card text-dark bg-light mb-3">
                                             <h3 class="card-header">
                                                 <span class="libelle"></span>
-                                                <span class="badge badge-secondary numero"></span>
+                                                <span class="badge rounded-pill text-bg-secondary numero"></span>
                                             </h3>
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span class="salle badge badge-info"></span>
+                                                    <span class="salle badge rounded-pill text-bg-info"></span>
                                                 </h5>
                                                 <a
-                                                    data-toggle="collapse"
+                                                    data-bs-toggle="collapse"
                                                     href="#"
                                                     role="button"
                                                     aria-expanded="false"
@@ -211,7 +209,9 @@
                                                 </ul>
                                             </div>
                                             <div class="card-footer text-muted tags">
-                                                <div class="badge badge-pill badge-secondary mr-1">Une étiquette</div>
+                                                <div class="badge rounded-pill rounded-pill text-bg-secondary me-1">
+                                                    Une étiquette
+                                                </div>
                                             </div>
                                         </div>
                                     </td>

@@ -10,13 +10,13 @@
         <link rel="icon" href="assets/img/favicon.ico" />
 
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
         <!-- jQuery -->
         <script src="assets/js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript with Popper -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
 
         <!-- Custom Theme JavaScript -->
         <script src="assets/js/navbar-collapse.js"></script>
@@ -32,39 +32,41 @@
     <body id="page-top">
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-expand-lg fixed-top" role="navigation">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/osm.svg" width="30" height="30" alt="osm-logo" />
-                State of the Map France
-            </a>
-            <button
-                class="navbar-toggler navbar-dark"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarText"
-                aria-controls="navbarText"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/osm.svg" width="30" height="30" alt="osm-logo" />
+                    State of the Map France
+                </a>
+                <button
+                    class="navbar-toggler navbar-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="links navbar-nav mx-auto">
-                    <li class="nav-item text-hide active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="programme.html">Programme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="inscription.html">Inscription</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Soutiens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="infos.html">Infos pratiques</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="links navbar-nav mx-auto">
+                        <li class="nav-item visually-hidden active">
+                            <a class="nav-link" href="#">Home<span class="visually-hidden"> (page actuelle)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programme.html">Programme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inscription.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sponsors.html">Soutiens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="infos.html">Infos pratiques</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
