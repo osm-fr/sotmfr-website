@@ -268,7 +268,8 @@ footer img::-moz-selection,
     padding: 100px 0;
     text-align: center;
     color: var(--primary-dark);
-    background-image: url('../img/fond-web.jpg');
+    background-image: url('');
+    background-color: var(--colour-5);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
