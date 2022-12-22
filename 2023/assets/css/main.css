@@ -1,11 +1,11 @@
 @import "./fonts.css";
 
 :root {
-    --colour-1: #242423;
-    --colour-2: #f5cb5c;
-    --colour-3: #333533;
-    --colour-4: #e8eddf;
-    --colour-5: #85b79d;
+    --colour-1: #212738;
+    --colour-2: #f97068;
+    --colour-3: #23656c;
+    --colour-4: #edf0da;
+    --colour-5: #67a29f;
     --primary-dark: var(--colour-1);
     --primary-light: var(--colour-3);
     --links: var(--colour-2);
