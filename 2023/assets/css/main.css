@@ -190,6 +190,10 @@ Remplacer "program-page" par "page" dans HTML.
     padding: 0.5em 0;
 }
 
+.space-bottom2{
+    margin-bottom: 1em;
+}
+
 /************************
     Footer
 ************************/
