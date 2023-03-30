@@ -1,11 +1,18 @@
 @import "./fonts.css";
 
 :root {
-    --colour-1: #212738;
-    --colour-2: #f97068;
-    --colour-3: #23656c;
-    --colour-4: #edf0da;
-    --colour-5: #67a29f;
+    --colour-1: #00396a;
+    --colour-2: #749cc3;
+    --colour-3: #2077aa;
+    --colour-4: #ffffff;
+    --colour-5: #bbe3fa;
+/*
+    #2077aa bleu roi fond du logo
+    #749cc3 bleu violet poi
+    #bbe3fa bleu ciel fond de carte
+    #ffffff blanc texte
+    #00396a bleu foncé tee shirt
+*/
 
     --primary-dark: var(--colour-1);
     --primary-light: var(--colour-3);
