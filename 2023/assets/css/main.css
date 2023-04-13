@@ -6,7 +6,7 @@
     --colour-3: #2077aa;
     --colour-4: #ffffff;
     --colour-5: #bbe3fa;
-/*
+    /*
     #2077aa bleu roi fond du logo
     #749cc3 bleu violet poi
     #bbe3fa bleu ciel fond de carte
@@ -23,7 +23,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 300;
     font-size: 17px;
     color: var(--text-light);
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -199,7 +199,7 @@ Remplacer "program-page" par "page" dans HTML.
     padding: 0.5em 0;
 }
 
-.space-bottom2{
+.space-bottom2 {
     margin-bottom: 1em;
 }
 
