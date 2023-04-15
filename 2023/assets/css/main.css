@@ -6,7 +6,7 @@
     --colour-3: #2077aa;
     --colour-4: #ffffff;
     --colour-5: #bbe3fa;
-/*
+    /*
     #2077aa bleu roi fond du logo
     #749cc3 bleu violet poi
     #bbe3fa bleu ciel fond de carte
@@ -23,7 +23,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 300;
     font-size: 17px;
     color: var(--text-light);
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -199,7 +199,7 @@ Remplacer "program-page" par "page" dans HTML.
     padding: 0.5em 0;
 }
 
-.space-bottom2{
+.space-bottom2 {
     margin-bottom: 1em;
 }
 
@@ -275,36 +275,17 @@ footer img::-moz-selection,
 ************************/
 
 .intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
     color: var(--primary-dark);
-    background-image: url("");
+    background-image: url("../img/home-intro-bg.png");
     background-color: var(--colour-5);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: bottom;
 }
 
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .logo {
-    font-size: 40px;
-    text-align: center;
-    display: inline-block;
+.intro .logo img {
     width: 350px;
-}
-
-.intro .intro-body .logo img {
-    margin-bottom: 1rem;
 }
 
 /************************
@@ -358,39 +339,6 @@ footer img::-moz-selection,
     overflow: hidden;
     border: 0;
     max-height: none;
-}
-
-/************************
-    Crédits
-************************/
-
-header.intro {
-    position: relative;
-}
-.credits {
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-    font-size: 12px;
-}
-
-.credits a {
-    color: var(--primary-dark);
-}
-
-.credits a:hover {
-    color: var(--links);
-}
-
-/* copyright symbol
-.credits a::before {
-    content: "\00A9";
-    padding-right: 5px;
-}
-*/
-
-div.img-with-credits {
-    position: relative;
 }
 
 /************************
@@ -756,16 +704,6 @@ p img.bio-pic {
 ************************/
 
 @media (max-width: 766px) {
-    header.intro {
-        background-attachment: local;
-        position: relative;
-    }
-
-    header.intro .credits {
-        position: absolute;
-        right: 0;
-    }
-
     .footer-logo {
         padding-bottom: 1em;
     }
@@ -784,20 +722,6 @@ p img.bio-pic {
 }
 
 @media (min-width: 991px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .logo {
-        font-size: 100px;
-        padding-bottom: 60px;
-        margin-left: 14%;
-        float: left;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -885,13 +809,6 @@ p img.bio-pic {
 }
 
 @media only screen and (max-width: 991px) {
-    .intro-body .col4 {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 0;
-    }
-
     form .icon.mail:before {
         content: "\e653";
         position: absolute !important;
