@@ -12,20 +12,24 @@
     #bbe3fa bleu ciel fond de carte
     #ffffff blanc texte
     #00396a bleu foncé tee shirt
-*/
+    */
 
     --primary-dark: var(--colour-1);
     --primary-light: var(--colour-3);
     --links: var(--colour-2);
     --text-light: var(--colour-4);
+    --bs-body-font-size: 1.25rem; /* 20px */
+    --bs-nav-link-font-size: 1.125rem; /* 18px */
+    --bs-nav-link-font-weight: var(--bs-body-font-weight);
+
+    --footer-font-size: 1.125rem; /* 18px */
 }
 
 body {
     width: 100%;
     height: 100%;
     font-family: "Barlow Condensed", sans-serif;
-    font-weight: 300;
-    font-size: 17px;
+    font-weight: 400;
     color: var(--text-light);
     background-color: var(--primary-dark);
 }
@@ -116,15 +120,6 @@ div.affix {
 nav a,
 .nav a {
     text-decoration: none;
-    font-weight: 1000;
-}
-
-nav {
-    font-size: 15px;
-}
-
-nav .navbar-brand {
-    font-size: 18px;
 }
 
 .navbar-brand {
@@ -254,7 +249,7 @@ footer img::-moz-selection,
 }
 
 #footer {
-    font-size: 15px;
+    font-size: var(--footer-font-size);
     line-height: 1.75em;
     background-color: var(--primary-dark);
     padding: 3em;
@@ -304,16 +299,16 @@ footer img::-moz-selection,
 }
 
 .card.presentation .card-title {
-    font-size: 2em;
+    font-size: 1.9em;
 }
 
 .card.presentation .card-subtitle {
-    font-size: 1.8em;
+    font-size: 1.35em;
     padding-bottom: 1em;
 }
 
 .card.presentation .card-text {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 /************************
