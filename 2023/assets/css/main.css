@@ -304,11 +304,6 @@ footer img::-moz-selection,
     text-align: center;
 }
 
-#inscription em {
-    font-weight: bold;
-    font-style: normal;
-}
-
 #iframe_assoconnect {
     padding-left: 0;
     padding-right: 0;
@@ -502,7 +497,6 @@ table.scheduleTable span.extraTag {
 td.scheduleBreak {
     text-align: center;
 }
-
 
 /************************
     Program
