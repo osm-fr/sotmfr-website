@@ -25,6 +25,10 @@
     --footer-font-size: 1.125rem; /* 18px */
 }
 
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--colour-3);
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -502,7 +506,6 @@ table.scheduleTable span.extraTag {
 td.scheduleBreak {
     text-align: center;
 }
-
 
 /************************
     Program
