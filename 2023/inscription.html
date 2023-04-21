@@ -76,15 +76,28 @@
         <section class="container-fluid dark inscription-page" id="inscription">
             <div class="container">
                 <h1 class="card-title">Inscription</h1>
-                Les inscriptions ouvriront prochainement.
-                <!-- <p>
-                    Si vous rencontrez des problèmes pour vous inscrire avec cette page, utilisez <a href="">ce lien</a>
-                </p>
                 <p>
-                    Si vous ne l'avez pas déjà fait, cliquez sur le bouton jaune <em>Je participe !</em> pour vous
-                    inscrire.
+                    <br>Si vous rencontrez des problèmes pour vous inscrire avec cette page, utilisez <a href="https://openstreetmap.assoconnect.com/collect/description/303968-b-state-of-the-map-france-2023">ce lien</a>
+                    <br>
+                    <br>Si vous ne l'avez pas déjà fait, cliquez sur le bouton jaune Je participe ! pour vous inscrire.
                 </p>
-                <iframe class="card-body" id="iframe_assoconnect" src="" width="100%" scrolling="no"></iframe>
+
+                <iframe id="iframe_assoconnect"
+                        src="https://openstreetmap.assoconnect.com/collect/description/303968-b-state-of-the-map-france-2023?iframe=1"
+                        width="100%" style="overflow: hidden; border: 0; max-height: none;" scrolling="no"
+                        onload="window.location.href='#iframe_assoconnect'"></iframe>
+
+                <script>
+                            window.addEventListener("message", function (event) {
+                                if (event.data.action === "iframe.height" && event.origin === "https://openstreetmap.assoconnect.com") {
+                                    document.getElementById("iframe_assoconnect").height = event.data.height;
+                                }
+                            });
+                </script>
+                <style>
+                    #iframe_assoconnect {
+                        border: 0
+                    }</style>
                 <script>
                     window.addEventListener('message', function (event) {
                         if (
@@ -94,7 +107,7 @@
                             document.getElementById('iframe_assoconnect').height = event.data.height;
                         }
                     });
-                </script> -->
+                </script>
             </div>
         </section>
 
@@ -103,14 +116,12 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-3 footer-logo">
-                        <img src="assets/img/osm.svg" alt="logo-osm" style="height: 140px; margin-bottom: -20px" />
+                        <img src="assets/img/osm.svg" alt="logo-osm" style="height: 140px; margin-bottom: -20px"/>
                     </div>
                     <nav class="col-lg-3 nav flex-column">
                         <a href="https://www.openstreetmap.fr/" class="animate block">OpenStreetMap France</a>
                         <a href="https://twitter.com/OSM_FR" class="animate block">Twitter</a>
-                        <a href="https://mastodon.cipherbliss.com/@osm_fr@fr.osm.social" class="animate block"
-                            >Mastodon</a
-                        >
+                        <a href="https://mastodon.cipherbliss.com/@osm_fr@fr.osm.social" class="animate block">Mastodon</a>
                     </nav>
                     <nav class="col-lg-3 nav flex-column">
                         <a href="https://www.facebook.com/osmfr/" class="animate block">Facebook</a>
@@ -128,8 +139,8 @@
                         Edition <span class="numeral">2023</span>&nbsp;-&nbsp;<a
                             href="mailto:sotm@openstreetmap.fr"
                             class="animate light"
-                            >sotm@openstreetmap.fr</a
-                        >
+                    >sotm@openstreetmap.fr</a
+                    >
                     </p>
                 </div>
             </div>
