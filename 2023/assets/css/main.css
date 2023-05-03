@@ -27,6 +27,9 @@
 
 .navbar-nav {
     --bs-nav-link-hover-color: var(--colour-3);
+
+.navbar-brand {
+    --bs-navbar-brand-padding-y: 0.625em; /* 10px */
 }
 
 body {
@@ -110,10 +113,9 @@ nav a,
     text-decoration: none;
 }
 
-.navbar-brand {
-    /* la loupe dépasse de la carte en bas, si on met la même valeur */
-    /* en haut et en bas, ça semble déséquilibré (pour 30x30 c'est 3px) */
-    padding: 15px 0 12px 0;
+.navbar-brand .logo {
+    /* optical correction for logo's shadow */
+    margin-bottom: -6px;
 }
 
 .navbar-toggle {
@@ -306,11 +308,6 @@ footer img::-moz-selection,
 #inscription {
     border-radius: 0;
     text-align: center;
-}
-
-#inscription em {
-    font-weight: bold;
-    font-style: normal;
 }
 
 #iframe_assoconnect {
