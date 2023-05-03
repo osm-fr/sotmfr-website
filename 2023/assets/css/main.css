@@ -25,6 +25,9 @@
     --footer-font-size: 1.125rem; /* 18px */
 }
 
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--colour-3);
+
 .navbar-brand {
     --bs-navbar-brand-padding-y: 0.625em; /* 10px */
 }
