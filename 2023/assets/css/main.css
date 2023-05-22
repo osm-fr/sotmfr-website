@@ -325,6 +325,15 @@ footer img::-moz-selection,
 }
 
 /************************
+    Sponsors
+************************/
+
+.sponsor-page a {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+/************************
     Content
 ************************/
 
