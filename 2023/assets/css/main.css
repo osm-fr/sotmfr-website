@@ -314,6 +314,19 @@ footer img::-moz-selection,
 }
 
 /************************
+    Video player
+************************/
+.video-playlist {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.video-playlist iframe {
+    position: absolute;
+    inset: 0;
+}
+
+/************************
     Inscription
 ************************/
 #iframe_assoconnect {
