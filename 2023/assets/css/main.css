@@ -285,6 +285,10 @@ footer img::-moz-selection,
     width: 350px;
 }
 
+.intro .credit-link {
+    color: var(--primary-dark);
+}
+
 /************************
     Présentation
 ************************/
