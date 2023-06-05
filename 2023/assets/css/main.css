@@ -41,6 +41,13 @@
     --bs-navbar-brand-padding-y: 0.625em; /* 10px */
 }
 
+.table {
+    --bs-table-color: var(--colour-1);
+    --bs-table-bg: #dff1fd;
+    --bs-table-border-color: #fff;
+    --bs-table-active-bg: var(--colour-5);
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -164,6 +171,22 @@ a:focus {
 
 a.nodeco {
     text-decoration: none;
+}
+
+/************************
+    Table
+************************/
+
+.table th {
+    background-color: #fecb00;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table .table-active {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /************************
@@ -540,27 +563,8 @@ td.scheduleBreak {
     Program
 ************************/
 
-.program-page h3.card-header {
-    font-family: inherit;
-    font-size: 1.2em !important;
-    font-weight: inherit;
-    text-transform: none;
-    padding: 0.75rem 1.25rem !important;
-}
-.program-page .filter > button.btn {
-    text-transform: none;
-}
-.program-page .salle.badge::before {
-    content: "salle";
-    padding-right: 0.4em;
-    font-size: 80%;
-}
-.program-page .jour {
-    padding-right: 0.4em;
-}
-
-.text-dark a {
-    color: var(--text-dark);
+.program-page table .hour {
+    vertical-align: top;
 }
 
 /************************
