@@ -173,6 +173,16 @@ a.nodeco {
     text-decoration: none;
 }
 
+.card a {
+    color: var(--links);
+}
+
+a:hover,
+a:focus {
+    color: var(--colour-3);
+    /* text-decoration-color: var(--links); */
+}
+
 /************************
     Table
 ************************/
@@ -227,15 +237,12 @@ a.nodeco {
     Footer
 ************************/
 
-footer a,
-.page a {
+footer a {
     color: var(--text-light);
 }
 
 footer a:hover,
-footer a:focus,
-.page a:hover,
-.page a:focus {
+footer a:focus {
     color: var(--links);
     text-decoration-color: var(--links);
 }
@@ -247,30 +254,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-footer ::selection,
-.page ::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-footer ::-moz-selection,
-.page ::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-footer img::selection,
-.page img::selection {
-    background: 0 0;
-}
-
-footer img::-moz-selection,
-.page img::-moz-selection {
-    background: 0 0;
 }
 
 #footer {
@@ -563,8 +546,8 @@ td.scheduleBreak {
     Program
 ************************/
 
-.program-page table .hour {
-    vertical-align: top;
+.program-page .conf h4 {
+    text-transform: initial;
 }
 
 /************************
