@@ -1,6 +1,11 @@
 {% macro conferenceCard(data) %}
 <div class="col">
     <div class="card conf">
+        {% if (data.thumbnail and data.videoUrl) %}
+        <a href="{{data.videoUrl}}" title="Vidéo de la conférence">
+            <img src="{{data.thumbnail}}" class="card-img-top" alt="{{data.title}}">
+        </a>
+        {% endif %}
         <div class="card-body">
             <h4>
             {% if (data.id) %}{{data.id}} &dash; {% endif %}
