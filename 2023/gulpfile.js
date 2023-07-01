@@ -1,23 +1,20 @@
 // libraries
+const data = require("gulp-data");
 const fs = require("fs");
 const gulp = require("gulp");
-const nunjucks = require("gulp-nunjucks");
+const header = require("gulp-header");
 const nunjucksRender = require("gulp-nunjucks-render");
-const data = require("gulp-data");
-
-// post-processing tools
-const clean = require("gulp-clean"); // TODO: deprecated
 
 // dev tools
 const browserSync = require("browser-sync").create();
-const log = require("fancy-log");
 
 function html() {
-    const conferencesData = JSON.parse(fs.readFileSync("./conferences.json"));
+    const conferencesData = JSON.parse(fs.readFileSync("scripts/conferences.json"));
     return gulp
         .src("scripts/nunjucks/templates/programme.html")
         .pipe(data({conferencesData}))
         .pipe(nunjucksRender())
+        .pipe(header("\n\n<!-- This file generated, do not edit it manually. Instructions in the README. -->\n\n\n"))
         .pipe(gulp.dest("."));
 }
 
@@ -45,10 +42,6 @@ function watchFiles() {
     return;
 }
 
-function del() {
-    return gulp.src("./programme.html", {read: false}).pipe(clean());
-}
-
 exports.html = html;
 exports.serve = gulp.parallel(html, watchFiles, serve);
-exports.build = gulp.series(del, html);
+exports.build = gulp.series(html);
