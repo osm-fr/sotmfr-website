@@ -1,0 +1,26 @@
+{% macro conferenceCard(data) %}
+<div class="col">
+    <div class="card conf">
+        {% if (data.thumbnail and data.videoUrl) %}
+        <a href="{{data.videoUrl}}" title="Vidéo de la conférence">
+            <img src="{{data.thumbnail}}" class="card-img-top" alt="{{data.title}}">
+        </a>
+        {% endif %}
+        <div class="card-body">
+            <h4>
+            {% if (data.id) %}{{data.id}} &dash; {% endif %}
+            {{data.title}}
+            </h4>
+            <h5 class="text-muted">{{data.author}}</h5>
+            {% if (data.videoUrl) %}
+            <a href="{{data.videoUrl}}" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endmacro %}
