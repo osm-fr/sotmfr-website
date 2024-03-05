@@ -1,0 +1,79 @@
+{% set page_name = 'Informations pratiques' %}
+{% extends "layouts/layout.html" %} 
+{% block content %}
+
+<section id="main" class="page">
+    <div class="container">
+        <h1>Informations pratiques</h1>
+        <div class="content-section">
+            <iframe width="100%" height="700px" frameborder="0" allow="geolocation" allowfullscreen
+                src="//umap.openstreetmap.fr/fr/map/state-of-the-map-france-2023_832917?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=true&embedControl=true&datalayersControl=true&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true&measureControl=true&editinosmControl=null"></iframe>
+            <p>
+                <a href="//umap.openstreetmap.fr/fr/map/state-of-the-map-france-2023_832917">Voir en plein écran</a>
+            </p>
+        </div>
+        <div class="content-section">
+            <h2>Point de rencontre du jeudi soir</h2>
+            <p>
+                Pour les participants qui arrivent dès le jeudi soir, un point de rendez-vous informel a été
+                fixé au restaurant Le République, 1 place Sadi Carnot, 13002 Marseille, à partir de 19h. Mettons
+                nos anciens tee-shirt SotM pour nous reconnaître. Un bon moment de convivialité pour lancer ce
+                SotM France 2023 de la meilleure des façons !
+            </p>
+        </div>
+        <div class="content-section">
+            <h2>Hébergement</h2>
+            <p>
+                Le Crous met à disposition quelques chambres d'étudiants situées sur le campus de Luminy. La
+                réservation se fait via le <a href="/inscription.html">formulaire d'inscription</a>. Prévoir
+                100€ pour un pack de 3 nuits. Quelques studios sont également disponibles pour des réservations
+                à la nuit au prix de 50€/nuit mais il y a peu de places.
+            </p>
+        </div>
+        <div class="content-section">
+            <h2>Moyens d'accès</h2>
+            <p>
+                La gare de Marseille Saint-Charles se trouve au centre-ville. Elle est desservie par les 2
+                lignes de métro de la ville. Toutes les infos sur
+                <a href="https://www.rtm.fr/" target="_blank" rel="noopener noreferrer">rtm.fr</a>.<br />
+                L'aéroport de Marignane est raccordé à la gare via une navette : L091. Comptez une bonne heure
+                pour rejoindre la gare Saint-Charles.
+            </p>
+
+            <h3>Depuis la gare</h3>
+            <p>
+                Métro Ligne 2 (Sainte-Marguerite Dromel) ➤ descendez à Castellane<br />
+                Ensuite, prenez le bus Ligne B1 (direction Luminy) ➤ descendez au terminus
+            </p>
+
+            <h3>Depuis l'aéroport</h3>
+            <p>
+                Prenez la navette aéroport, elle vous déposera à la gare Saint-Charles ➤ descendez au terminus
+                et prenez le métro Ligne 2, puis la ligne de bus 24 (cf ci-dessus).
+            </p>
+
+            <h3>En voiture</h3>
+            <p>Vous avez des parkings un peu partout sur le site de Luminy.</p>
+
+            <h3>Vendredi soir</h3>
+            <p>Métro Ligne 2 (Sainte-Marguerite Dromel) ➤ descendez à Notre-Dame du Mont Cours Julien</p>
+
+            <h3>Bus de nuit</h3>
+            <p>
+                Un bus de nuit (ligne 521) dessert le campus depuis la Gare Saint-Charles, le vieux -port et le
+                cours Julien.
+            </p>
+        </div>
+        <div class="content-section">
+            <h2>Application SotM-fr 2023</h2>
+            <p>
+                Une application Android éphémère a été créé par Thomas Lombard. L'APK est disponible
+                <a href="https://dev.k-prod.fr/apk/SotMfr2023.apk" target="_blank" rel="noopener noreferrer">ici en
+                    téléchargement<span class="ms-1"><img src="assets/img/mobile.svg" alt="application android"
+                            style="width: 1em" /></span></a>.
+            </p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

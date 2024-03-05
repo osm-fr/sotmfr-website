@@ -1,14 +1,21 @@
 ## Code contribution
 
-➡ Programme page is generated.
+➡ Website is generated.
 
-To code on this page, you need Node.js and npm.\
+To code on the website, you need Node.js and npm.\
 Run `npm install` to install dependencies.
 
 Then, run `npm run dev` to start a local server with auto-reload in the browser.
 
-The programme.html page will be generated with the [data](./scripts/conferences.json) injected in a [template](./scripts/nunjucks/).
+The pages in `./src` will be generated to `./dist` 
 
-If you only want to generate the Programme page without local server run `npm run build`.
+- `./src/html/layout` layout
+- `./src/html/pages` pages content
+- `./src/html/partials` html chunks like header, footer and navigation
 
-Generated page have to be commited.
+
+The [conferences data](./src/js/conferences.json) are injected in the [programme template](./src/html/pages/programme.html).
+
+If you only want to generate the website without local server run `npm run build`.
+
+Generated page (`./dist`) are not commited.

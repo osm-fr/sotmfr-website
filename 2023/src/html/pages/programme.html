@@ -1,0 +1,38 @@
+{% set page_name = 'Programme' %}
+{% extends "layouts/layout.html" %}
+{% block content %}
+
+<section id="main" class="page program-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-2">
+                <h1>Programme</h1>
+                <p>
+                    Le programme est disponible en
+                    <a href="doc/SOTM-FR_2023_programme.pdf">
+                        téléchargement
+                        <span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf"
+                                style="width: 1em" /></span></a>
+                </p>
+                <p>
+                    Vous pouvez aussi télécharger le
+                    <a href="doc/SOTM-FR_2023_guide_des_interventions.pdf">
+                        guide des interventions avec les résumés<span class="ms-1"><img
+                                src="img/file-pdf-regular.svg" alt="fichier pdf" style="width: 1em" /></span></a>
+                </p>
+                <h3>Conférences</h3>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3">
+                    <!-- Generated, do not edit this part manually. Instructions in the README. -->
+                    {% import "partials/conference.njk" as macros %}
+                    {% for conf in conferencesData %}
+                    {{ macros.conferenceCard(conf) }}
+                    {% else %}
+                    No Conf.
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
