@@ -1,0 +1,67 @@
+{% set page_name = 'Accueil' %}
+{% extends "layouts/layout.html" %}
+{% block content %}
+{% include "partials/header.html" %}
+
+<!-- Presentation Section -->
+<section class="container-fluid page card presentation">
+    <div class="container">
+        <div class="card-body">
+            <h1 class="card-title">Du vendredi 28 au dimanche 30 Juin 2024</h1>
+            <h2 class="card-subtitle"><a href="https://www.openstreetmap.org/way/694531440">Lyon - Université Lyon 3 -
+                    Campus Manufacture des Tabacs.</a></h2>
+            <p class="card-text">
+                Conférence organisée par l'association
+                <a class="animate block" href="https://www.openstreetmap.fr/" rel="noopener noreferrer"
+                    target="_blank">OpenStreetMap France</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="container-fluid dark page" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section>
+                    <h2 class="mb-4">State of the Map</h2>
+                    <p>
+                        Après Lyon (2013), Paris (2014), Brest (2015), Clermont-Ferrand (2016), Avignon (2017),
+                        Bordeaux (2018), Montpellier (2019), Nantes (2022), Marseille (2023) c'est au tour de Lyon
+                        d'accueillir les 10èmes Rencontres Nationales OpenStreetMap&nbsp;:&nbsp;le State Of The
+                        Map France (SotM-fr).
+                    </p>
+
+                    <p>
+                        Les 28-29-30 juin 2024, durant 3 jours, contributeurs, utilisateurs, représentants de
+                        collectivités et d'entreprises gravitant autour du Web et de l'information géographique,
+                        chercheurs, mais aussi personnes curieuses de découvrir cette «&nbsp;carte libre du
+                        monde&nbsp;» que représente OSM, se retrouveront pour partager leurs expériences, se
+                        tenir informé, se former, découvrir l'écosystème et les multiples
+                        applications&nbsp;–&nbsp;existantes ou à imaginer&nbsp;–&nbsp;autour d'OpenStreetMap.
+                    </p>
+                    <p>Nous vous y attendons nombreuses et nombreux.</p>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="col-subtitle-info">Où&nbsp;?</h3>
+                <p>
+                    <a href="https://www.openstreetmap.org/#map=13/45.7487/4.8438" rel="noopener noreferrer"
+                        target="_blank">Lyon,&nbsp;France</a>
+                </p>
+
+                <h3 class="col-subtitle-info">Quand&nbsp;?</h3>
+                <p>28 au 30 Juin 2024</p>
+
+                <h3 class="col-subtitle-info"></h3>
+                <a href="https://openstreetmap.org/" rel="noopener noreferrer" target="_blank">
+                    <img alt="Lien vers osm" src="img/osm.svg" style="height: 85px; margin-top: 20px" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
