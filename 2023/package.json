@@ -5,7 +5,8 @@
         "build": "gulp build"
     },
     "dependencies": {
-        "bootstrap": "^5.3.3"
+        "bootstrap": "^5.3.3",
+        "jquery": "^3.7.1"
     },
     "devDependencies": {
         "browser-sync": "^3.0.2",

@@ -39,7 +39,8 @@ function javascript() {
 
 function jsVendor() {
     return src([
-        'node_modules/bootstrap/dist/js/bootstrap.bundle.js'
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'node_modules/jquery/dist/jquery.slim.min.js'
     ])
         .pipe(dest('dist/js'))
 }
@@ -57,11 +58,11 @@ function font() {
 
 // Static Server
 function serve() {
-    series(clean, html, image, font, css, javascript, jsVendor)
+    series(clean, html, image, font, css, javascript, jsVendor);
     browserSync.init({
         open: false,
         server: "./dist"
-    })
+    });
 }
 
 function browserSyncReload(done) {
@@ -76,5 +77,6 @@ function watchFiles() {
     watch('src/img/**/*.+(png|jpg|jpeg|svg)', series(image, browserSyncReload));
 }
 
-exports.serve = parallel(serve, watchFiles);
-exports.build = series(clean, html, image, font, css, javascript, jsVendor);
+const _build = series(clean, html, image, font, css, javascript, jsVendor);
+exports.serve = parallel(_build, watchFiles, serve);
+exports.build = _build;
