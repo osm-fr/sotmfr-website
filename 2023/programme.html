@@ -1,3 +1,8 @@
+
+
+<!-- This file generated, do not edit it manually. Instructions in the README. -->
+
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -60,9 +65,6 @@
                             <a class="nav-link" href="programme.html">Programme</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contribution.html">Appel à contributions</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="inscription.html">Inscription</a>
                         </li>
                         <li class="nav-item">
@@ -82,163 +84,1388 @@
                 <div class="row">
                     <div class="col-12 pb-2">
                         <h1>Programme</h1>
-                        <!-- <p class="lead">
-                            Le programme est filtrable par le menu de gauche.
-                            <br />
-                            Il est aussi disponible en
-                            <a href="" target="_blank" class="fw-bold">
-                                téléchargement
-                                <span class="ps-1"> -->
-                        <!-- see: https://stackoverflow.com/a/53336754 -->
-                        <!-- <img
-                                        src="assets/img/file-pdf-regular.svg"
-                                        alt="PDF"
-                                        style="
-                                            width: 1em;
-                                            filter: invert(91%) sepia(23%) saturate(192%) hue-rotate(200deg)
-                                                brightness(99%) contrast(93%);
-                                        " />
-                                </span>
-                            </a>
-                            mais aussi via
-                            <a href="https://f-droid.org/fr/packages/net.gaast.giggity/" target="_blank"
-                                >l'application Giggity</a
-                            >
-                            où le programme est présent par défaut.
-                            <br />
-                            Vous pouvez aussi télécharger le
-                            <a href="" target="_blank" class="fw-bold"
-                                >guide des interventions avec les résumés</a
-                            >
-                            <span class="ps-1">
-                                <img
-                                    src="assets/img/file-pdf-regular.svg"
-                                    alt="PDF"
-                                    style="
-                                        width: 1em;
-                                        filter: invert(91%) sepia(23%) saturate(192%) hue-rotate(200deg) brightness(99%)
-                                            contrast(93%);
-                                    " />
-                            </span>
-                        </p> -->
                         <p>
-                            Le programme est aussi disponible en
-                            <a href="assets/programme.pdf">
+                            Le programme est disponible en
+                            <a href="assets/SOTM-FR_2023_programme.pdf">
                                 téléchargement
-                                <span class="pl-1"
+                                <span class="ms-1"
                                     ><img
                                         src="assets/img/file-pdf-regular.svg"
                                         alt="fichier pdf"
                                         style="width: 1em" /></span
                             ></a>
                         </p>
-                        <object data="assets/programme.pdf" type="application/pdf" class="w-100" height="1000">
-                            Téléchargez la version pdf du programme <a href="assets/programme.pdf">ici</a>
-                        </object>
-                    </div>
-                    <!--
-                    <div class="col-lg-4">
-                        <!-- Filtrer la liste - ->
-                        <form role="form">
-                            <div class="form-group">
-                                <!-- <label class="float-label" for="search">Filtre de recherche</label> - ->
-                                <input type="text" class="form-control" id="search" placeholder="Rechercher..." />
-                            </div>
-                            <div id="filter-group" class="form-group">
-                                <div class="filter">
-                                    <button type="button" class="btn btn-outline-primary" data-filter="all">
-                                        Voir tout
-                                    </button>
-                                    <button
-                                        style="display: none"
-                                        type="button"
-                                        class="btn btn-outline-dark me-1 mb-1 filter-model"
-                                        data-filter="code">
-                                        Libelle
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-8">
-                        <!-- La liste - ->
-                        <div class="table-responsive">
-                            <table class="table table-sm programme">
-                                <caption class="no-result">
-                                    Aucun résultat trouvé !
-                                </caption>
-                                <colgroup>
-                                    <col style="min-width: 8em" />
-                                    <col style="width: auto" />
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Horaire</th>
-                                        <th scope="col">Présentation</th>
-                                    </tr>
-                                </thead>
-                                <tr class="tr_model" style="display: none">
-                                    <th scope="row" class="horaire"></th>
-                                    <td class="program-presentation">
-                                        <div class="card text-dark bg-light mb-3">
-                                            <h3 class="card-header">
-                                                <span class="libelle"></span>
-                                                <span class="badge rounded-pill text-bg-secondary numero"></span>
-                                            </h3>
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    <span class="salle badge rounded-pill text-bg-info"></span>
-                                                </h5>
-                                                <a
-                                                    data-bs-toggle="collapse"
-                                                    href="#"
-                                                    role="button"
-                                                    aria-expanded="false"
-                                                    class="text-dark text-decoration-none">
-                                                    Résumé
-                                                    <img
-                                                        src="assets/img/circle-chevron-down-solid.svg"
-                                                        alt=""
-                                                        width="16"
-                                                        height="16" />
-                                                </a>
-                                                <p class="card-text description collapse mb-2"></p>
-                                                <p class="card-text conferencier mt-2 mb-2"></p>
-                                                <p class="card-text organisation text-body-secondary"></p>
-                                                <ul class="list-group list-group-flush videos">
-                                                    <li class="list-group-item">
-                                                        <img
-                                                            src="assets/img/film-solid.svg"
-                                                            alt=""
-                                                            width="16"
-                                                            height="16" />
-                                                        <a href="#" class="card-link text-dark">Voir la vidéo</a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="list-group list-group-flush presentations">
-                                                    <li class="list-group-item">
-                                                        <img
-                                                            src="assets/img/chalkboard-solid.svg"
-                                                            alt=""
-                                                            width="16"
-                                                            height="16" />
-                                                        <a href="#" class="card-link text-dark">Voir la présentation</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="card-footer text-body-secondary tags">
-                                                <div class="badge rounded-pill rounded-pill text-bg-secondary me-1">
-                                                    Une étiquette
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tbody></tbody>
-                            </table>
+                        <p>
+                            Vous pouvez aussi télécharger le
+                            <a href="assets/SOTM-FR_2023_guide_des_interventions.pdf">
+                                guide des interventions avec les résumés<span class="ms-1"
+                                ><img
+                                    src="assets/img/file-pdf-regular.svg"
+                                    alt="fichier pdf"
+                                    style="width: 1em" /></span
+                        ></a>
+                        </p>
+                        <h3>Conférences</h3>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3">
+                            <!-- Generated, do not edit this part manually. Instructions in the README. -->
+                            
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/3zBHp9q7SztLTkvD8g7D35" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/45c15317-66ea-4163-9f11-d63dc9f2d12b.jpg" class="card-img-top" alt="Déclaration d&#39;amour à OpenStreetMap">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            
+            Déclaration d&#39;amour à OpenStreetMap
+            </h4>
+            <h5 class="text-muted">J. Gombin</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/3zBHp9q7SztLTkvD8g7D35" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/eZ4zwaafo4Ji1swj3fQkun" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/0ede8fa6-5245-4ff8-87b3-0a3187f75882.jpg" class="card-img-top" alt="Relever le défi de l’animation collaborative pour la biodiversité et l’environnement">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            
+            Relever le défi de l’animation collaborative pour la biodiversité et l’environnement
+            </h4>
+            <h5 class="text-muted">F. Chambonneau</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/eZ4zwaafo4Ji1swj3fQkun" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/iLpz3PziyVbt86wQsAdFVB" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/e0759ae3-2554-449d-9750-0cdfb5a8f1bc.jpg" class="card-img-top" alt="Retour d&#39;expérience sur l&#39;utilisation d&#39;uMap à la Chambre d&#39;agriculture des Pays de la Loire">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            1 &dash; 
+            Retour d&#39;expérience sur l&#39;utilisation d&#39;uMap à la Chambre d&#39;agriculture des Pays de la Loire
+            </h4>
+            <h5 class="text-muted">Frédéric GUIMIER</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/iLpz3PziyVbt86wQsAdFVB" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/iUvqRk6w4T8tqfVk7J3gFY" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/cd780dd8-dbcd-4a50-bbb6-e3756b22d319.jpg" class="card-img-top" alt="Utiliser le Plan Corps de Rue Simplifié pour contribuer à OSM">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            2 &dash; 
+            Utiliser le Plan Corps de Rue Simplifié pour contribuer à OSM
+            </h4>
+            <h5 class="text-muted">François Lacombe</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/iUvqRk6w4T8tqfVk7J3gFY" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/wiG42EvRhoz24Pf17K8uAa" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/95bcc6bb-396d-4b1e-90c4-08205b9ea6ec.jpg" class="card-img-top" alt="Estimation d’urbanisme">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            3 &dash; 
+            Estimation d’urbanisme
+            </h4>
+            <h5 class="text-muted">Ugo Zennaro</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/wiG42EvRhoz24Pf17K8uAa" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/nntP5A58WbMTM9xJAnv52P" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/53edbe77-263a-4722-a948-92754c7163b7.jpg" class="card-img-top" alt="Acteurs publics, communs et OpenStreetMap : une rencontre laborieuse mais pleine de promesses">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            4 &dash; 
+            Acteurs publics, communs et OpenStreetMap : une rencontre laborieuse mais pleine de promesses
+            </h4>
+            <h5 class="text-muted">Jean-Christophe Becquet</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/nntP5A58WbMTM9xJAnv52P" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/ae7HFVjJe3t6dNYK36qdsr" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/eb9701d0-8bca-40a1-8769-4cda4ae234e6.jpg" class="card-img-top" alt="Utilisation d&#39;OpenStreetMap dans une institution régionale">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            5 &dash; 
+            Utilisation d&#39;OpenStreetMap dans une institution régionale
+            </h4>
+            <h5 class="text-muted">Tony EMERY, Milan NUBLAT</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/ae7HFVjJe3t6dNYK36qdsr" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/pgqg3uutEDrs6t4ryq9QF4" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/086028d1-c91f-4bbe-9b2a-3ea64e86c71b.jpg" class="card-img-top" alt="Les pompiers de l&#39;Hérault aiment encore OSM... un an après">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            6 &dash; 
+            Les pompiers de l&#39;Hérault aiment encore OSM... un an après
+            </h4>
+            <h5 class="text-muted">Nicolas Moyroud</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/pgqg3uutEDrs6t4ryq9QF4" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/pgqg3uutEDrs6t4ryq9QF4" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/086028d1-c91f-4bbe-9b2a-3ea64e86c71b.jpg" class="card-img-top" alt="#AdopteUneCommune : mise à jour des données d&#39;infrastructures par commune">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            7 &dash; 
+            #AdopteUneCommune : mise à jour des données d&#39;infrastructures par commune
+            </h4>
+            <h5 class="text-muted">Nicolas Moyroud</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/pgqg3uutEDrs6t4ryq9QF4" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/fhG3ZgkBwU6ToKePCGNpyf" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/e9ace33b-acf3-4669-8be6-f1c0408ce72d.jpg" class="card-img-top" alt="Restitution sur l&#39;historique commerciale de la vacance dans 7 centres-villes (région Provence-Alpes-Côte d&#39;Azur)">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            8 &dash; 
+            Restitution sur l&#39;historique commerciale de la vacance dans 7 centres-villes (région Provence-Alpes-Côte d&#39;Azur)
+            </h4>
+            <h5 class="text-muted">Laurence Cantaloube-Kim, Jean-Louis Zimmerman</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/fhG3ZgkBwU6ToKePCGNpyf" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/bUrmgnoJh61FbSAVb1U9Fv" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/3682ee2c-4002-4bd5-ade5-f2fe1be49206.jpg" class="card-img-top" alt="Un dispositif de signalement pour les adresses de la BAN">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            9 &dash; 
+            Un dispositif de signalement pour les adresses de la BAN
+            </h4>
+            <h5 class="text-muted">Olivier DELTEIL</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/bUrmgnoJh61FbSAVb1U9Fv" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/uGVFnqsFJFaZtHtSokJjTx" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/f7afc83d-a36e-4e01-986b-154df6f69807.jpg" class="card-img-top" alt="Ateliers de cartographie participative avec OSM pour améliorer l’inclusion numérique des personnes exilées">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            10 &dash; 
+            Ateliers de cartographie participative avec OSM pour améliorer l’inclusion numérique des personnes exilées
+            </h4>
+            <h5 class="text-muted">Léonie Miège</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/uGVFnqsFJFaZtHtSokJjTx" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/ubML8R8j6vn9AdRRoX23zU" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/43286b96-3285-46df-bf46-df20d2afd39e.jpg" class="card-img-top" alt="Sensibiliser à OSM et aux ODD par des activités ludiques de cartographie, grâce à la coopération entre communautés">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            11 &dash; 
+            Sensibiliser à OSM et aux ODD par des activités ludiques de cartographie, grâce à la coopération entre communautés
+            </h4>
+            <h5 class="text-muted">Ezechiel Ametovena, Léonie Miège</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/ubML8R8j6vn9AdRRoX23zU" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/wPUdVmN4tnGejoqZpPEL7i" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/5f6aa0b7-4e93-49c3-a615-29482d0c29c9.jpg" class="card-img-top" alt="L&#39;OSGeo, l&#39;autre communauté de l&#39;information géographique libre">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            12 &dash; 
+            L&#39;OSGeo, l&#39;autre communauté de l&#39;information géographique libre
+            </h4>
+            <h5 class="text-muted">Nicolas Roelandt</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/wPUdVmN4tnGejoqZpPEL7i" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/qoF57ccEJTfXDKk9dt2MdL" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/79f739c4-1e38-4ac8-8260-e77de7fb2b50.jpg" class="card-img-top" alt="Le Bon Tag, un maillon de valorisation des données OpenStreetMap">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            13 &dash; 
+            Le Bon Tag, un maillon de valorisation des données OpenStreetMap
+            </h4>
+            <h5 class="text-muted">Jérémie Valentin, Bruno Beguin, Nicolas Moyroud</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/qoF57ccEJTfXDKk9dt2MdL" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/5xmC2MaFR5ZfwV3t4ujbF4" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/3e159c87-7b5e-430c-a22d-d46c0b24ff26.jpg" class="card-img-top" alt="Pourquoi et comment améliorer les données de marchabilité dans OSM ?">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            14 &dash; 
+            Pourquoi et comment améliorer les données de marchabilité dans OSM ?
+            </h4>
+            <h5 class="text-muted">Bertrand Gervais, Florent Morel</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/5xmC2MaFR5ZfwV3t4ujbF4" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/1QNKc2mLHu6VNh6J4nfEeA" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/3b9d4491-81d8-44a4-885c-5c4e9149c4bc.jpg" class="card-img-top" alt="OpenStreetMap, la meilleure base de données ouverte pour le ferroviaire ?">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            15 &dash; 
+            OpenStreetMap, la meilleure base de données ouverte pour le ferroviaire ?
+            </h4>
+            <h5 class="text-muted">Céline Durupt</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/1QNKc2mLHu6VNh6J4nfEeA" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/tzPeb3w8W7TKmCm4g7eiEF" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/ff98eb44-66a8-4da0-8d8b-702ce6bd1f8a.jpg" class="card-img-top" alt="Overpass Turbo : le couteau suisse des données OSM">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            18 &dash; 
+            Overpass Turbo : le couteau suisse des données OSM
+            </h4>
+            <h5 class="text-muted">Antoine RICHE</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/tzPeb3w8W7TKmCm4g7eiEF" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/t2nyzAJ3xrF6LF7YEfVxPQ" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/66f82fb1-c045-4c0a-b6b9-4316a111ff4b.jpg" class="card-img-top" alt="Requêtes Overpass : faites mieux que l&#39;assistant d&#39;Overpass Turbo">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            19 &dash; 
+            Requêtes Overpass : faites mieux que l&#39;assistant d&#39;Overpass Turbo
+            </h4>
+            <h5 class="text-muted">Antoine RICHE</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/t2nyzAJ3xrF6LF7YEfVxPQ" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/sPhRSYGc5owD5EQeBngN3g" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/b029fb3a-0a99-4d6a-a8bb-cf379eebd12f.jpg" class="card-img-top" alt="La carto GEOVELO &amp; la communauté OSM, une grande histoire">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            20 &dash; 
+            La carto GEOVELO &amp; la communauté OSM, une grande histoire
+            </h4>
+            <h5 class="text-muted">Ronan Bouquet, Simon Réau, Samuel Deschamps Berger</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/sPhRSYGc5owD5EQeBngN3g" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/daCQgYxxPcWx1JBET4ESyu" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/6bfc746b-7074-4804-ba0e-fd6ac4daa9be.jpg" class="card-img-top" alt="C’est une bonne donnée, ça, OSM">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            21 &dash; 
+            C’est une bonne donnée, ça, OSM
+            </h4>
+            <h5 class="text-muted">Anne Pelletier, Samuel Deschamps Berger, Simon Réau</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/daCQgYxxPcWx1JBET4ESyu" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/cmBAgcFQK6NtA555aDYtqN" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/773c2031-92fd-4b5a-8a95-d047862aec94.jpg" class="card-img-top" alt="La fondation OpenStreetMap">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            22 &dash; 
+            La fondation OpenStreetMap
+            </h4>
+            <h5 class="text-muted">Sarah Hoffmann</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/cmBAgcFQK6NtA555aDYtqN" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/thfCz5n4PkxbpcodDY9KqH" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/876b9eda-c133-4ce1-a8bb-d1155b472fca.jpg" class="card-img-top" alt="OSM Espagne // OSM France">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            23 &dash; 
+            OSM Espagne // OSM France
+            </h4>
+            <h5 class="text-muted">Frédéric Rodrigo</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/thfCz5n4PkxbpcodDY9KqH" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/7YynqrJXDzM9K1V9gKWCf7" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/955c6546-a3a9-4093-8627-6941190a562b.jpg" class="card-img-top" alt="Clearance : suivre et extraire des données d’OSM sous contrainte de qualité">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            24 &dash; 
+            Clearance : suivre et extraire des données d’OSM sous contrainte de qualité
+            </h4>
+            <h5 class="text-muted">Frédéric Rodrigo</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/7YynqrJXDzM9K1V9gKWCf7" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/q2q5tcVHFMoRBRnWg8U5je" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/4dc2350c-4eab-46e8-beec-9683b95f9129.jpg" class="card-img-top" alt="Questions-réponses sur Overture">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            25 &dash; 
+            Questions-réponses sur Overture
+            </h4>
+            <h5 class="text-muted">Hervé Clauss, Simon Hughes, Priscilla Zachée</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/q2q5tcVHFMoRBRnWg8U5je" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/iPmgfN9nyLV6TtGcgfBhAb" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/8f8fa62c-11f3-4041-a372-b30d8d198f00.jpg" class="card-img-top" alt="TomTom s’ouvre au monde, TomTom s’ouvre à OSM">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            26 &dash; 
+            TomTom s’ouvre au monde, TomTom s’ouvre à OSM
+            </h4>
+            <h5 class="text-muted">Salim Baidoun, Hervé Clauss, Priscilla Zachée</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/iPmgfN9nyLV6TtGcgfBhAb" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/xc8uBmZGj9vchgJ7TTn6WR" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/6b2fe381-af1d-46f6-a57f-c5337d1acc4b.jpg" class="card-img-top" alt="Trucs et Astuces Josm !">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            27 &dash; 
+            Trucs et Astuces Josm !
+            </h4>
+            <h5 class="text-muted">Stéphane Péneau</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/xc8uBmZGj9vchgJ7TTn6WR" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/91Litdha1c7YE4jc9hP32n" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/5539c7fb-5387-4f3a-bd6a-127217b5ad90.jpg" class="card-img-top" alt="Viens tester le RTK (géolocalisation centimétrique) !">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            28 &dash; 
+            Viens tester le RTK (géolocalisation centimétrique) !
+            </h4>
+            <h5 class="text-muted">Stéphane Péneau</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/91Litdha1c7YE4jc9hP32n" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/7KFz9RF4XrFi4sY8ybrVWC" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/b2dd94d7-d7ca-41ad-8ad6-e30aac09bed1.jpg" class="card-img-top" alt="Calcul d&#39;un différentiel entre le référentiel routier du Gard et OSM">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            29 &dash; 
+            Calcul d&#39;un différentiel entre le référentiel routier du Gard et OSM
+            </h4>
+            <h5 class="text-muted">Michaël Galien</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/7KFz9RF4XrFi4sY8ybrVWC" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            30 &dash; 
+            Cartographie de bâtiments complexes : le cas des grands stades de Roland Garros
+            </h4>
+            <h5 class="text-muted">Emma Godenzi, Thibaud Michel</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/7CsZzc4mBGC7EN3sBVyGu4" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/5473f6b5-b70d-4e2b-876b-31a34d77e107.jpg" class="card-img-top" alt="2023 : Démystifions les tuiles vectorielles">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            31 &dash; 
+            2023 : Démystifions les tuiles vectorielles
+            </h4>
+            <h5 class="text-muted">Frédéric Rodrigo</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/7CsZzc4mBGC7EN3sBVyGu4" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/2Udvt6xFiterqptKAdozus" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/1b214240-53be-4f52-815b-2c541c0b8dc5.jpg" class="card-img-top" alt="Revitalisons les centres bourgs avec OSM ">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            32 &dash; 
+            Revitalisons les centres bourgs avec OSM 
+            </h4>
+            <h5 class="text-muted">Alban Vivert</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/2Udvt6xFiterqptKAdozus" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            33 &dash; 
+            Météo, climat : découverte de cet écosystème géospatial
+            </h4>
+            <h5 class="text-muted">Frédéric AMEYE</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/kvH7qvG1TJCXnW1ZKBxoH4" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/1594b108-ece0-43d7-8925-9427ab55205d.jpg" class="card-img-top" alt="La Fabrique des géocommuns Année 2 ">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            34 &dash; 
+            La Fabrique des géocommuns Année 2 
+            </h4>
+            <h5 class="text-muted">Nicolas Berthelot</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/kvH7qvG1TJCXnW1ZKBxoH4" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/eAgnh9uupTw8SYsKp5VBXh" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/46dd7304-5473-4a42-9fd4-4f8c229862e2.jpg" class="card-img-top" alt="Table ronde : Acteurs publics et OSM, le clash des bases de données, comment le dépasser ?">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            35 &dash; 
+            Table ronde : Acteurs publics et OSM, le clash des bases de données, comment le dépasser ?
+            </h4>
+            <h5 class="text-muted">Nicolas Berthelot </h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/eAgnh9uupTw8SYsKp5VBXh" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/o5AWXYerrMs7Us7v1YLdCF" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/af455f35-262e-45bc-8335-1796ed0cfb6f.jpg" class="card-img-top" alt="Projet Eazyway : mapper l&#39;accessibilité… sans le tag wheelchair">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            36 &dash; 
+            Projet Eazyway : mapper l&#39;accessibilité… sans le tag wheelchair
+            </h4>
+            <h5 class="text-muted">Florian Lainez, Jean-Luc Chirpaz</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/o5AWXYerrMs7Us7v1YLdCF" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/vg8Cj1zVAgqQKKNUNZFTsb" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/fda5a4a9-e886-4d6f-a210-6591f750a311.jpg" class="card-img-top" alt="Welcome to OSM ou comment accueillir facilement les nouveaux">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            37 &dash; 
+            Welcome to OSM ou comment accueillir facilement les nouveaux
+            </h4>
+            <h5 class="text-muted">Donat ROBAUX</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/vg8Cj1zVAgqQKKNUNZFTsb" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/jrpmGrW8un2d8if6Pb3Ys7" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/90a1ae55-1576-4fc2-84a0-04bebd9aeb0b.jpg" class="card-img-top" alt="OSMOverpassConnector, un Transformer FME permettant l’accès aux données de l’API Overpass d’OSM">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            38 &dash; 
+            OSMOverpassConnector, un Transformer FME permettant l’accès aux données de l’API Overpass d’OSM
+            </h4>
+            <h5 class="text-muted">Alizée BUCKEL</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/jrpmGrW8un2d8if6Pb3Ys7" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/v9AwT6kUxn5ax5W9zzaq3V" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/6d5c4ab2-befd-4ffe-8472-8d3e5f9bbb74.jpg" class="card-img-top" alt="Retour sur l&#39;expérimentation de collecte de données accessibilité du CD94">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            39 &dash; 
+            Retour sur l&#39;expérimentation de collecte de données accessibilité du CD94
+            </h4>
+            <h5 class="text-muted">Nathalie Temin, Jean-Louis Zimmerman</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/v9AwT6kUxn5ax5W9zzaq3V" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/jgBRXhAFNiJXNhj9C5fa4L" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/c18b4cf7-3718-4cfa-a620-8ad42d165a41.jpg" class="card-img-top" alt="Enrichir les fonds cartographiques web IGN avec des données OSM Monde">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            40 &dash; 
+            Enrichir les fonds cartographiques web IGN avec des données OSM Monde
+            </h4>
+            <h5 class="text-muted">Sofiane KRIAT</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/jgBRXhAFNiJXNhj9C5fa4L" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/fDJW4cWpyEwmwwLawGjBe7" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/1c3a83a4-f1b1-4387-8e62-45a8a0fe9c2b.jpg" class="card-img-top" alt="Présentation parcours de formation sur OpenStreetMap">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            41 &dash; 
+            Présentation parcours de formation sur OpenStreetMap
+            </h4>
+            <h5 class="text-muted">Cédric Frayssinet, Vincent Bergeot</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/fDJW4cWpyEwmwwLawGjBe7" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/3iAfpGnP4PJeVvBedRXxnu" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/89e922d8-9eaf-4ebb-905f-4e77f83eae67.jpg" class="card-img-top" alt="Marseille Innovante : MPulse, Accessibilité et OpenData pour un espace public dynamique et inclusif">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            42 &dash; 
+            Marseille Innovante : MPulse, Accessibilité et OpenData pour un espace public dynamique et inclusif
+            </h4>
+            <h5 class="text-muted">Christophe Hugon, Yannick Ohanesian, Isabelle Laussine</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/3iAfpGnP4PJeVvBedRXxnu" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            44 &dash; 
+            Marseille et l&#39;ouverture de ses données : Espace public, Accessibilité et environnement
+            </h4>
+            <h5 class="text-muted">Christophe Hugon, Yannick Ohanesian, Isabelle Laussine</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/1yrg4h4XXPRGH1vhTxvSFW" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/eeab8e91-b800-4735-b8ce-c8a83c1996c7.jpg" class="card-img-top" alt="Refonte de BANO et Pifomètre">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            46 &dash; 
+            Refonte de BANO et Pifomètre
+            </h4>
+            <h5 class="text-muted">Vincent de Château-Thierry</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/1yrg4h4XXPRGH1vhTxvSFW" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/iXSK2NyRgkVadQapnZsZu2" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/cee88582-3db5-4de5-9120-72db7d11aad6.jpg" class="card-img-top" alt="Tags d&#39;OSM : sortir du yes-no">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            47 &dash; 
+            Tags d&#39;OSM : sortir du yes-no
+            </h4>
+            <h5 class="text-muted">Jean-Louis ZIMMERMANN, François LACOMBE</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/iXSK2NyRgkVadQapnZsZu2" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            48 &dash; 
+            Quelle infrastructure pour les &quot;services&quot; de l&#39;association OpenStreetMap France ?
+            </h4>
+            <h5 class="text-muted">Vincent Bergeot</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/xkmNT3xroRPfmjb9feLVwP" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/7b5a364a-b8e3-4975-8553-670f3043eaa4.jpg" class="card-img-top" alt="Structurer la filière des pros d’OSM avec la fédération">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            49 &dash; 
+            Structurer la filière des pros d’OSM avec la fédération
+            </h4>
+            <h5 class="text-muted">Florian Lainez, Alban Vivert</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/xkmNT3xroRPfmjb9feLVwP" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/ffRFuUH7mptF5yRChW7u71" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/0114f5ea-dd04-45c8-929d-619b1cbf59e4.jpg" class="card-img-top" alt="magOSM : suivi de changement thématique">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            50 &dash; 
+            magOSM : suivi de changement thématique
+            </h4>
+            <h5 class="text-muted">Augustin Doury</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/ffRFuUH7mptF5yRChW7u71" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            51 &dash; 
+            CommuneCarte, faire commun autour d&#39;OSM. Dis tonton, si le commun ne concerne pas que les données OSM, comment on fait ?
+            </h4>
+            <h5 class="text-muted">Stéphane Branquart</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/ozdnBAz5BgYmNtuBYAq5Z2" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/f3da45a4-c18b-4af7-b2e2-1e4ea580529c.jpg" class="card-img-top" alt="Vous êtes acteur public et intéressé par OpenStreetMap : regroupons nous !">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            52 &dash; 
+            Vous êtes acteur public et intéressé par OpenStreetMap : regroupons nous !
+            </h4>
+            <h5 class="text-muted">Xavier DURANG, Tony EMERY, Jean-Louis ZIMMERMANN</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/ozdnBAz5BgYmNtuBYAq5Z2" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            53 &dash; 
+            Panoramax : prêts ? Partez !
+            </h4>
+            <h5 class="text-muted">Christian Quest</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <a href="https://peertube.openstreetmap.fr/w/wfi9b4BE1ztiNM5GUAbqRc" title="Vidéo de la conférence">
+            <img src="https://peertube.openstreetmap.fr/static/thumbnails/33180105-7dd9-4dc9-b8c7-25ecf8eaeda7.jpg" class="card-img-top" alt="uMap a 10 ans, bilan et perspectives">
+        </a>
+        
+        <div class="card-body">
+            <h4>
+            54 &dash; 
+            uMap a 10 ans, bilan et perspectives
+            </h4>
+            <h5 class="text-muted">Yohan Boniface</h5>
+            
+            <a href="https://peertube.openstreetmap.fr/w/wfi9b4BE1ztiNM5GUAbqRc" title="Vidéo de la conférence">
+                <span class="d-flex mt-3">
+                    <img src="assets/img/play.svg" width="20" class="me-1" />
+                    <span>Voir la conférence</span>
+                </span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+                            
+                                
+<div class="col">
+    <div class="card conf">
+        
+        <div class="card-body">
+            <h4>
+            55 &dash; 
+            Technopolice &lt;3 OSM : la cartographie participative des caméras de surveillance
+            </h4>
+            <h5 class="text-muted">Eda</h5>
+            
+        </div>
+    </div>
+</div>
+
+                            
                         </div>
                     </div>
--->
                 </div>
             </div>
         </section>

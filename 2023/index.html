@@ -1,202 +1,213 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>State of the Map France 2023 - Accueil</title>
-        <meta name="viewport" content="width=device-width" />
-        <meta name="theme-color" content="#592123" />
-        <link rel="icon" href="assets/img/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>State of the Map France 2023 - Accueil</title>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="theme-color" content="#592123"/>
+    <link rel="icon" href="assets/img/favicon.ico"/>
 
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
 
-        <!-- jQuery -->
-        <script src="assets/js/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript with Popper -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Core JavaScript with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Custom Theme JavaScript -->
-        <script src="assets/js/navbar-collapse.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="assets/js/navbar-collapse.js"></script>
 
-        <!-- leaflet -->
-        <script src="assets/js/leaflet.js"></script>
-        <link rel="stylesheet" href="assets/css/leaflet.css" />
+    <!-- leaflet -->
+    <script src="assets/js/leaflet.js"></script>
+    <link rel="stylesheet" href="assets/css/leaflet.css"/>
 
-        <!--  Custom Css  -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
+    <!--  Custom Css  -->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
 
-    <body id="page-top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-expand-lg fixed-top" data-bs-theme="dark" role="navigation">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-0 mx-md-3 text-wrap d-flex align-items-center" href="index.html">
-                    <img src="assets/img/osm.svg" width="30" height="30" alt="osm-logo" class="logo me-2" />
-                    State of the Map France
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarText"
-                    aria-controls="navbarText"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body id="page-top">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-expand-lg fixed-top" data-bs-theme="dark" role="navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand mx-0 mx-md-3 text-wrap d-flex align-items-center" href="index.html">
+            <img src="assets/img/osm.svg" width="30" height="30" alt="osm-logo" class="logo me-2"/>
+            State of the Map France
+        </a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="links navbar-nav mx-auto">
-                        <li class="nav-item visually-hidden active">
-                            <a class="nav-link" href="#">Home<span class="visually-hidden"> (page actuelle)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="programme.html">Programme</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contribution.html">Appel à contributions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="inscription.html">Inscription</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sponsors.html">Soutiens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="infos.html">Infos pratiques</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="links navbar-nav mx-auto">
+                <li class="nav-item visually-hidden active">
+                    <a class="nav-link" href="#">Home<span class="visually-hidden"> (page actuelle)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programme.html">Programme</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inscription.html">Inscription</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sponsors.html">Soutiens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="infos.html">Infos pratiques</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <!-- Intro Header -->
-        <header class="intro container-fluid position-relative">
-            <div class="row">
-                <div class="logo col-lg-5 text-center">
-                    <!-- <h1>State of the Map 2023</h1> -->
-                    <img src="./assets/img/logo-sotm-2023.svg" alt="State of the map, 9 au 11 Juin 2023" />
-                </div>
-                <div class="col mt-3 me-lg-5 text-center d-flex flex-column align-items-center justify-content-center">
+<!-- Intro Header -->
+<header class="intro container-fluid position-relative">
+    <div class="row">
+        <div class="logo col-lg-5 text-center">
+            <!-- <h1>State of the Map 2023</h1> -->
+            <img src="./assets/img/logo-sotm-2023.svg" alt="State of the map, 9 au 11 Juin 2023"/>
+        </div>
+        <div class="col mt-3 me-lg-5 text-center d-flex flex-column align-items-center justify-content-center">
                     <span class="fs-1 w-75">
                         Conférences et ateliers pour les contributeurs et les utilisateurs d'OpenStreetMap
                     </span>
-                </div>
-            </div>
-            <div class="position-absolute bottom-0 end-0">
-                <span class="p-2"
-                    >Logo : <a href="https://bardelli.fr/" class="link-secondary">Antoine Bardelli</a></span
-                >
-            </div>
-        </header>
+        </div>
+    </div>
+    <div class="position-absolute bottom-0 end-0">
+        <span class="p-2">
+            Logo : <a href="https://bardelli.fr/" class="credit-link">Antoine Bardelli</a>
+        </span>
+    </div>
+</header>
 
-        <!-- Presentation Section -->
-        <section class="container-fluid page card presentation">
-            <div class="container">
-                <div class="card-body">
-                    <h1 class="card-title">Du vendredi 9 au dimanche 11 Juin 2023</h1>
-                    <h2 class="card-subtitle">Marseille - Campus Faculté Sciences du sport, Luminy</h2>
-                    <p class="card-text">
-                        Conférence organisée par l'association
-                        <a
-                            href="https://www.openstreetmap.fr/"
-                            class="animate block"
+<!-- Presentation Section -->
+<section class="container-fluid page card presentation">
+    <div class="container">
+        <div class="card-body">
+            <div class="video-playlist">
+                <iframe title="DIRECT SOTM-FR 2023"
+                    src="https://peertube.openstreetmap.fr/video-playlists/embed/618cffd6-52cd-4f12-a52a-7775bc31d4f6"
+                    allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
+                     width="100%" height="100%"
+                    frameborder="0"></iframe>
+            </div>
+            <p>
+                Les replays seront affichés ici&nbsp;:
+                <a href="https://peertube.openstreetmap.fr/c/sotm_fr_2023">
+                    https://peertube.openstreetmap.fr/c/sotm_fr_2023
+                </a>
+            </p>
+            <h1 class="card-title">Du vendredi 9 au dimanche 11 Juin 2023</h1>
+            <h2 class="card-subtitle">Marseille - Campus Faculté Sciences du sport, Luminy</h2>
+            <p class="card-text">
+                Conférence organisée par l'association
+                <a
+                        href="https://www.openstreetmap.fr/"
+                        class="animate block"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >OpenStreetMap France</a
+                >
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container-fluid dark page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section>
+                    <h2 class="mb-4">State of the Map</h2>
+
+                    <p>
+                        Après Lyon (2013), Paris (2014), Brest (2015), Clermont-Ferrand (2016), Avignon (2017),
+                        Bordeaux (2018), Montpellier (2019) et Nantes (2022) c'est au tour de Marseille
+                        d'accueillir les 9èmes Rencontres Nationales OpenStreetMap&nbsp;:&nbsp;le State Of The
+                        Map France (SotM-fr).
+                    </p>
+
+                    <p>
+                        Les 9-10-11 juin 2023, durant 3 jours, contributeurs, utilisateurs, représentants de
+                        collectivités et d'entreprises gravitant autour du Web et de l'information géographique,
+                        chercheurs, mais aussi personnes curieuses de découvrir cette «&nbsp;carte libre du
+                        monde&nbsp;» que représente OSM, se retrouveront pour partager leurs expériences, se
+                        tenir informé, se former, découvrir l'écosystème et les multiples
+                        applications&nbsp;–&nbsp;existantes ou à imaginer&nbsp;–&nbsp;autour d'OpenStreetMap.
+                    </p>
+                    <p>Nous vous y attendons nombreuses et nombreux.</p>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="col-subtitle-info">Où&nbsp;?</h3>
+                <p>
+                    <a
+                            href="https://www.openstreetmap.org/#map=12/43.3004/5.4097"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >OpenStreetMap France</a
-                        >
-                    </p>
-                </div>
+                    >Marseille,&nbsp;France</a
+                    >
+                </p>
+
+                <h3 class="col-subtitle-info">Quand&nbsp;?</h3>
+                <p>9 au 11 Juin 2023</p>
+
+                <h3 class="col-subtitle-info"></h3>
+                <a href="https://openstreetmap.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/osm.svg" alt="Lien vers osm" style="height: 85px; margin-top: 20px"/>
+                </a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- About Section -->
-        <section id="about" class="container-fluid dark page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <section>
-                            <h2 class="mb-4">State of the Map</h2>
-                            <p>
-                                Après Lyon (2013), Paris (2014), Brest (2015), Clermont-Ferrand (2016), Avignon (2017),
-                                Bordeaux (2018), Montpellier (2019) et Nantes (2022) c'est au tour de Marseille
-                                d'accueillir les 9èmes Rencontres Nationales OpenStreetMap&nbsp;:&nbsp;le State Of The
-                                Map France (SotM-fr).
-                            </p>
-
-                            <p>
-                                Les 9-10-11 juin 2023, durant 3 jours, contributeurs, utilisateurs, représentants de
-                                collectivités et d'entreprises gravitant autour du Web et de l'information géographique,
-                                chercheurs, mais aussi personnes curieuses de découvrir cette «&nbsp;carte libre du
-                                monde&nbsp;» que représente OSM, se retrouveront pour partager leurs expériences, se
-                                tenir informé, se former, découvrir l'écosystème et les multiples
-                                applications&nbsp;–&nbsp;existantes ou à imaginer&nbsp;–&nbsp;autour d'OpenStreetMap.
-                            </p>
-                            <p>Nous vous y attendons nombreuses et nombreux.</p>
-                        </section>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h3 class="col-subtitle-info">Où&nbsp;?</h3>
-                        <p>
-                            <a
-                                href="https://www.openstreetmap.org/#map=12/43.3004/5.4097"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Marseille,&nbsp;France</a
-                            >
-                        </p>
-
-                        <h3 class="col-subtitle-info">Quand&nbsp;?</h3>
-                        <p>9 au 11 Juin 2023</p>
-
-                        <h3 class="col-subtitle-info"></h3>
-                        <a href="https://openstreetmap.org/" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/osm.svg" alt="Lien vers osm" style="height: 85px; margin-top: 20px" />
-                        </a>
-                    </div>
-                </div>
+<!-- Footer -->
+<footer id="footer" class="home">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 footer-logo">
+                <img src="assets/img/osm.svg" alt="logo-osm" style="height: 140px; margin-bottom: -20px"/>
             </div>
-        </section>
+            <nav class="col-lg-3 nav flex-column">
+                <a href="https://www.openstreetmap.fr/" class="animate block">OpenStreetMap France</a>
+                <a href="https://twitter.com/OSM_FR" class="animate block">Twitter</a>
+                <a href="https://mastodon.cipherbliss.com/@osm_fr@fr.osm.social" class="animate block"
+                >Mastodon</a
+                >
+            </nav>
+            <nav class="col-lg-3 nav flex-column">
+                <a href="https://www.facebook.com/osmfr/" class="animate block">Facebook</a>
+                <a href="https://peertube.openstreetmap.fr/" class="animate block">Peertube</a>
+            </nav>
+            <nav class="col-lg-3 nav flex-column">
+                <a href="mentions-legales.html" class="animate block">Mentions légales</a>
+                <a href="https://github.com/osm-fr/sotmfr-website" class="animate block">Sources</a>
 
-        <!-- Footer -->
-        <footer id="footer" class="home">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 footer-logo">
-                        <img src="assets/img/osm.svg" alt="logo-osm" style="height: 140px; margin-bottom: -20px" />
-                    </div>
-                    <nav class="col-lg-3 nav flex-column">
-                        <a href="https://www.openstreetmap.fr/" class="animate block">OpenStreetMap France</a>
-                        <a href="https://twitter.com/OSM_FR" class="animate block">Twitter</a>
-                        <a href="https://mastodon.cipherbliss.com/@osm_fr@fr.osm.social" class="animate block"
-                            >Mastodon</a
-                        >
-                    </nav>
-                    <nav class="col-lg-3 nav flex-column">
-                        <a href="https://www.facebook.com/osmfr/" class="animate block">Facebook</a>
-                        <a href="https://peertube.openstreetmap.fr/" class="animate block">Peertube</a>
-                    </nav>
-                    <nav class="col-lg-3 nav flex-column">
-                        <a href="mentions-legales.html" class="animate block">Mentions légales</a>
-                        <a href="https://github.com/osm-fr/sotmfr-website" class="animate block">Sources</a>
-
-                        <a href="#" class="animate block">Contact</a>
-                    </nav>
-                </div>
-                <div class="center">
-                    <p>
-                        Edition <span class="numeral">2023</span>&nbsp;-&nbsp;<a
-                            href="mailto:sotm@openstreetmap.fr"
-                            class="animate light"
-                            >sotm@openstreetmap.fr</a
-                        >
-                    </p>
-                </div>
-            </div>
-        </footer>
-    </body>
+                <a href="#" class="animate block">Contact</a>
+            </nav>
+        </div>
+        <div class="center">
+            <p>
+                Edition <span class="numeral">2023</span>&nbsp;-&nbsp;<a
+                    href="mailto:sotm@openstreetmap.fr"
+                    class="animate light"
+            >sotm@openstreetmap.fr</a
+            >
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
