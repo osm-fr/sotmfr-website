@@ -1,24 +1,24 @@
 // libraries
-const data = require("gulp-data");
-const fs = require("fs");
-const gulp = require("gulp");
-const header = require("gulp-header");
-const nunjucksRender = require("gulp-nunjucks-render");
+import fs from "fs";
+import gulp from "gulp";
+import data from "gulp-data";
+import header from "gulp-header";
+import nunjucksRender from "gulp-nunjucks-render";
 
 // dev tools
-const browserSync = require("browser-sync").create();
+import browserSync from "browser-sync";
 
-function html() {
+export function html() {
     const conferencesData = JSON.parse(fs.readFileSync("scripts/conferences.json"));
     return gulp
         .src("scripts/nunjucks/templates/programme.html")
-        .pipe(data({conferencesData}))
+        .pipe(data({ conferencesData }))
         .pipe(nunjucksRender())
         .pipe(header("\n\n<!-- This file generated, do not edit it manually. Instructions in the README. -->\n\n\n"))
         .pipe(gulp.dest("."));
 }
 
-function serve() {
+function _serve() {
     browserSync.init({
         open: false,
         server: {
@@ -42,6 +42,5 @@ function watchFiles() {
     return;
 }
 
-exports.html = html;
-exports.serve = gulp.parallel(html, watchFiles, serve);
-exports.build = gulp.series(html);
+const serve = gulp.parallel(html, watchFiles, _serve);
+export { serve, html as build };
