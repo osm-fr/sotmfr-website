@@ -1,9 +1,9 @@
 # sotmfr-website
 
 
-Lien site officiel : https://sotm2023.openstreetmap.fr/
+Lien site officiel : https://sotm2024.openstreetmap.fr/
 
-Lien vers le site web hébergé par Github : https://osm-fr.github.io/sotmfr-website/2023/
+Lien vers le site web hébergé par Github : https://osm-fr.github.io/sotmfr-website/
 
 Configuration dépôt pour prévisualisation :
 
