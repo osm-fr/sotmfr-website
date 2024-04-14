@@ -34,7 +34,7 @@
 }
 
 .navbar-nav {
-    --bs-nav-link-hover-color: var(--colour-3);
+    --bs-nav-link-hover-color: var(--colour-4);
 }
 
 .navbar-brand {
@@ -179,7 +179,7 @@ a.nodeco {
 
 a:hover,
 a:focus {
-    color: var(--colour-3);
+    color: var(--links);
     /* text-decoration-color: var(--links); */
 }
 
