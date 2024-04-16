@@ -357,6 +357,19 @@ footer p {
     margin-bottom: 1em;
 }
 
+.recurring {
+    position: relative;
+}
+
+.recurring .nodeco {
+    position: relative;
+}
+
+.recurring-logo {
+    position: absolute;
+    right: 5%;
+}
+
 /************************
     Content
 ************************/

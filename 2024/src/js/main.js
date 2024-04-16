@@ -21,4 +21,8 @@ $(function () {
     $('.contributionCall').each(function () {
         if (state) $(this).toggle();
     });
+
+    // Démarrer les tooltips pour les sponsors
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 });
