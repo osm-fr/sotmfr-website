@@ -34,7 +34,7 @@
 }
 
 .navbar-nav {
-    --bs-nav-link-hover-color: var(--colour-4);
+    --bs-nav-link-hover-color: var(--colour-2);
 }
 
 .navbar-brand {
@@ -280,9 +280,9 @@ footer p {
 .intro {
     padding-top: 150px;
     padding-bottom: 150px;
-    color: var(--white);
+    color: var(--primary-dark);
     text-shadow: 0 3px 10px rgba(0,0,0,0.8);
-    background-image: url("../img/vieux_lyon_paceholder.jpg");
+    background-image: url("../img/Sotm-2024-banniere-site-1826x600.png");
     background-color: var(--colour-5);
     background-size: cover;
     background-repeat: no-repeat;
@@ -586,4 +586,5 @@ td.scheduleBreak {
 
 .attribution{
     font-size: 1rem;
+    color:var(--primary-dark);
 }
