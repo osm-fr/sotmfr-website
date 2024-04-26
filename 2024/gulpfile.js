@@ -47,7 +47,7 @@ function jsVendor() {
 
 
 function image() {
-    return src('src/img/**/*.+(png|jpg|jpeg|gif|svg)')
+    return src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico)')
         .pipe(dest('dist/img'));
 }
 
