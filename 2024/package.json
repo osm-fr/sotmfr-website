@@ -1,5 +1,5 @@
 {
-    "name": "sotmfr-2023",
+    "name": "sotmfr-2024",
     "scripts": {
         "dev": "gulp serve",
         "build": "gulp build"
