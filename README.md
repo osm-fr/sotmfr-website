@@ -14,3 +14,10 @@ Click on the Settings tab and scroll down to the GitHub Pages section.
 Then select the master branch source and click on the Save button.
 
 ![](https://pages.github.com/images/source-setting@2x.png)
+
+Lien des sites des sotm précédents:
+- https://sotm2023.openstreetmap.fr/
+- https://sotm2022.openstreetmap.fr/
+- https://sotm2020.openstreetmap.fr/
+- https://sotm2019.openstreetmap.fr/
+- https://sotm2018.openstreetmap.fr/
