@@ -1,15 +1,12 @@
 {% set page_name = 'Programme' %}
 {% extends "layouts/layout.html" %}
 {% block content %}
-
+<script type="text/javascript" src="https://pretalx.com/sotm-fr-2024/schedule/widget/v2.en.js"></script>
 <section id="main" class="page program-page">
     <div class="container">
         <div class="row">
             <div class="col-12 pb-2">
                 <h1>Programme</h1>
-                <p>
-                    <a class="nav-link" href="contribution.html">L'appel à contributions est ouvert</a>
-                </p>
                 <!-- <p class="lead">
                     Le programme est filtrable par le menu de gauche.
                     <br />
@@ -50,15 +47,24 @@
                     </span>
                 </p> -->
                 <p>
-                    Le programme est aussi disponible en
-                    <a href="assets/programme.pdf">
-                        téléchargement
-                        <span class="pl-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf"
-                                style="width: 1em" /></span></a>
-                </p>
+                    Le programme est disponible au
+                    <a href="assets/programme.pdf">téléchargement<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf" style="width: 1em" /></span></a> mais aussi via
+                    <a href="https://f-droid.org/fr/packages/net.gaast.giggity/" target="_blank">l'application Giggity</a>
+                    où le programme est présent par défaut.</p>
                 <object data="assets/programme.pdf" type="application/pdf" class="w-100" height="1000">
-                    Téléchargez la version pdf du programme <a href="assets/programme.pdf">ici</a>
+                    Vous pouvez aussi télécharger <a href="assets/programme.pdf">le guide des interventions avec les résumés
+					<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf"
+                                style="width: 1em" /></span></a>
                 </object>
+				<p>Les replays des conférences seront disponibles sur <a href="https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos" class="animate block">Peertube</a> quelques jours après l'événement.</p> 
+				<pretalx-schedule event-url="https://pretalx.com/sotm-fr-2024/" locale="en" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
+					<noscript>
+						<div class="pretalx-widget">
+							<div class="pretalx-widget-info-message">
+						JavaScript is disabled in your browser. To access our schedule without JavaScript,please <a target="_blank" href="https://pretalx.com/sotm-fr-2024/schedule/">click here</a>.
+							</div>
+						</div>
+					</noscript>
             </div>
             <!--
             <div class="col-lg-4">
