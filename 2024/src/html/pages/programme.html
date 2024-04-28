@@ -1,174 +1,33 @@
 {% set page_name = 'Programme' %}
 {% extends "layouts/layout.html" %}
 {% block content %}
-<script type="text/javascript" src="https://pretalx.com/sotm-fr-2024/schedule/widget/v2.en.js"></script>
+<script type="text/javascript" src="https://pretalx.com/sotm-fr-2024/widgets/schedule.js"></script>
 <section id="main" class="page program-page">
     <div class="container">
         <div class="row">
             <div class="col-12 pb-2">
                 <h1>Programme</h1>
-                <!-- <p class="lead">
-                    Le programme est filtrable par le menu de gauche.
-                    <br />
-                    Il est aussi disponible en
-                    <a href="" target="_blank" class="fw-bold">
-                        téléchargement
-                        <span class="ps-1"> -->
-                <!-- see: https://stackoverflow.com/a/53336754 -->
-                <!-- <img
-                                src="assets/img/file-pdf-regular.svg"
-                                alt="PDF"
-                                style="
-                                    width: 1em;
-                                    filter: invert(91%) sepia(23%) saturate(192%) hue-rotate(200deg)
-                                        brightness(99%) contrast(93%);
-                                " />
-                        </span>
-                    </a>
-                    mais aussi via
-                    <a href="https://f-droid.org/fr/packages/net.gaast.giggity/" target="_blank"
-                        >l'application Giggity</a
-                    >
-                    où le programme est présent par défaut.
-                    <br />
-                    Vous pouvez aussi télécharger le
-                    <a href="" target="_blank" class="fw-bold"
-                        >guide des interventions avec les résumés</a
-                    >
-                    <span class="ps-1">
-                        <img
-                            src="assets/img/file-pdf-regular.svg"
-                            alt="PDF"
-                            style="
-                                width: 1em;
-                                filter: invert(91%) sepia(23%) saturate(192%) hue-rotate(200deg) brightness(99%)
-                                    contrast(93%);
-                            " />
-                    </span>
-                </p> -->
                 <p>
-                    Le programme est disponible au
-                    <a href="assets/programme.pdf">téléchargement<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf" style="width: 1em" /></span></a> mais aussi via
+                    Le programme sera bientôt disponible au
+                    <!--<a href="assets/programme.pdf">-->téléchargement<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf" style="width: 1em" /></span></a> mais aussi via
                     <a href="https://f-droid.org/fr/packages/net.gaast.giggity/" target="_blank">l'application Giggity</a>
                     où le programme est présent par défaut.</p>
                 <object data="assets/programme.pdf" type="application/pdf" class="w-100" height="1000">
-                    Vous pouvez aussi télécharger <a href="assets/programme.pdf">le guide des interventions avec les résumés
+                    <!--Vous pouvez aussi télécharger <a href="assets/programme.pdf">le guide des interventions avec les résumés
 					<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf"
-                                style="width: 1em" /></span></a>
+                                style="width: 1em" /></span></a>-->
                 </object>
-				<p>Les replays des conférences seront disponibles sur <a href="https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos" class="animate block">Peertube</a> quelques jours après l'événement.</p> 
-				<pretalx-schedule event-url="https://pretalx.com/sotm-fr-2024/" locale="en" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
-					<noscript>
-						<div class="pretalx-widget">
-							<div class="pretalx-widget-info-message">
-						JavaScript is disabled in your browser. To access our schedule without JavaScript,please <a target="_blank" href="https://pretalx.com/sotm-fr-2024/schedule/">click here</a>.
-							</div>
+				<p>Les replays des conférences seront disponibles sur <a href="https://peertube.openstreetmap.fr/c/sotm_fr_2024/videos" class="animate block">Peertube</a> quelques jours après l'événement.</p>
+				<pretalx-schedule event-url="https://pretalx.com/sotm-fr-2024/" locale="fr" format="list" style="--pretalx-clr-primary: var(--colour-2)"></pretalx-schedule>
+				<noscript>
+					<div class="pretalx-widget">
+						<div class="pretalx-widget-info-message">
+							JavaScript is disabled in your browser. To access our schedule without JavaScript,
+							please <a target="_blank" href="https://pretalx.com/sotm-fr-2024/schedule/">click here</a>.
 						</div>
-					</noscript>
+					</div>
+				</noscript>
             </div>
-            <!--
-            <div class="col-lg-4">
-                <!-- Filtrer la liste - ->
-                <form role="form">
-                    <div class="form-group">
-                        <!-- <label class="float-label" for="search">Filtre de recherche</label> - ->
-                        <input type="text" class="form-control" id="search" placeholder="Rechercher..." />
-                    </div>
-                    <div id="filter-group" class="form-group">
-                        <div class="filter">
-                            <button type="button" class="btn btn-outline-primary" data-filter="all">
-                                Voir tout
-                            </button>
-                            <button
-                                style="display: none"
-                                type="button"
-                                class="btn btn-outline-dark me-1 mb-1 filter-model"
-                                data-filter="code">
-                                Libelle
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-8">
-                <!-- La liste - ->
-                <div class="table-responsive">
-                    <table class="table table-sm programme">
-                        <caption class="no-result">
-                            Aucun résultat trouvé !
-                        </caption>
-                        <colgroup>
-                            <col style="min-width: 8em" />
-                            <col style="width: auto" />
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">Horaire</th>
-                                <th scope="col">Présentation</th>
-                            </tr>
-                        </thead>
-                        <tr class="tr_model" style="display: none">
-                            <th scope="row" class="horaire"></th>
-                            <td class="program-presentation">
-                                <div class="card text-dark bg-light mb-3">
-                                    <h3 class="card-header">
-                                        <span class="libelle"></span>
-                                        <span class="badge rounded-pill text-bg-secondary numero"></span>
-                                    </h3>
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <span class="salle badge rounded-pill text-bg-info"></span>
-                                        </h5>
-                                        <a
-                                            data-bs-toggle="collapse"
-                                            href="#"
-                                            role="button"
-                                            aria-expanded="false"
-                                            class="text-dark text-decoration-none">
-                                            Résumé
-                                            <img
-                                                src="assets/img/circle-chevron-down-solid.svg"
-                                                alt=""
-                                                width="16"
-                                                height="16" />
-                                        </a>
-                                        <p class="card-text description collapse mb-2"></p>
-                                        <p class="card-text conferencier mt-2 mb-2"></p>
-                                        <p class="card-text organisation text-body-secondary"></p>
-                                        <ul class="list-group list-group-flush videos">
-                                            <li class="list-group-item">
-                                                <img
-                                                    src="assets/img/film-solid.svg"
-                                                    alt=""
-                                                    width="16"
-                                                    height="16" />
-                                                <a href="#" class="card-link text-dark">Voir la vidéo</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="list-group list-group-flush presentations">
-                                            <li class="list-group-item">
-                                                <img
-                                                    src="assets/img/chalkboard-solid.svg"
-                                                    alt=""
-                                                    width="16"
-                                                    height="16" />
-                                                <a href="#" class="card-link text-dark">Voir la présentation</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-footer text-body-secondary tags">
-                                        <div class="badge rounded-pill rounded-pill text-bg-secondary me-1">
-                                            Une étiquette
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tbody></tbody>
-                    </table>
-                </div>
-            </div>
--->
         </div>
     </div>
 </section>
