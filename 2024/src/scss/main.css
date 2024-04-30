@@ -130,7 +130,7 @@ h6 {
     color: var(--primary-dark);
 }
 
-.navbar a::hover {
+.navbar a:hover {
     color: var(--colour-2);
 }
 
@@ -368,6 +368,10 @@ footer p {
 .recurring-logo {
     position: absolute;
     right: 5%;
+}
+
+.sponsor-page img {
+    margin: 20px;
 }
 
 /************************
