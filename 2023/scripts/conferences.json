@@ -360,8 +360,8 @@
         "title": "Quelle infrastructure pour les \"services\" de l'association OpenStreetMap France ?",
         "author": "Vincent Bergeot",
         "summary": "L’association OpenStreetMap France propose un ensemble de « services », certains étant jugés « critiques » au regard de l’usage (uMap, rendu humanitaire, Cyclosm, rendu fr, Osmose, …). Ce n’est cependant qu’une petite partie de l’ensemble des services proposés, les autres étant tournés vers la communauté (Pifometre, Enedis, Bano, polygon, Projet du mois, commerces, Educosm, Mapcontrib, Panoramax …). Tout cela repose sur des serveurs mis à disposition par Free, Ovh, TH3-Hivane, Aquilenet, \"lacavequest\" et sans doutes d’autres ! Et toute cette infra on peut dire que c’est 3 personnes qui la gère bénévolement (Christian, Jocelyn et Marc / immense merci public). Plusieurs discussions tournent depuis quelques temps autour de cette infra : › de la charge pesant sur peu de personnes, › du temps nécessaire pour accueillir de nouvelles personnes, › de l’équilibre entre assurer des services « critiques » et garder une liberté de tenter, tester, essayer dans tous le sens, › de reposer sur le bénévolat, sur de la prestation, de la compétence externe, › … Cela ne sera donc pas une présentation de l’infrastructure mais c’est bien un temps pour en discuter, aux bonnes volontés, aux idées, aux envies de participer !",
-        "videoUrl": "",
-        "thumbnail": ""
+        "videoUrl": "https://peertube.openstreetmap.fr/w/if55dDtXyt7tQcmP6S6N3g",
+        "thumbnail": "https://peertube.openstreetmap.fr/static/thumbnails/552cea0e-e1fe-40e7-8897-32535bdfd4dc.jpg"
     },
     {
         "id": 49,
@@ -400,8 +400,8 @@
         "title": "Panoramax : prêts ? Partez !",
         "author": "Christian Quest",
         "summary": "Un an après \"Tu veux mes photos\", le projet Panoramax est en route en collaboration avec l'IGN.",
-        "videoUrl": "",
-        "thumbnail": ""
+        "videoUrl": "https://peertube.openstreetmap.fr/w/pyF1dyUioksHvSqDxc4ZJ4",
+        "thumbnail": "https://peertube.openstreetmap.fr/static/thumbnails/d4cf07f7-54f3-460b-8cdf-a030356d0fe6.jpg"
     },
     {
         "id": 54,
@@ -416,7 +416,7 @@
         "title": "Technopolice <3 OSM : la cartographie participative des caméras de surveillance",
         "author": "Eda",
         "summary": "Technopolice est une campagne lancée en 2019 par l'association de défense des libertés numériques la Quadrature du Net. Son but est d'analyser et documenter les dispositifs opaques de surveillance qui se multiplient dans nos villes et espace public, afin de pousser aux débats et actions collectives de résistance et de préservation de nos libertés fondamentales. Caméras de surveillance , vidéo-surveillance algorithmique détectant les comportements \"suspects\" (Marseille), microphones à Saint Étienne ou Orléans, drones dotés de caméras survolant nos manifestations, ... la Smart City, sous couvert d’optimisation, d'aide à la décision, de captation de magie-données (qui vont magiquement résoudre des problématiques complexes), transforme l’urbanité en une vaste entreprise de surveillance et d'expérimentations technopolicières. Au sein du collectif Technopolice Marseille, nous abordons la vidéosurveillance, entre autre angles, par celui de la cartographie participative des caméras dans OpenStreetMap. Nous organisons régulièrement des cartoparties thématiques, pour à la fois relever les caméras manquantes (les données, comme tant d'autres concernant la vidéosurveillance, n'étant pas ouvertes), mais aussi en apprendre d'avantage sur leurs fonctionnalités (en détectant les numéros de modèles et fabricants), et leur fonction urbaine. Ainsi, notre première cartographie de caméras a été faite dans le quartier de la Belle de Mai, un des quartiers le plus pauvres de Marseille, qui manque de tout mais qui s'est vue doté en 2020 d'un réseau dense de caméras, (voir notre poster). En 2021 nous cartographions les 23 caméras multicapteurs de la nouvelle place de la Plaine, l'emblématique place qui accueille le carnaval autogéré de la Plaine. Au fil de l'eau les cartoparties ont donné naissance à des promenades cartographiques de caméras, sortes de promenades guidées des dispositifs de surveillance. Ces cartographies enrichissent nos connaissances, les liens avec collectifs et habitants, et nous permettent de transformer le rapport de force : nous ne sommes plus dans la posture des regardés, nous devenons aussi les regardants de ces caméras qui nous surplombent.",
-        "videoUrl": "",
-        "thumbnail": ""
+        "videoUrl": "https://peertube.openstreetmap.fr/w/g2f98EfBkyjzP7ZPwqBvDV",
+        "thumbnail": "https://peertube.openstreetmap.fr/static/thumbnails/c92c72fa-8cfe-4a85-9b97-2a6281f29ef3.jpg"
     }
 ]
