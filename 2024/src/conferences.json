@@ -1,0 +1,406 @@
+[
+    {
+        "title": "Conférence pléinière SOTM FR 2024",
+        "author": "",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/6dnSYspzFMS2xgK2UEi7MG",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/42f1a75a-c8dd-46c8-9ce3-37d7638efb20.jpg"
+    },
+    {
+        "title": "Assemblée Générale d'OpenStreetMap France / 2024",
+        "author": "",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/54Qo8W3jLEL6gzmUsxN8Lo",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/bc184098-b8fd-4383-9a20-aa8f13ce56e4.jpg"
+    },
+    {
+        "id": 1,
+        "title": "Retour d'expérience sur l'utilisation d'uMap à la Chambre d'agriculture des Pays de la Loire",
+        "author": "Frédéric GUIMIER",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 2,
+        "title": "Utiliser le Plan Corps de Rue Simplifié pour contribuer à OSM",
+        "author": "François Lacombe",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 3,
+        "title": "Estimation d’urbanisme",
+        "author": "Ugo Zennaro",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 4,
+        "title": "Cartographier les zones climatiques locales avec OpenStreetMap",
+        "author": "Bocher",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 5,
+        "title": "Nouveau DataSud, nouvel élan régional pour OpenStreetMap",
+        "author": "Tony Emery, Victor Canut",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 7,
+        "title": "State of Panoramax",
+        "author": "Christian Quest",
+		"summary": "",
+		"videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 8,
+        "title": "L'OCSGE et le CoSIA de l'IGN : une nouvelle opportunité pour OSM ?",
+        "author": "Jean-Louis ZIMMERMANN",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 9,
+        "title": "09 - Nouveau DataSud, nouvel élan régional pour OpenStreetMap",
+        "author": "Emery Tony, Victor Canut",
+        "summary": "",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/gWa94MWRBfjFAkMtUH29iE",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/4fbed5d6-43d2-43d6-a983-ab6acc9906f5.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Présentation du Référentiel National des Bâtiments (RNB)",
+        "author": "Veith",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 12,
+        "title": "libLRS : une bibliothèque pour gérer des référentiels linéaires",
+        "author": "Céline Durupt",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 13,
+        "title": "RNB & OSM, quelles synergies ?",
+        "author": "Veith",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 14,
+        "title": "Migrer de Mapillary à Panoramax",
+        "author": "Tykayn",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 15,
+        "title": "Micro-cartographie de l’eau dans les Zones d’Activités Economiques (ZAE) en Région SUD : vers la construction d’un cadre d’évaluation de la gestion intégrée",
+        "author": "Jean-Louis ZIMMERMANN, Matthieu Vignal, Laurence Cantaloube-Kim",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 18,
+        "title": "Cartographie des gares françaises pour l'application \"Ma Gare SNCF\" avec Wemap",
+        "author": "Thibaud Michel",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 19,
+        "title": "OpenStreetMap et les systèmes d’information touristique : quelles alliances ?",
+        "author": "Vincent Bergeot",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 20,
+        "title": "Panoramax : les mains dans le cambouis !",
+        "author": "Adrien Pavie",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 21,
+        "title": "Production d'une cartographie des zones climatiques locales avec l'outil GeoClimate",
+        "author": "Bocher, Jérémy Bernard",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 22,
+        "title": "uMap incubé par l'État, ça donne quoi ?",
+        "author": "Yohan Boniface",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 23,
+        "title": "Panoramax : retour d'expérience du SDIS34 sur ses prises de vue RTK/360°",
+        "author": "Nicolas Moyroud",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 24,
+        "title": "OSerM : cartographier les gares aujourd'hui pour les améliorer demain",
+        "author": "Guillaume Chauvet",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 25,
+        "title": "Cartes IGN, une application pour découvrir la France autrement",
+        "author": "Nicolas Berthelot",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 26,
+        "title": "La licence ODbL expliquée par la fédé des Pros d'OSM",
+        "author": "Florian Lainez",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 27,
+        "title": "Carto Graou : sous les trains, la carte",
+        "author": "Nicolas Wurtz",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 28,
+        "title": "Mise en valeur touristique des territoires avec OSM: retour d’expérience de L’Abel Destination (Allier) et Teritorio",
+        "author": "Alban Vivert, CHAMBRIARD",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 29,
+        "title": "Mapper des trottoirs pour l'accessibilité",
+        "author": "Florian Lainez, Nicolas Matthieu",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 30,
+        "title": "Cartographie pour le VTT",
+        "author": "Lilian Morinon",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 31,
+        "title": "« Clearance », contrôler collaborativement des données OpenStreetMap pour des usages thématiques",
+        "author": "Frédéric Rodrigo, Vincent Bergeot",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 32,
+        "title": "Utilisation d'OSM dans une mairie",
+        "author": "Laura Mouchet",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 33,
+        "title": "La mise à jour multithématique d'OpenStreetMap au sein du pôle développement du Département de Vaucluse",
+        "author": "Jean-Louis ZIMMERMANN",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 34,
+        "title": "OpenMapTiles 3.15",
+        "author": "Nicolas Bozon",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 35,
+        "title": "Atelier formation uMap",
+        "author": "Alain RUET",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 36,
+        "title": "Architecture SIG au SDIS34 pour l'exploitation des données OSM",
+        "author": "Nicolas Moyroud",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 37,
+        "title": "OSM & l'accessibilité pour les personnes handicapées : des clés pour comprendre et des outils pour contribuer",
+        "author": "Jean-Louis ZIMMERMANN, Muriel Larrouy",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 38,
+        "title": "Travailler avec la communauté en tant qu'entreprise : les engagements de TomTom en France et à l'étranger",
+        "author": "Priscilla Zachée",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 39,
+        "title": "Underpass-API, requêtes Overpass sur une base de données SQL",
+        "author": "Frédéric Rodrigo",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 40,
+        "title": "Géocoder effectivement avec BANO et Addok",
+        "author": "Frédéric Rodrigo",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 41,
+        "title": "Interroger et récuperer des données OSM à la demande avec l'API Overpass",
+        "author": "mericskay",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 42,
+        "title": "Présentation de Cartes.app",
+        "author": "Maël THOMAS",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 44,
+        "title": "Pifomètre & Pifomap : ajouter et corriger des adresses, noms de voies et lieux-dits dans OSM",
+        "author": "Vincent de Château-Thierry",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 46,
+        "title": "Le hackathon des écoles",
+        "author": "Elise MEOUCHY",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 47,
+        "title": "Questions-Réponses Orbis Map/Overture Maps",
+        "author": "Priscilla Zachée",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 48,
+        "title": "Cartographier les cours d'eau, ça coule de source !",
+        "author": "François Lacombe, Jean-Louis ZIMMERMANN",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 49,
+        "title": "L’émergence de la pratique du vélo en France : quels impacts de la BNAC et des politiques publiques sur OSM ?",
+        "author": "Simon Reau, Elisabeth FELIX-GOUTAL",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 50,
+        "title": "Computer vision... \"l'IA\" utile pour OSM",
+        "author": "Christian Quest",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 51,
+        "title": "10 ans d'OpenStreetMap au Mali, réalisations & perspectives",
+        "author": "Nathalie SIDIBE",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 52,
+        "title": "AdopteUneCommune : retour sur les contributions réalisées depuis le SotM-FR 2023",
+        "author": "Nicolas Moyroud",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 53,
+        "title": "Accueil cyclable dans les zones commerciales",
+        "author": "Paul D.",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 54,
+        "title": "Des nouvelles d'OSM dans l'enseignement",
+        "author": "Cédric Frayssinet, Vincent Bergeot",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 55,
+        "title": "Technopolice <3 OSM : la cartographie participative des caméras de surveillance",
+        "author": "Eda",
+        "summary": "",
+        "videoUrl": "",
+        "thumbnail": ""
+    }
+]
