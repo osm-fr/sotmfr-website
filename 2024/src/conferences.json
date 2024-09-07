@@ -331,6 +331,14 @@
         "videoUrl": "https://peertube.openstreetmap.fr/w/pxjVCP4BYEEowJXvL7y4Fy",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/301e1d0e-d72a-45d7-809b-da28e897ca2f.jpg"
     },
+    {
+        "id": 62,
+        "title": "Utilisation d’OSM pour l’appli campus OPALE : apports mutuels et évolutions à venir",
+        "author": "Stéphanie Jean-Daubias",
+        "summary": "",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/4m8uWZFERx3BEgJCfuNd9a",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/fa0a3592-c5bf-4a22-9e35-9733baca38a4.jpg"
+    },
 	{
         "id": 63,
         "title": "OSMTracker-Android | Personnaliser, contribuer et maintenir.",
