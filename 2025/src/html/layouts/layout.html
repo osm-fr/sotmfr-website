@@ -1,0 +1,36 @@
+{% set site_name = 'State of the Map France 2025' %}
+{% set SEO_description = 'State of the Map France 2025, Tours' %}
+{% set SEO_keywords = 'sotm, france, tours, 2025, map, carte' %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{ site_name }} - {{ page_name }}</title>
+  <link rel="icon" type="image/x-icon" href="img/osm.svg">
+  <meta name="keywords" content="{{ SEO_keywords }}">
+  <meta name="description" content="{{ SEO_description }}">
+  <meta name="og:title" content="{{ site_name }} - {{ page_name }}">
+  <meta name="og:description" content="{{ SEO_description }}">
+  <meta property="og:image" content="https://sotm2024.openstreetmap.fr/img/2082-sotm2024-logos_Sotm-2024-logo-horizontal.png" />
+
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="page-top">
+  {% include "partials/navigation.html" %}
+  <div class="main">
+    {% block content %}{% endblock %}
+  </div>
+  {% include "partials/footer.html" %}
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/main.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+
+</html>

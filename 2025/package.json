@@ -1,0 +1,22 @@
+{
+    "name": "sotmfr-2025",
+    "scripts": {
+        "dev": "gulp serve",
+        "build": "gulp build"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.3",
+        "jquery": "^3.7.1"
+    },
+    "devDependencies": {
+        "browser-sync": "^3.0.3",
+        "del": "^6.1.1",
+        "gulp": "^5.0.0",
+        "gulp-data": "^1.3.1",
+        "gulp-header": "^2.0.9",
+        "gulp-nunjucks": "^6.0.0",
+        "gulp-nunjucks-render": "^2.2.3",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.80.5"
+    }
+}
