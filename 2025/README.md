@@ -12,6 +12,11 @@ The pages in `./src` will be generated to `./dist`
 -   `./src/html/layout` layout
 -   `./src/html/pages` pages content
 -   `./src/html/partials` html chunks like header, footer and navigation
+-   `./src/fonts` website fonts
+-   `./src/img` images and pdf
+-   `./src/fonts` website fonts
+-   `./src/js` Javascript code used on website
+-   `./src/scss` css style used on website
 
 Pages are HTML code + [Nunjucks](https://mozilla.github.io/nunjucks/) blocks.
 
