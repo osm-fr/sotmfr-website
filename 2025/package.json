@@ -17,6 +17,6 @@
         "gulp-nunjucks": "^6.0.0",
         "gulp-nunjucks-render": "^2.2.3",
         "gulp-sass": "^5.1.0",
-        "sass": "^1.81.0"
+        "sass": "^1.82.0"
     }
 }
