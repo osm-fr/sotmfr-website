@@ -1,17 +1,22 @@
+import gulp from 'gulp';
+import fs from 'fs';
+import {deleteAsync} from 'del';
+import header from 'gulp-header';
+import nunjucksRender from 'gulp-nunjucks-render';
+import data from 'gulp-data';
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import browserSync from "browser-sync";
+
 // libraries
-const { src, dest, parallel, series, watch } = require('gulp')
-const fs = require("fs");
-const del = require('del');
-const header = require("gulp-header");
-const nunjucksRender = require("gulp-nunjucks-render");
-const data = require("gulp-data");
-const sass = require('gulp-sass')(require('sass'));
+const { src, dest, parallel, series, watch,task } = gulp;
+const sass = gulpSass(dartSass);
 
 // dev tools
-const browserSync = require("browser-sync").create();
+browserSync.create();
 
 function clean() {
-    return del(['dist']);
+    return deleteAsync(['dist']);
 }
 
 function html() {
@@ -78,5 +83,5 @@ function watchFiles() {
 }
 
 const _build = series(clean, html, image, font, css, javascript, jsVendor);
-exports.serve = parallel(_build, watchFiles, serve);
-exports.build = _build;
+task('serve', parallel(_build, watchFiles, serve))
+task('build', _build)
