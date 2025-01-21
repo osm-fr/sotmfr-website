@@ -1,3 +1,4 @@
+// libraries
 import gulp from 'gulp';
 import fs from 'fs';
 import {deleteAsync} from 'del';
@@ -8,8 +9,7 @@ import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import browserSync from "browser-sync";
 
-// libraries
-const { src, dest, parallel, series, watch,task } = gulp;
+const { src, dest, parallel, series, watch, task } = gulp;
 const sass = gulpSass(dartSass);
 
 // dev tools
