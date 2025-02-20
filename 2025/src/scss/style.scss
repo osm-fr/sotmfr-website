@@ -1,5 +1,5 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+@use "../../node_modules/bootstrap/scss/bootstrap" as*;
 
-@import "./fonts.css";
-@import "./main.css";
+@use "./fonts.css" as*;
+@use  "./main.css" as*;
 

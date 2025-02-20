@@ -1,4 +1,4 @@
-@import "./fonts.css";
+@use "./fonts.css" as *;
 
 :root {
     --colour-1: #00396a;
