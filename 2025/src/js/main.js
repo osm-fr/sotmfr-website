@@ -14,14 +14,6 @@ $(function () {
             $(this).addClass('hidden');
     });
 
-    // cacher l'appel à contribution après une certaine date
-    const now = new Date();
-    const futureDate = new Date('2024-05-01');
-    const state = (now >= futureDate);
-    $('.contributionCall').each(function () {
-        if (state) $(this).toggle();
-    });
-
     // Démarrer les tooltips pour les sponsors
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
