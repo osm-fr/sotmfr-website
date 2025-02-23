@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sotm-v1';
+const CACHE_NAME = 'sotm-2025';
 const urlsToCache = [
   '/',
   '/index.html',
