@@ -61,6 +61,11 @@ function font() {
         .pipe(dest('dist/fonts'));
 }
 
+function manifest() {
+    return src('src/**/*.json')
+        .pipe(dest('dist/'));
+}
+
 // Static Server
 function serve() {
     series(clean, html, image, font, css, javascript, jsVendor);
@@ -82,6 +87,6 @@ function watchFiles() {
     watch('src/img/**/*.+(png|jpg|jpeg|svg)', series(image, browserSyncReload));
 }
 
-const _build = series(clean, html, image, font, css, javascript, jsVendor);
+const _build = series(clean, html, image, font, css, javascript, jsVendor, manifest);
 task('serve', parallel(_build, watchFiles, serve))
 task('build', _build)
