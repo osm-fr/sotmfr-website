@@ -50,7 +50,6 @@ function jsVendor() {
         .pipe(dest('dist/js'))
 }
 
-
 function image() {
     return src('src/img/**/*.+(png|jpg|jpeg|gif|svg|pdf)',{ encoding: false })
         .pipe(dest('dist/img'));
@@ -62,7 +61,7 @@ function font() {
 }
 
 function manifest() {
-    return src('src/**/*.json')
+    return src('src/manifest.json')
         .pipe(dest('dist/'));
 }
 
