@@ -6,6 +6,7 @@ To code on the website, you need Node.js and npm.
 
 Run `npm install` to install dependencies.<br>
 Then, run `npm run dev` to start a local server with auto-reload in the browser.
+The site can be viewed at [localhost:3000](http://localhost:3000) and browsersync administration interface can be viewed at [localhost:3001](http://localhost:3001).
 
 The pages in `./src` will be generated to `./dist`
 
@@ -25,3 +26,9 @@ Generated pages (`./dist`) are not commited.
 ### Conferences
 
 The [conferences data](./src/js/conferences.json) are injected in the [programme template](./src/html/pages/programme.html).
+
+### PWA App
+
+The website support PWA technology to install website like an app on IOS and Android.
+- PWA file properties is in [manifest.json](./src/manifest.json)
+- When website is opened [Javascript code](./src/js/main.js) was executed to register a [service worker](./src/js/service-worker.js) to store a part of the website in browser cache.
