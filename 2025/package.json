@@ -1,5 +1,8 @@
 {
     "name": "sotmfr-2025",
+    "engines": {
+    "node": ">=20.0.0"
+  },
     "scripts": {
         "dev": "gulp serve",
         "build": "gulp build"
