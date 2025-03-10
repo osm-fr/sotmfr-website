@@ -10,14 +10,14 @@
     "orientation": "portrait",
     "icons": [
      {
-      "src": "./img/osm-logo-x256.png",
+      "src": "img/osm-logo-x256.png",
       "type": "image/png",
       "sizes": "256x256"
      },
      {
-        "src": "./img/osm-logo-x512.png",
+        "src": "img/osm-logo-x512.png",
       "type": "image/png",
       "sizes": "512x512"
        } ],
-    "start_url": "./"
+    "start_url": "index.html"
 }
