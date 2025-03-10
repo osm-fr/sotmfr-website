@@ -50,7 +50,8 @@ jobs:
         run: npm run build --if-present
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: "./${{ env.YEAR }}/dist"
