@@ -1,6 +1,5 @@
 const CACHE_NAME = 'sotm-2025';
 const urlsToCache = [
-  './',
   './index.html',
   './css/main.css',
   './js/main.js'
