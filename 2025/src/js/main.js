@@ -7,7 +7,7 @@ $(function () {
     });
 
     // cacher dynamiquement les éléments de la navigation
-    const navToHide = ['programme.html','inscription.html','infos.html', 'contribution.html'];
+    const navToHide = ['programme.html','inscription.html','infos.html'];
     $('.nav-link').each(function () {
         //console.debug($(this).text() + " | href=" + $(this).attr("href"));
         if (navToHide.includes($(this).attr('href')))
