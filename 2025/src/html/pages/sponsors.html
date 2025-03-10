@@ -1,0 +1,55 @@
+{% set page_name = 'Soutiens' %}
+{% extends "layouts/layout.html" %}
+{% block content %}
+
+<section class="sponsor-page" id="main">
+
+  <div class="container">
+    <h1>Soutiens</h1>
+    <!--<h2>Partenaires</h2>
+    <div class="row bg-white text-center">
+      <div class="col pt-5 pb-5">
+        
+      </div>
+    </div>-->
+    <h2>Sponsors</h2>
+
+    <!--grands taille 500 px de large-->
+
+    <!--moyens taile 350px de large-->
+    <div class="row bg-white text-center">
+      <div class="col pt-5 pb-5">
+        <span class="recurring">
+          <a class="nodeco" href="https://cartocite.fr/" target="_blank">
+              <img alt="logo Cartocité" class="logo p-2" src="img/sponsors/logo_cartocite.svg" width="350">
+          </a>
+          <img alt="Sponsor récurrent" class="recurring-logo" data-bs-placement="top"
+               data-bs-title="Ce sponsor nous finance pendant trois ans." data-bs-toggle="tooltip"
+               src="img/sponsors/recurring.svg" width="50">
+        </span>
+
+        <br>
+        <a class="nodeco"
+           href="mailto:soutien@openstreetmap.fr?subject=%5BSOTM%5D%20Soutenir%20le%20State%20Of%20The%20Map%202025"
+           target="_blank">
+          <img alt="Votre logo ici" class="logo p-2" src="img/sponsors/logo_vide.svg" width="200">
+        </a>
+      </div>
+    </div>
+
+
+    <!--petits soutiens taille 200 px de large-->
+    <div class="row bg-white text-center">
+      <div class="col pt-5 pb-5">
+
+        <a class="nodeco"
+           href="mailto:soutien@openstreetmap.fr?subject=%5BSOTM%5D%20Soutenir%20le%20State%20Of%20The%20Map%202025"
+           target="_blank">
+          <img alt="Votre logo ici" class="logo p-2" src="img/sponsors/logo_vide.svg" width="200">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

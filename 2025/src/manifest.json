@@ -1,0 +1,24 @@
+{
+    "short_name": "SOTM-FR 2025",
+    "name": "SOTM-FR 2025",
+    "description":"Site web du State of The Map France 2025",
+    "lang": "fr",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "Scope": "/",
+    "orientation": "portrait",
+    "serviceworker": "/",
+    "icons": [
+     {
+      "src": "/img/osm-logo-x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+     },
+     {
+        "src": "/img/osm-logo-x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+       } ],
+    "start_url": "/index.html"
+}

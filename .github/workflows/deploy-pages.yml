@@ -3,7 +3,7 @@ name: Deploy static site with GitHub Pages dependencies preinstalled
 
 env:
   # Year of site
-  YEAR: "2024"
+  YEAR: "2025"
 
 on:
   push:

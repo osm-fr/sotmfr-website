@@ -1,0 +1,78 @@
+{% set page_name = 'Accueil' %}
+{% extends "layouts/layout.html" %}
+{% block content %}
+{% include "partials/header.html" %}
+
+<!-- Presentation Section -->
+<section class="container-fluid page card presentation">
+    <div class="container">
+        <div class="card-body">
+            <!--<div class="video-playlist">
+                <iframe title="DIRECT SOTM-FR 2025"
+                    src="https://peertube.openstreetmap.fr/video-playlists/embed/de909255-bba3-44e6-9a5d-84bb6f23dbcb"
+                    allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"
+                     width="100%" height="100%"
+                    frameborder="0"></iframe>
+            </div>
+			<br>
+			<p>Les replays des conférences seront disponibles sur <a href="https://peertube.openstreetmap.fr/c/sotm_fr_2025/videos" class="animate block">Peertube</a> quelques jours après l'événement.</p>
+			<br>-->
+            <h1 class="card-title">Du vendredi 13 au dimanche 15 Juin 2025</h1>
+            <h2 class="card-subtitle"><a href="https://www.openstreetmap.org/way/129250679">Université de Tours - Campus des Deux Lions</a></h2>
+            <p class="card-text">
+                Conférence organisée par l'association
+                <a class="animate block" href="https://www.openstreetmap.fr/" rel="noopener noreferrer"
+                    target="_blank">OpenStreetMap France</a>.
+                <br/>
+                En partenariat avec l'<a class="animate block" href="https://www.univ-tours.fr/" rel="noopener noreferrer"
+                    target="_blank">Université de Tours</a>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="container-fluid dark page" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <section>
+                    <h2 class="mb-4">State of the Map</h2>
+                    <p>
+                        Après Lyon (2013), Paris (2014), Brest (2015), Clermont-Ferrand (2016), Avignon (2017),
+                        <a href="https://sotm2018.openstreetmap.fr/">Bordeaux (2018)</a>, <a href="https://sotm2019.openstreetmap.fr/">Montpellier (2019)</a>, <a href="https://sotm2022.openstreetmap.fr/">Nantes (2022)</a>, <a href="https://sotm2023.openstreetmap.fr/">Marseille (2023)</a>, <a href="https://sotm2024.openstreetmap.fr/">Lyon (2024)</a> pour leur onzième édition,
+                        les Rencontres Nationales OpenStreetMap arrivent à Tours.
+                    </p>
+
+                    <p>
+                        Les 13-14-15 juin 2025, durant 3 jours, contributeurs, utilisateurs, représentants de
+                        collectivités et d'entreprises gravitant autour du Web et de l'information géographique,
+                        chercheurs, mais aussi personnes curieuses de découvrir cette «&nbsp;base de données libre du
+                        monde&nbsp;» que représente OSM, se retrouveront pour partager leurs expériences, se
+                        tenir informé, se former, découvrir l'écosystème et les multiples
+                        applications&nbsp;–&nbsp;existantes ou à imaginer&nbsp;–&nbsp;autour d'OpenStreetMap.
+                    </p>
+                    <p>Nous vous y attendons nombreuses et nombreux.</p>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="col-subtitle-info">Où&nbsp;?</h3>
+                <p>
+                    <a href="https://www.openstreetmap.org/#map=14/47.39231/0.69428" rel="noopener noreferrer"
+                        target="_blank">Tours,&nbsp;France</a>
+                </p>
+
+                <h3 class="col-subtitle-info">Quand&nbsp;?</h3>
+                <p>13 au 15 Juin 2025</p>
+
+                <h3 class="col-subtitle-info"></h3>
+                <a href="https://openstreetmap.org/" rel="noopener noreferrer" target="_blank">
+                    <img alt="Lien vers osm" src="img/osm.svg" style="height: 85px; margin-top: 20px" />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
