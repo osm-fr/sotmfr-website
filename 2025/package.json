@@ -1,5 +1,6 @@
 {
     "name": "sotmfr-2025",
+    "homepage": "https://github.com/osm-fr/sotmfr-website",
     "engines": {
     "node": ">=20.0.0"
   },
