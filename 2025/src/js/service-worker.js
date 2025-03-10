@@ -1,16 +1,11 @@
 const CACHE_NAME = 'sotm-2025';
-const urlsToCache = [
-  '/',
-  'index.html',
-  '/css/main.css',
-  '/js/main.js'
-];
+const urlsToCache = '/';
 
 // Install event
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
+      return cache.add(urlsToCache);
     })
   );
 });
