@@ -282,7 +282,7 @@ footer p {
     padding-bottom: 150px;
     color: var(--primary-dark);
     text-shadow: 0 3px 10px rgba(0,0,0,0.8);
-    background-image: url("../img/");
+    background-image: url("../img/fond_index.jpg");
     background-color: var(--colour-5);
     background-size: cover;
     background-repeat: no-repeat;
