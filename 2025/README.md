@@ -31,3 +31,4 @@ The [conferences data](./src/js/conferences.json) are injected in the [programme
 
 The website support PWA technology to install website like an app on IOS and Android.
 - PWA file properties is in [manifest.json](./src/manifest.json)
+- When website is opened [Javascript code](./src/js/main.js) was executed to register a [service worker](./src/js/service-worker.js) to store a part of the website in browser cache.
