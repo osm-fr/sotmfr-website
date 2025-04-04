@@ -1,11 +1,11 @@
 @use "./fonts.css" as *;
 
 :root {
-    --colour-1: #00396a;
-    --colour-2: #749cc3;
-    --colour-3: #2077aa;
+    --colour-1: #006a3a;
+    --colour-2: #74c398;
+    --colour-3: #20aa6c;
     --colour-4: #ffffff;
-    --colour-5: #bbe3fa;
+    --colour-5: #bbfada;
     --colour-1-rgb: 0, 57, 106;
     --colour-2-rgb: 116, 156, 195;
     --colour-3-rgb: 32, 119, 170;
@@ -282,14 +282,14 @@ footer p {
     padding-bottom: 150px;
     color: var(--primary-dark);
     text-shadow: 0 3px 10px rgba(0,0,0,0.8);
-    background-image: url("../img/fond_index.jpg");
+    background-image: url("../img/sotmfr2025-banniere.png");
     background-color: var(--colour-5);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .intro .logo img {
-    width: 350px;
+    width: 200px;
 }
 
 .intro .credit-link {
