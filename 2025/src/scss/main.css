@@ -6,6 +6,7 @@
     --colour-3: #20aa6c;
     --colour-4: #ffffff;
     --colour-5: #bbfada;
+    --colour-6: #000000;
     --colour-1-rgb: 0, 57, 106;
     --colour-2-rgb: 116, 156, 195;
     --colour-3-rgb: 32, 119, 170;
@@ -127,11 +128,11 @@ h6 {
 
 .navbar,
 .navbar a {
-    color: var(--primary-dark);
+    color: var(--colour-1);
 }
 
 .navbar a:hover {
-    color: var(--colour-2);
+    color: var(--colour-3);
 }
 
 nav a,
@@ -280,7 +281,7 @@ footer p {
 .intro {
     padding-top: 150px;
     padding-bottom: 150px;
-    color: var(--primary-dark);
+    color: var(--colour-6);
     text-shadow: 0 3px 10px rgba(0,0,0,0.8);
     background-image: url("../img/sotmfr2025-banniere.png");
     background-color: var(--colour-5);
@@ -590,5 +591,5 @@ td.scheduleBreak {
 
 .attribution{
     font-size: 1rem;
-    color:var(--primary-dark);
+    color:var(--colour-6);
 }
