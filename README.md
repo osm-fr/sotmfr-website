@@ -20,4 +20,8 @@ Lien des sites des sotm précédents:
 - https://sotm2020.openstreetmap.fr/
 - https://sotm2019.openstreetmap.fr/
 - https://sotm2018.openstreetmap.fr/
-- https://www.openstreetmap.fr/sotmfr2016-programme/
+- https://prev.openstreetmap.fr/sotmfr2017.html
+- https://prev.openstreetmap.fr/sotmfr2016.html
+- https://prev.openstreetmap.fr/sotmfr2015.html
+- https://prev.openstreetmap.fr/sotmfr2014.html
+- https://prev.openstreetmap.fr/sotmfr2013.html
