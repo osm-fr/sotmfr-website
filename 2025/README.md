@@ -25,7 +25,22 @@ Generated pages (`./dist`) are not commited.
 
 ### Conferences
 
-The [conferences data](./src/js/conferences.json) are injected in the [programme template](./src/html/pages/programme.html).
+The [conferences data](./src/js/conferences.json) are injected in the [programme page](./src/html/pages/programme.html).
+To generate programme html page with conference data:
+- Add 
+```
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3">
+                            <!-- Generated, do not edit this part manually. Instructions in the README. -->
+                            {% import "./partials/conference.njk" as macros %}
+                            {% for conf in conferencesData %}
+                                {{ macros.conferenceCard(conf) }}
+                            {% else %}
+                                No Conf.
+                            {% endfor %}
+</div>
+```
+in [programme page](./src/html/pages/programme.html)
+- Then run `npm run build`
 
 ### PWA App
 
