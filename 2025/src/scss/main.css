@@ -1,9 +1,9 @@
 @use "./fonts.css" as *;
 
 :root {
-    --colour-1: #006a3a;
+    --colour-1: #01884b;
     --colour-2: #74c398;
-    --colour-3: #20aa6c;
+    --colour-3: #9ad789;
     --colour-4: #ffffff;
     --colour-5: #bbfada;
     --colour-6: #000000;
@@ -23,7 +23,7 @@
     --primary-dark: var(--colour-1);
     --primary-light: var(--colour-3);
     --links: var(--colour-2);
-    --text-light: var(--colour-4);
+    --text-light: var(--colour-6);
     --footer-font-size: 1.125rem; /* 18px */
 
     /* Bootstrap variables override */
@@ -132,7 +132,7 @@ h6 {
 }
 
 .navbar a:hover {
-    color: var(--colour-3);
+    color: var(--colour-6);
 }
 
 nav a,
