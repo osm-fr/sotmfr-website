@@ -128,11 +128,11 @@ h6 {
 
 .navbar,
 .navbar a {
-    color: var(--colour-1);
+    color: var(--colour-6);
 }
 
 .navbar a:hover {
-    color: var(--colour-6);
+    color: var(--colour-1);
 }
 
 nav a,
