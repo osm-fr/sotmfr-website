@@ -51,7 +51,7 @@ function jsVendor() {
 }
 
 function image() {
-    return src('src/img/**/*.+(png|jpg|jpeg|gif|svg|pdf)',{ encoding: false })
+    return src('src/img/**/*.+(png|jpg|jpeg|gif|svg|pdf|ics)',{ encoding: false })
         .pipe(dest('dist/img'));
 }
 

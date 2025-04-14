@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+PRODID:-//Mozilla.org/NONSGML Mozilla Calendar V1.1//EN
+VERSION:2.0
+BEGIN:VEVENT
+CREATED:20250414T051049Z
+LAST-MODIFIED:20250414T081341Z
+DTSTAMP:20250414T081341Z
+UID:9d6daf64-f42b-4fe6-b804-f1ec92342b28
+SUMMARY:SotM France 2025
+STATUS:CONFIRMED
+DTSTART;VALUE=DATE:20250613
+DTEND;VALUE=DATE:20250616
+TRANSP:OPAQUE
+LOCATION:https://www.openstreetmap.org/#map=14/47.39231/0.69428
+DESCRIPTION;ALTREP="data:text/html,%3Ch1%20class%3D%22card-title%22%3EDu%20
+ vendredi%2013%20au%20dimanche%2015%20Juin%202025%3C%2Fh1%3E%0A%20%20%20%20%
+ 20%20%20%20%20%20%20%20%3Ch2%20class%3D%22card-subtitle%22%3E%3Ca%20href%3D
+ %22https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F129250679%22%3EUniversit%C3%
+ A9%20de%20Tours%20-%20Campus%20des%20Deux-Lions%2FPortalis%3C%2Fa%3E%3C%2Fh
+ 2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22card-text%22%3
+ E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Conf%C3%A9rence%20organ
+ is%C3%A9e%20par%20l'association%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%2
+ 0%20%20%3Ca%20class%3D%22animate%20block%22%20href%3D%22https%3A%2F%2Fwww.o
+ penstreetmap.fr%2F%22%20rel%3D%22noopener%20noreferrer%22%20target%3D%22_bl
+ ank%22%3EOpenStreetMap%20France%3C%2Fa%3E.%0A%20%20%20%20%20%20%20%20%20%20
+ %20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%
+ 20En%20partenariat%20avec%20l'%3Ca%20class%3D%22animate%20block%22%20href%3
+ D%22https%3A%2F%2Fwww.univ-tours.fr%2F%22%20rel%3D%22noopener%20noreferrer%
+ 22%20target%3D%22_blank%22%3EUniversit%C3%A9%20de%20Tours%3C%2Fa%3E.%0A%20%
+ 20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%3Cbr%3ELes%2013-14-15%20juin%202
+ 025%2C%20durant%203%20jours%2C%20contributeurs%2C%20utilisateurs%2C%20repr%
+ C3%A9sentants%20de%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20
+ %20%20%20%20%20%20collectivit%C3%A9s%20et%20d'entreprises%20gravitant%20aut
+ our%20du%20Web%20et%20de%20l'information%20g%C3%A9ographique%2C%0A%20%20%20
+ %20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20chercheurs%2
+ C%20mais%20aussi%20personnes%20curieuses%20de%20d%C3%A9couvrir%20cette%20%C
+ 2%AB%C2%A0base%20de%20donn%C3%A9es%20libre%20du%0A%20%20%20%20%20%20%20%20%
+ 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20monde%C2%A0%C2%BB%20que%20re
+ pr%C3%A9sente%20OSM%2C%20se%20retrouveront%20pour%20partager%20leurs%20exp%
+ C3%A9riences%2C%20se%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%
+ 20%20%20%20%20%20%20tenir%20inform%C3%A9%2C%20se%20former%2C%20d%C3%A9couvr
+ ir%20l'%C3%A9cosyst%C3%A8me%20et%20les%20multiples%0A%20%20%20%20%20%20%20%
+ 20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20applications%C2%A0%E2%80%
+ 93%C2%A0existantes%20ou%20%C3%A0%20imaginer%C2%A0%E2%80%93%C2%A0autour%20d'
+ OpenStreetMap.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%
+ 20":Du vendredi 13 au dimanche 15 Juin 2025\n\n            \nUniversité de
+  Tours - Campus des Deux-Lions/Portalis\n\n            \n\n\n              
+   Conférence organisée par l'association\n                OpenStreetMap F
+ rance.\n                \n\n                En partenariat avec l'Universit
+ é de Tours.\n            \n\nLes 13-14-15 juin 2025\, durant 3 jours\, con
+ tributeurs\, utilisateurs\, représentants de\n                        coll
+ ectivités et d'entreprises gravitant autour du Web et de l'information gé
+ ographique\,\n                        chercheurs\, mais aussi personnes cur
+ ieuses de découvrir cette « base de données libre du\n                  
+       monde » que représente OSM\, se retrouveront pour partager leurs ex
+ périences\, se\n                        tenir informé\, se former\, déco
+ uvrir l'écosystème et les multiples\n                        applications
+  – existantes ou à imaginer – autour d'OpenStreetMap.\n               
+      
+SEQUENCE:1
+X-MOZ-GENERATION:2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Description par défaut Mozilla
+END:VALARM
+END:VEVENT
+END:VCALENDAR
