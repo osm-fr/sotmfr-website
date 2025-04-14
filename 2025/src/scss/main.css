@@ -282,7 +282,7 @@ footer p {
     padding-top: 150px;
     padding-bottom: 150px;
     color: var(--colour-6);
-    text-shadow: 0 3px 10px rgba(0,0,0,0.8);
+    text-shadow: 0 3px 10px rgba(255, 254, 254, 0.8);
     background-image: url("../img/sotmfr2025-banniere.png");
     background-color: var(--colour-5);
     background-size: cover;
