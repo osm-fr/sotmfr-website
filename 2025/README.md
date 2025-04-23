@@ -47,3 +47,10 @@ in [programme page](./src/html/pages/programme.html)
 The website support PWA technology to install website like an app on IOS and Android.
 - PWA file properties is in [manifest.json](./src/manifest.json)
 - When website is opened [Javascript code](./src/js/main.js) was executed to register a [service worker](./src/js/service-worker.js) to store a part of the website in browser cache.
+
+### Matomo Tracker
+
+The Matomo tracker has been integrated into the website to count number of site visits. Stats about website are used when we try to find sponsors.
+The script is configured to not store cookies in the browser and respect [DoNotTrack browser setting](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/DNT).
+- To enable Matomo script, you need to create a new website at https://stats.openstreetmap.fr/ and add `SiteId` in [matomo.js](./src/js/matomo.js)
+- To disable Matomo script, remove `<script src="js/matomo.js"></script>` in [layout.html](./src/html/layouts/layout.html)
