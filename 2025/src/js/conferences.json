@@ -1,14 +1,63 @@
 [
     {
-        "title": "Conférence pléinière SOTM FR 2025",
-        "author": "",
-        "videoUrl": "https://peertube.openstreetmap.fr/w/6dnSYspzFMS2xgK2UEi7MG",
-        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/6691d38a-b4e9-4886-ab16-3ae294bf4681.jpg"
+        "title": "Assemblée Générale OSM-Fr 2025",
+
+        "videoUrl": "https://peertube.openstreetmap.fr/w/vwRjeX3rzoc1tTBZKJRtLP",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/61055005-1c06-49fa-838a-573f705407e2.jpg"
     },
     {
-        "title": "Assemblée Générale d'OpenStreetMap France / 2025",
-        "author": "",
-        "videoUrl": "https://peertube.openstreetmap.fr/w/54Qo8W3jLEL6gzmUsxN8Lo",
-        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/acb9b78a-1ff5-44b2-ac69-25d399b2e5db.jpg"
+        "title": "Lightning Talks (Présentations éclairs)",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/muyceyaN3KpMKpm22SRyhr",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/cae81acd-4b7d-4d52-a3e3-476dc40dd9a4.jpg"
+    },
+	{
+        "title": "State of Panoramax !",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/tTvRx6eRA1hGQroC9xjunH",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/1f0ee23c-96cc-4c8c-b66b-429b03cf2e45.jpg"
+    },
+    {
+        "title": "20 ans de la loi handicap : albOSM souvenir",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/4LtxQP8fXfUqB3Vp4e3kxq",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/d69abe3c-5fb8-4940-a8d1-a51c61e8b7f0.jpg"
+    },
+    {
+        "title": "Rouen, métropole la mieux cartographiée de France ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/35NA6a5hcYNdJ48E943KC5",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/d3623c45-88a5-4e64-87a7-8c69dd0fa0d7.jpg"
+    },
+    {
+        "title": "Espace Passerelles : Comment OpenStreetMap crée du lien et facilite le quotidien des habitants ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/czW8hTw6kzSAxnnsmraaL8",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/c0333629-eb4e-45cc-ac72-b329c7db1cd6.jpg"
+    },
+    {
+        "title": "Quels outils pour contribuer aux réseaux d'utilités ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/891kXVsRZgRVsfWVCgVjeY",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/a1c3ca93-da1e-4622-b621-272611406379.jpg"
+    },
+    {
+        "title": "uMap, quoi de neuf ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/7avEP5WPUvur4za46zXGLj",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/ea41f885-d97d-4d68-8342-41e46906ace9.jpg"
+    },
+    {
+        "title": "Sous le capot de l'infra d'OSM-FR",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/oDEUZ2grJS2BLb8J1qAFfj",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/763b3b52-c8fa-4641-8855-23401db37b4a.jpg"
+    },
+    {
+        "title": "Panoramax au-delà des images, la sémantique pour décrire les photos",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/n5kEKcBFnU3rdbiQQKmk6b",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/4d1a0c25-9b11-448b-ae86-f5bfbf3c2de1.jpg"
+    },
+    {
+        "title": "Organic Maps - 4 ans de contribution à OSM",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/5DyHzLFNgG4YtJuXumfZRT",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/0ac486bb-cb5a-41b5-8005-7386902be524.jpg"
+    },
+    {
+        "title": "Comment jardiner les commerces dans OSM ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/pnVFusGztifhpj512P2y9U",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/f499eaeb-2a5a-4fbe-b613-b07a7251e039.jpg"
     }
 ]
