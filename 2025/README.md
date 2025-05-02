@@ -23,6 +23,8 @@ Pages are HTML code + [Nunjucks](https://mozilla.github.io/nunjucks/) blocks.
 If you only want to generate the website without local server run `npm run build`.<br>
 Generated pages (`./dist`) are not commited.
 
+Do not push dependencies update after the website was installed on the server, task on the server to get sources and build website is not adapted to upgrade dependencies.
+
 ### Conferences
 
 The [conferences data](./src/js/conferences.json) are injected in the [programme page](./src/html/pages/programme.html).
