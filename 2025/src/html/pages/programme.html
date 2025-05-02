@@ -1,7 +1,7 @@
 {% set page_name = 'Programme' %}
 {% extends "layouts/layout.html" %}
 {% block content %}
-<script type="text/javascript" src="https://pretalx.com/sotm-fr-2025/widgets/schedule.js"></script>
+<script type="text/javascript" src="https://pretalx.com/sotm-fr-2025/schedule/widget/v2.en.js"></script>
 <section id="main" class="page program-page">
     <div class="container">
         <div class="row">
@@ -14,7 +14,9 @@
                 <a href="img/sotm2025-programme-d.pdf">téléchargement<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf" style="width: 1em" /></span></a> ,vous pouvez aussi télécharger <a href="img/sotm2025-A0-guide-vertical-c.pdf">le guide des interventions avec les résumés
 					<span class="ms-1"><img src="img/file-pdf-regular.svg" alt="fichier pdf"
                                 style="width: 1em" /></span></a></li>-->
-                
+                <br>
+                <p>Le programme de l'événement n'est pas définitif, certaines conférences n'ont pas encore été confirmées par les conférenciers.</p>
+                <div style="overflow-x: auto; width: calc(100%);">
                 <pretalx-schedule event-url="https://pretalx.com/sotm-fr-2025/" locale="en" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
                     <noscript>
                         <div class="pretalx-widget">
@@ -23,6 +25,7 @@
                              </div>
                         </div>
                     </noscript>
+                </div>
         </div>
     </div>
 </div>
