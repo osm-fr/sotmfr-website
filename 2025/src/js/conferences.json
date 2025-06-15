@@ -1,14 +1,39 @@
 [
     {
         "title": "Conférence pléinière SOTM FR 2025",
-        "author": "",
+
         "videoUrl": "https://peertube.openstreetmap.fr/w/6dnSYspzFMS2xgK2UEi7MG",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/6691d38a-b4e9-4886-ab16-3ae294bf4681.jpg"
     },
     {
         "title": "Assemblée Générale d'OpenStreetMap France / 2025",
-        "author": "",
+
         "videoUrl": "https://peertube.openstreetmap.fr/w/54Qo8W3jLEL6gzmUsxN8Lo",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/acb9b78a-1ff5-44b2-ac69-25d399b2e5db.jpg"
+    },
+	{
+        "title": "State of Panoramax !",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/tTvRx6eRA1hGQroC9xjunH",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/1f0ee23c-96cc-4c8c-b66b-429b03cf2e45.jpg"
+    },
+    {
+        "title": "Lightning Talks (Présentations éclairs)",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/muyceyaN3KpMKpm22SRyhr",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/cae81acd-4b7d-4d52-a3e3-476dc40dd9a4.jpg"
+    },
+    {
+        "title": "20 ans de la loi handicap : albOSM souvenir",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/4LtxQP8fXfUqB3Vp4e3kxq",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/d69abe3c-5fb8-4940-a8d1-a51c61e8b7f0.jpg"
+    },
+    {
+        "title": "Rouen, métropole la mieux cartographiée de France ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/35NA6a5hcYNdJ48E943KC5",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/d3623c45-88a5-4e64-87a7-8c69dd0fa0d7.jpg"
+    },
+    {
+        "title": "Espace Passerelles : Comment OpenStreetMap crée du lien et facilite le quotidien des habitants ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/czW8hTw6kzSAxnnsmraaL8",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/6dc1341d-42cc-496a-8231-530963e6df12.jpg"
     }
 ]
