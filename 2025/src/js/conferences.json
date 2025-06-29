@@ -26,14 +26,69 @@
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/d3623c45-88a5-4e64-87a7-8c69dd0fa0d7.jpg"
     },
     {
+        "title": "À la conquête des bornes de recharge électriques",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/5fBZWD3TqfZyFkBMvd2AGZ",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/8cd39858-b2d5-4866-bb0e-785f1bb808a3.jpg"
+    },
+    {
+        "title": "Données cyclables en Région SUD : une démarche collaborative pour améliorer la donnée",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/nxoYyHXa3ek34Z4WubLhZr",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/f251fb1e-ea1d-4261-8d06-f845bd9f9b8b.jpg"
+    },
+    {
+        "title": "Mapper l'accessibilité de Caen la Mer",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/a7E6FNFZhtxB7oKJwWmddp",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/54b77583-ea23-43ae-9e29-46f10cd1b928.jpg"
+    },
+    {
+        "title": "Schéma directeur cyclable : de l'OpenData à l'OpenBar ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/d9BRs74CWmBxcHKhPLDNdE",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/3bc7556a-ef5e-451a-9ea8-2388589a767f.jpg"
+    },
+    {
         "title": "Espace Passerelles : Comment OpenStreetMap crée du lien et facilite le quotidien des habitants ?",
         "videoUrl": "https://peertube.openstreetmap.fr/w/czW8hTw6kzSAxnnsmraaL8",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/c0333629-eb4e-45cc-ac72-b329c7db1cd6.jpg"
     },
     {
+        "title": "Contributions, Collaborations et Innovations : TomTom et OSM traçant ensemble de nouveaux chemins",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/cC3jcD3cGVxyaKYHbEoDp4",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/3732e709-0af6-483e-850f-f91d3737f4b1.jpg"
+    },
+    {
+        "title": "Du scanner 3D à OSM : le Val de Marne expérimente la production en masse de données d'accessibilité",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/hghC3My6UQ3GGK68gq57Xy",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/0f6c7fa4-03f1-4ed7-93eb-6e7997a2f559.jpg"
+    },
+    {
+        "title": "Usage d'OpenStreetMap en collectivités et organismes publics : pourquoi ? comment ?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/1FxthNYTsbmgWotYM8FrXv",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/149abf8a-4501-4df4-9e59-b0845c51f74c.jpg"
+    },
+    {
+        "title": "BHYNO : Base d'HYdrants Nationale Ouverte",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/eDsvzPJSpkm7EJfzwshzkQ",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/c0bf2cbe-a5de-49d6-9042-6d19b2fed96f.jpg"
+    },
+    {
+        "title": "OSM Logical History",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/kReuBPJkKJpHntQE915avc",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/c9d964fd-3645-43f8-b2c0-83bd3d3f917d.jpg"
+    },
+    {
+        "title": "De la donnée à la carte web avec la stack CartoGuide : Ontologie de POI OSM + Clearance + Datasources + Elasa + Vido",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/tKEDpvin18S8FgzScisTtd",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/5164ca6e-b81f-415b-a637-6b9c2238ece6.jpg"
+    },
+    {
         "title": "Quels outils pour contribuer aux réseaux d'utilités ?",
         "videoUrl": "https://peertube.openstreetmap.fr/w/891kXVsRZgRVsfWVCgVjeY",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/a1c3ca93-da1e-4622-b621-272611406379.jpg"
+    },
+    {
+        "title": "On ne fait pas d'omelette sans casser des nœuds / à 360°C",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/4EdgMwWFJiPeh4n88MbcxP",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/c4d4ade2-b2ab-4798-bb8b-423d7dd85d75.jpg"
     },
     {
         "title": "uMap, quoi de neuf ?",
@@ -51,6 +106,51 @@
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/4d1a0c25-9b11-448b-ae86-f5bfbf3c2de1.jpg"
     },
     {
+        "title": "Découverte de trucs et astuces des outils autour d'OSM",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/cMpa1U6vf1SVjLd4txqDgk",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/6d79a0a1-ee51-41d0-8072-24de66d2f121.jpg"
+    },
+    {
+        "title": "Preums : les jeux OSMlympiques",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/b9LqQeqigoNhoe6CXDJHXn",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/1114fa14-ff0a-4a42-8ddc-77a269b0e1b4.jpg"
+    },
+    {
+        "title": "OMO un gestionnaire de tâches simple",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/gDGuBMZ9UYbhgSNk4V8K9M",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/0067e9af-08d7-4e95-97b0-372f5c016b2a.jpg"
+    },
+    {
+        "title": "Wiki? Oui qui, quoi, comment?",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/sMCt83LT8u9f2BnpYZboar",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/df0facc9-4ef9-4ab2-9061-3d70abd512da.jpg"
+    },
+    {
+        "title": "MadAtlas, 2 ans d'initiation à OpenStreetMap à l'université de Fianarantsoa",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/uPPvnVZpYFrntq7ztCwBum",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/96d2bb30-def2-438a-94f5-f28d435393e3.jpg"
+    },
+    {
+        "title": "Retour d'expérience de l'usage d'OSM dans divers enseignements d'une école d'ingénieur.",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/m8uRwwUyGRxQAbvxdEepde",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/bda392a7-42ea-4659-9c2f-5a276f5a2764.jpg"
+    },
+    {
+        "title": "Cartographier le Réseau Express Vélo de Nantes grâce à uMap et Panoramax",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/1dCXqzCWjQnhm6BWHEN12t",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/a4392a18-56a9-44b3-aa73-95cc7f561f00.jpg"
+    },
+    {
+        "title": "Venez vous pifomètre à jour : nouveautés 2025 et idées pour la suite",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/sACXW87xBSBraogMscLF3V",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/e3867709-f27d-4e79-9d68-4200da83fc8b.jpg"
+    },
+    {
+        "title": "Une stack technique pour des cartographies vectorielles efficaces",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/uFPjiPXSEWgjYiMyHHdMrz",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/1adda11e-ac6b-43e0-9a22-ae5efbbb87b3.jpg"
+    },
+    {
         "title": "Organic Maps - 4 ans de contribution à OSM",
         "videoUrl": "https://peertube.openstreetmap.fr/w/5DyHzLFNgG4YtJuXumfZRT",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/0ac486bb-cb5a-41b5-8005-7386902be524.jpg"
@@ -59,5 +159,55 @@
         "title": "Comment jardiner les commerces dans OSM ?",
         "videoUrl": "https://peertube.openstreetmap.fr/w/pnVFusGztifhpj512P2y9U",
         "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/f499eaeb-2a5a-4fbe-b613-b07a7251e039.jpg"
+    },
+    {
+        "title": "Faire dialoguer OSM et Wikidata : vers une cartographie interopérable",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/wp6rzzfLt96gftqET39puP",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/3fe3bcfa-7fd4-45e8-bdde-cb85b4d54ca0.jpg"
+    },
+    {
+        "title": "Améliorer l'accessibilité aux soins dans le Sud-Est de Madagascar via une contribution massive à OpenStreetMap",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/tKcpy9SiRVmLUJYQ8ReZhb",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/704ef62f-1c87-4c1d-b088-ac1cf7ca3c59.jpg"
+    },
+    {
+        "title": "Cartographie OSM des dommages du bâti à Mayotte après Chido - bilan et perspectives",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/dcTMhBeDSXaCLQ2Kfff6KX",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/f34f1665-670c-4553-9ee0-005a02bd0193.jpg"
+    },
+    {
+        "title": "Tout est dans le détail",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/5oG9vnFDbfoe9TM8YxutfQ",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/1bb6d4bb-dbb7-4cab-97c3-6b70ed86ee96.jpg"
+    },
+    {
+        "title": "Chasseur de photos : de Commons à Panoramax",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/qbeWENY5HmbaQ5MNPtioL5",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/5e2d7a40-707f-4eb4-8559-b651f5cd8a41.jpg"
+    },
+    {
+        "title": "Wololo! Convertissez l'open data vers des tags d'OpenStreetMap",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/5DDdSMD3PzgU6gFDiYiRLv",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/d6e11173-ae08-4e35-8b8a-a281240f0ebf.jpg"
+    },
+    {
+        "title": "Paris, Texas: Technically Correct  🇬🇧",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/d4ZwBJmwcLzDQ3ekWNPswA",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/20672590-6403-4140-9332-0f85c553b65c.jpg"
+    },
+    {
+        "title": "Être contributrice à OpenStreetMap à 6 ans et le rester",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/qbeWENY5HmbaQ5MNPtioL5",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/9c711bbd-8397-4834-b861-8ae0ae548135.jpg"
+    },
+    {
+        "title": "Chérie, GPT le code ! 😲",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/gLqe4b1W7h6JVStSUwQrsj",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/6fa91be1-e32b-4370-bd28-a8ab03670989.jpg"
+    },
+    {
+        "title": "Carto-partie et roman-photo : naissance d'une romance",
+        "videoUrl": "https://peertube.openstreetmap.fr/w/6BEVJoeo4PmuhV5PDo4wiy",
+        "thumbnail": "https://peertube.openstreetmap.fr/lazy-static/thumbnails/41c929dc-72be-46cf-bedc-fa4b6323566d.jpg"
     }
 ]
